@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of delayed or incorrect decision-making at an intersection due to snow-covered pavement, yellow signal ambiguity, and limited environmental feedback.
+
+Component 1: Road Surface and Maintenance
+Role: Provide traction and surface clarity for safe navigation.
+Contribution:
+- Snow completely covers the road surface, eliminating all lane markings.
+- No visible treatment (plowing, salting) to enhance traction or visibility.
+- Intersection shape is unclear due to uniform snow coverage.
+
+Component 2: Road Markings and Signage
+Role: Provide visual cues for lane structure and intersection behavior.
+Contribution:
+- Painted lines are mostly obscured by snow, except for a faint yellow line.
+- No stop line or directional arrows visible at the intersection.
+- Signage is minimal; traffic signal is the only active control.
+
+Component 3: Vehicle Subsystems
+Role: Interpret road geometry, signals, and surface conditions.
+Contribution:
+- Lane detection systems likely impaired or inoperative.
+- Camera-based signal detection may struggle with visual clarity of yellow light and bright background.
+- No visible curb or boundary markings to assist lateral positioning.
+
+Component 4: Roadway Management Authority
+Role: Ensure visibility and safety under environmental conditions.
+Contribution:
+- No snow mitigation infrastructure evident.
+- Traffic signal is functional, but lacks visual reinforcement (e.g., vertical reflective backing).
+- No adaptive response to snow, signal timing, or reduced visibility.
+
+Component 5: Drivers
+Role: Make timely decisions based on visual inputs and environment.
+Contribution:
+- Yellow light requires immediate decision under uncertain surface conditions.
+- Snow reduces perception of safe braking distance and turning zones.
+- Lack of markings and strong visual context may lead to hesitation or error.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide context-aware feedback on hazards and visibility.
+Contribution:
+- No warning systems for snow or signal visibility impairment.
+- No advisory speed reduction or surface condition alerts.
+- Environmental support system appears inactive.
+
+Summary:
+This intersection scenario poses moderate-to-high risk due to ambiguous visual cues, snow-covered surfaces, and a yellow signal that demands immediate judgment. Both human and automated systems may experience degraded decision reliability without compensatory infrastructure or alert mechanisms.

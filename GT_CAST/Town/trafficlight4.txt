@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of situational misjudgment or improper lane use due to snow-covered roads, constrained urban space, and signage-dense environment.
+
+Component 1: Road Surface and Maintenance
+Role: Maintain safe traction and visual structure.
+Contribution:
+- Road is fully snow-covered, obscuring all standard markings.
+- Narrow lane width makes maneuvering more sensitive to loss of visual guidance.
+- Surface condition likely reduces vehicle control and feedback precision.
+
+Component 2: Road Markings and Signage
+Role: Support regulation compliance and lane awareness.
+Contribution:
+- Speed limit sign (30 km/h) is visible and properly placed.
+- Lane markings are invisible due to snow coverage.
+- Multiple signs are present, creating a high cognitive load for interpretation under snowy conditions.
+
+Component 3: Vehicle Subsystems
+Role: Guide vehicle control and maintain environmental perception.
+Contribution:
+- Lane detection systems will likely fail due to visual occlusion.
+- Object recognition may struggle with snow and varied lighting across narrow corridor.
+- Traction and braking systems under stress in snow-covered urban conditions.
+
+Component 4: Roadway Management Authority
+Role: Manage visual safety and operational readiness of road networks.
+Contribution:
+- No evidence of snow clearance or temporary lane indicators.
+- Narrow urban street lacks redundancy for visual failure cases.
+- Infrastructure unprepared for ongoing snow conditions.
+
+Component 5: Drivers
+Role: Navigate using environmental cues while reacting to urban density.
+Contribution:
+- Drivers may be unsure of exact lane position.
+- Potential for slow or erratic behavior due to visual uncertainty.
+- Compounding challenge from parked vehicles, signage, and urban clutter.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide hazard warnings and dynamic driving condition alerts.
+Contribution:
+- No indication of adaptive signage or alerts for snow or limited visibility.
+- Drivers receive no support to mitigate surface or navigation uncertainty.
+- System does not compensate for snow-related perceptual limitations.
+
+Summary:
+This snowy urban scene presents compounded visual and spatial complexity. Despite clear speed signage, missing lane boundaries and narrowed street width under winter conditions create systemic strain for both human and automated navigation, especially in high-signage environments.

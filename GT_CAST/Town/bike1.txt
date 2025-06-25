@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased potential for collision or right-of-way confusion at a wide intersection with an unprotected cyclist and no supporting road infrastructure.
+
+Component 1: Road Surface and Maintenance
+Role: Provide stable, clearly defined travel paths.
+Contribution:
+- Road surface is dry, clean, and visually uniform.
+- No structural issues or obstacles, but lacks any visual or tactile segmentation for cyclists.
+- Cyclist’s space is undefined, contributing to spatial ambiguity at the intersection.
+
+Component 2: Road Markings and Signage
+Role: Guide user behavior and support safe navigation.
+Contribution:
+- No visible lane markings or directional arrows.
+- Intersection lacks crosswalks, bike lane indicators, or signage for traffic priority.
+- Cyclist appears to navigate based on estimation rather than marked path.
+
+Component 3: Vehicle Subsystems
+Role: Detect, track, and respond to dynamic road agents.
+Contribution:
+- Cyclist crossing laterally without lane cues increases perception and trajectory uncertainty.
+- No visual cues or road structure to assist in prioritizing or predicting cyclist’s behavior.
+- System must make inferences solely from motion pattern and silhouette.
+
+Component 4: Roadway Management Authority
+Role: Implement infrastructure to support safe multimodal flow.
+Contribution:
+- No marked crossing areas, bike lanes, or signalized control for vulnerable users.
+- Intersection design does not include structural protections or visual cues for cyclists.
+- Urban infrastructure prioritizes vehicles over mixed-use integration.
+
+Component 5: Drivers
+Role: Detect, yield, and maintain appropriate distance to cyclists.
+Contribution:
+- Drivers may misjudge cyclist’s speed, direction, or priority due to open intersection and lack of signs.
+- Wide space may encourage aggressive or assertive maneuvers by vehicles.
+- Visual distraction from buildings and trees increases the chance of cyclist oversight.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide environmental alerts and dynamic behavior cues.
+Contribution:
+- Clear weather reduces environmental complexity.
+- No electronic signage or dynamic alert system in place for cyclist detection.
+- Passive environment places full responsibility on drivers and vehicle systems.
+
+Summary:
+This intersection is visually open and physically unobstructed, yet poses moderate-to-high risk for cyclists due to lack of guiding infrastructure. The scene relies heavily on user intuition and detection systems to manage safe negotiation of movement, increasing risk of miscoordination in a high-speed, ambiguous environment.

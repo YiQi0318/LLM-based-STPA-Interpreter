@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: High likelihood of misperception or delayed reaction due to glare, wet surface conditions, and reduced visual clarity of markings and signage.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a stable, high-friction driving path.
+Contribution:
+- Surface is wet with significant glare and reflection from sunlight.
+- No debris, but patches of water may affect braking and handling.
+- Slippery conditions likely, particularly in areas of high reflectance.
+
+Component 2: Road Markings and Signage
+Role: Support navigation through visual cues.
+Contribution:
+- Lane markings are faint and partially obscured by reflection.
+- Speed limit sign (90) is present and legible, though may be missed in bright glare.
+- Lack of high-contrast or anti-glare markings contributes to perceptual risk.
+
+Component 3: Vehicle Subsystems
+Role: Detect lanes, signs, and manage path control.
+Contribution:
+- Sensor systems may struggle with visual distortion caused by light reflections.
+- Lane detection could fail in glare-dominant regions.
+- Risk of false negatives in perception modules due to bright light interference.
+
+Component 4: Roadway Management Authority
+Role: Implement design for safe performance under variable conditions.
+Contribution:
+- No anti-glare pavement treatment visible.
+- Signage is fixed and not supported by redundancy or electronic alerts.
+- Infrastructure does not mitigate sunlight-induced visual hazards.
+
+Component 5: Drivers
+Role: Visually interpret the environment and maintain control.
+Contribution:
+- Direct sun glare compromises forward visibility.
+- Wet pavement glare may cause lane confusion or missed signage.
+- Elevated risk of error in judgment or overcorrection.
+
+Component 6: Weather Forecasting / Notification System
+Role: Deliver timely warnings about environmental hazards.
+Contribution:
+- No dynamic alert system for low-angle sun or wet road conditions.
+- No speed adaptation or visibility warning system in place.
+- Missed opportunity to preemptively manage risk perception.
+
+Summary:
+This is a high-risk visual environment due to intense sun glare and wet road surfaces. While the road and signage are physically intact, perceptual clarity is severely compromised. Both human and machine vision systems are vulnerable to error without compensatory infrastructure or alerts.

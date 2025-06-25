@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased chance of pedestrian-vehicle interaction misjudgment due to snow-covered surfaces, lack of lane markings, and ambiguous infrastructure visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Provide visual cues and reliable surface conditions for vehicle control.
+Contribution:
+- Road is snow-covered, eliminating all lane, edge, and crosswalk markings.
+- No visible effort to plow or treat the snow-covered area.
+- Visual and friction cues for lane keeping and stopping are lost.
+
+Component 2: Road Markings and Signage
+Role: Guide vehicle positioning and pedestrian awareness.
+Contribution:
+- Single centerline partially visible; no crosswalk or pedestrian-related markings present.
+- Pedestrian crossing signal is green, but lacks high-visibility housing or reinforcement.
+- No tactile warnings or curb markings near the pedestrian area.
+
+Component 3: Vehicle Subsystems
+Role: Perceive road boundaries and dynamic objects like pedestrians.
+Contribution:
+- Automated systems may struggle to differentiate road edge from sidewalk.
+- Pedestrian detection may be partially obstructed by nearby objects and environment uniformity.
+- System effectiveness is reduced by lack of distinct visual cues and boundary lines.
+
+Component 4: Roadway Management Authority
+Role: Provide and maintain safe crossing infrastructure.
+Contribution:
+- Snow-covered crossing lacks any visible protective or guidance features.
+- Infrastructure does not appear adapted to ensure clarity during winter conditions.
+- Crossing point blends into the general street layout.
+
+Component 5: Drivers
+Role: Interpret road layout, signals, and pedestrian intent.
+Contribution:
+- Drivers may misinterpret signal intent due to subtle presentation and snow conditions.
+- Without marked crosswalks or curbs, pedestrian behavior is less predictable.
+- Increased reliance on personal judgment rather than structured cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Inform road users about environmental effects and hazards.
+Contribution:
+- No signage or dynamic feedback to alert of reduced visibility or snow-related risk.
+- No supplementary warnings for pedestrian zone.
+- Environmental data integration appears inactive or nonexistent.
+
+Summary:
+This scene presents a moderately hazardous environment with pedestrian presence and insufficient visual structure due to snow. Despite an active signal, the absence of markings and infrastructure support limits perception clarity for both human drivers and automated systems, especially in interpreting pedestrian zones.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Heightened chance of reduced control or visibility-related error due to snow-covered surface, occluded signage, and constrained urban layout.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure friction and navigable terrain under all weather conditions.
+Contribution:
+- Road is covered with snow, masking lane boundaries and affecting traction.
+- No visual texture or separation between lanes and shoulders.
+- Snow accumulation significantly degrades braking and steering control.
+
+Component 2: Road Markings and Signage
+Role: Provide visual structure and speed guidance.
+Contribution:
+- Only a single yellow centerline is partially visible; side markings are missing.
+- A speed limit sign (30) is visible and properly placed.
+- Snow and parked vehicle obstruct visibility of surface cues and contribute to ambiguity.
+
+Component 3: Vehicle Subsystems
+Role: Detect lane, obstacles, and regulate vehicle movement.
+Contribution:
+- Lane-detection systems likely non-functional due to snow cover.
+- Surface-based visual inputs will be unreliable or return null.
+- Traction control may be required to maintain stability on icy surfaces.
+
+Component 4: Roadway Management Authority
+Role: Maintain navigability and visibility under winter conditions.
+Contribution:
+- No sign of snow clearance or lane restoration.
+- Lack of proactive treatments such as plowing, salting, or temporary markings.
+- Infrastructure appears inactive in response to seasonal hazard.
+
+Component 5: Drivers
+Role: Perceive road environment and operate safely.
+Contribution:
+- Visibility of lane structure is compromised, leading to increased cognitive load.
+- Obscured boundaries and limited cues increase chance of overcorrection or drift.
+- Decision-making delayed or stressed due to unpredictable traction.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide real-time hazard awareness and environment updates.
+Contribution:
+- No electronic signage or environmental alerting system visible.
+- System does not reflect or warn of ongoing snow or visibility limitations.
+- Absent dynamic guidance weakens driver readiness for surface conditions.
+
+Summary:
+This image depicts a moderately constrained urban snow environment, where surface markings are nearly eliminated and vehicle systems may lose effectiveness. Although signage is visible, poor road preparation and occlusions introduce operational risks for both human drivers and automation.

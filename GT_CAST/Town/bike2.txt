@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated collision risk or maneuvering conflict due to shared use of a narrow lane by both cyclists and motorcyclists, with no physical or visual separation and limited structural guidance.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure stability and lane clarity for diverse users.
+Contribution:
+- Surface is clean, dry, and free of defects.
+- No special texturing or coloring to separate bicycle path from vehicular lane.
+- Smooth layout offers no tactile or visual feedback for road-user differentiation.
+
+Component 2: Road Markings and Signage
+Role: Indicate safe movement paths and prioritize user types.
+Contribution:
+- Yellow centerline is present, but there are no side markings or lane dividers.
+- No signage indicating shared lane, caution zones, or overtaking regulations.
+- Lack of bike symbols, arrows, or buffer indicators may lead to misjudgment.
+
+Component 3: Vehicle Subsystems
+Role: Interpret lateral positioning and classify road users accurately.
+Contribution:
+- Cyclist and motorcyclist both operate within a single shared lane, increasing prediction complexity.
+- Risk of misclassification between bicycle and pedestrian due to upright posture and positioning.
+- System must predict collision-avoidance paths without environmental constraints or hint cues.
+
+Component 4: Roadway Management Authority
+Role: Provide context-appropriate infrastructure and markings.
+Contribution:
+- Road lacks dedicated cycling infrastructure despite visible mixed use.
+- No signs, lane buffers, or awareness prompts for approaching vehicles.
+- Management decisions appear vehicle-centric, with minimal accommodation for bicycles.
+
+Component 5: Drivers
+Role: Maintain spatial awareness and prioritize vulnerable users appropriately.
+Contribution:
+- Drivers must estimate cyclist and motorcyclist speed and path without lane boundaries.
+- Potential for misjudged overtaking, crowding, or insufficient following distance.
+- Lack of contextual cues increases driver dependence on personal judgment.
+
+Component 6: Weather Forecasting / Notification System
+Role: Issue dynamic risk alerts and enhance situational awareness.
+Contribution:
+- Weather is clear; no environmental hazard exists.
+- No electronic signage or context-responsive systems are present.
+- Static infrastructure does not adjust to variable mixed-use traffic flow.
+
+Summary:
+This scene presents a moderate-to-high operational risk in a constrained urban environment where bicycles and motorcycles share the same space without markings, buffers, or prioritization. The absence of supporting infrastructure demands high perceptual accuracy from both human and automated agents, increasing the likelihood of misinterpretation or unsafe passing behavior.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased likelihood of driver confusion or automation delay due to multiple visual stimuli, traffic density, and potential occlusion of traffic signs.
+
+Component 1: Road Surface and Maintenance
+Role: Provide consistent, safe surface conditions for vehicles.
+Contribution:
+- Pavement is clean and dry with clear lane markings.
+- No visible damage, debris, or surface irregularities.
+- Adequate for urban traffic but lacks tactile or enhanced guidance elements.
+
+Component 2: Road Markings and Signage
+Role: Communicate rules and structural boundaries to drivers and systems.
+Contribution:
+- Lane markings are clear and continuous.
+- Traffic signs are present but partially obscured by vehicles and objects.
+- Potential for sign occlusion in dense or dynamic traffic scenarios.
+
+Component 3: Vehicle Subsystems
+Role: Assist with perception, decision-making, and control.
+Contribution:
+- Multiple moving vehicles may create sensor clutter or occlusion.
+- Automated sign detection could fail if signs are blocked by larger vehicles.
+- Lane tracking likely reliable; object detection systems must compensate for congestion.
+
+Component 4: Roadway Management Authority
+Role: Provide infrastructure conducive to visual safety and traffic flow.
+Contribution:
+- Sign placement may not be optimal for dynamic visibility.
+- No elevated or redundant signs to mitigate occlusion risk.
+- Infrastructure does not actively adjust to traffic-induced obstructions.
+
+Component 5: Drivers
+Role: Perceive and respond to traffic signs, road cues, and vehicle behavior.
+Contribution:
+- May miss critical signage due to partial visibility.
+- High visual load from surrounding vehicles, buildings, and trees.
+- Requires proactive scanning and interpretation in a cluttered scene.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicate dynamic environmental or visibility hazards.
+Contribution:
+- Weather is clear; system not actively challenged.
+- No dynamic alerts or integrated visibility enhancements observed.
+- System remains passive in this scenario.
+
+Summary:
+This urban daytime scene is physically stable but perceptually complex. Vehicles, roadside features, and signage interact to create potential occlusion risks, especially for automation and distracted drivers. The environment demands high visual awareness and may strain perception systems under dynamic conditions.

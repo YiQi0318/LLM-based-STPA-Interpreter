@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased risk of bicycle-related navigation error or collision due to absence of bike infrastructure, unclear road-user priority, and urban complexity.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a stable and clear surface for mixed traffic use.
+Contribution:
+- Road surface is dry and appears well-maintained.
+- No damage or obstructions visible, but surface lacks lane-specific textures or visual segregation.
+- No physical guidance cues for shared use by bicycles and vehicles.
+
+Component 2: Road Markings and Signage
+Role: Define space usage and inform user behavior.
+Contribution:
+- No visible lane markings or signage to distinguish between bike and vehicle zones.
+- Absence of speed or yield signs removes prioritization clarity.
+- Cyclist appears to be navigating informally, possibly within a mixed-use corridor or parking zone.
+
+Component 3: Vehicle Subsystems
+Role: Interpret structure and dynamic actor movement for safe control.
+Contribution:
+- Without markings, systems must rely on pure perception (camera/LIDAR) to detect cyclists.
+- Unstructured layout complicates path planning and object categorization.
+- Close urban elements (trees, poles) may create occlusions or false positives.
+
+Component 4: Roadway Management Authority
+Role: Design environments that account for vulnerable road users.
+Contribution:
+- No infrastructure present for bicycle safety (e.g., signage, lanes, bollards).
+- Urban layout prioritizes aesthetics and pedestrian zones over mobility clarity.
+- Inadequate provisions for routing non-motorized traffic safely through vehicle areas.
+
+Component 5: Drivers
+Role: Maintain awareness and adapt based on cyclist presence.
+Contribution:
+- Drivers may not expect or plan for cyclist trajectory without visual or structural cues.
+- Risk of last-second maneuvering or encroachment during turns or approach.
+- Competing visual elements in dense urban scene increase driver distraction.
+
+Component 6: Weather Forecasting / Notification System
+Role: Support situational awareness in varying environmental conditions.
+Contribution:
+- Weather is clear and poses no hazard, but no alert or guidance system is evident.
+- No speed feedback, cyclist warnings, or adaptive zone management in place.
+- Static environment provides no augmentation for visual ambiguity or priority management.
+
+Summary:
+This urban environment introduces moderate to high risk for cyclists due to the lack of infrastructure, markings, and behavioral cues. The undefined nature of the roadway blurs the boundaries between pedestrian, cyclist, and vehicular domains, reducing the predictability of movement for both human and autonomous agents.

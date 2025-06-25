@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of vehicle-bicycle collision due to lack of structural separation, visual clutter, and unpredictable trajectory in a shared-use urban setting.
+
+Component 1: Road Surface and Maintenance
+Role: Support safe and stable operation for all road users.
+Contribution:
+- Surface is clear and dry, with no visible defects or obstructions.
+- No surface treatment or demarcation to guide or protect cyclists.
+- Visual continuity of the road blends vehicle and cyclist space without distinction.
+
+Component 2: Road Markings and Signage
+Role: Inform road users of right-of-way, space allocation, and behavior.
+Contribution:
+- Only a centerline is visible; no bicycle lane or lateral guidance markings.
+- No signs indicating cyclist presence or reduced speed zone.
+- Absence of turn or yield indicators at upcoming junctions.
+
+Component 3: Vehicle Subsystems
+Role: Provide detection, prediction, and guidance assistance.
+Contribution:
+- Cyclist tracking must rely entirely on visual systems without road context.
+- Vehicle in left lane partially obstructs the field of view, introducing occlusion risk.
+- Predictive algorithms may struggle to determine cyclist intent or lane positioning.
+
+Component 4: Roadway Management Authority
+Role: Design and maintain infrastructure for multimodal safety.
+Contribution:
+- No structural or visual separation for bicycles.
+- No traffic calming, signage, or crossing infrastructure in proximity to the cyclist.
+- Layout does not promote cyclist safety despite high interaction probability.
+
+Component 5: Drivers
+Role: Maintain awareness of dynamic road users and plan accordingly.
+Contribution:
+- Vehicle turning or overtaking behavior may endanger the cyclist due to lack of defined space.
+- Visual load from urban background (fencing, shadows, trees) complicates hazard recognition.
+- Drivers may underestimate cyclist speed or path deviation without explicit cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Offer hazard alerts or speed moderation support.
+Contribution:
+- Clear weather and visibility, but environment lacks smart infrastructure or alerts.
+- No electronic signage or dynamic risk indicators to aid situational awareness.
+- System is entirely passive and unresponsive to road-user diversity.
+
+Summary:
+This image depicts a moderate-risk environment for bicycle navigation. The shared road space, lack of visual guidance, and urban occlusion sources introduce hazards for both cyclists and drivers. Automated and human decision-making is burdened by ambiguity, increasing the likelihood of delayed response or unsafe lane sharing.

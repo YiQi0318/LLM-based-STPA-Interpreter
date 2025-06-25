@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased likelihood of intersection conflict or delayed reaction due to mixed traffic, signal timing pressure, and lane-sharing ambiguity involving motorcycles.
+
+Component 1: Road Surface and Maintenance
+Role: Maintain safe travel conditions and visible lane guidance.
+Contribution:
+- Surface appears clean and dry with no visible damage or obstruction.
+- Lane marking (centerline) is present and visible.
+- Edge markings and secondary lane indicators are not clearly defined, especially for mixed traffic.
+
+Component 2: Road Markings and Signage
+Role: Communicate traffic flow structure and control behavior.
+Contribution:
+- Lane markings are minimal, with no dedicated indicators for motorcycles.
+- Traffic light is visible and red, providing clear intersection control.
+- No supplementary signs to reinforce right-of-way or motorcycle awareness.
+
+Component 3: Vehicle Subsystems
+Role: Assist with path tracking, obstacle detection, and intersection negotiation.
+Contribution:
+- Lane tracking functional but limited to basic centerline.
+- Motorcycle may be challenging to detect depending on sensor angle and occlusions.
+- Timing and decision logic must accurately interpret the mixed traffic dynamic at signalized intersections.
+
+Component 4: Roadway Management Authority
+Role: Design and maintain safe infrastructure for all vehicle types.
+Contribution:
+- No special markings or designated areas for motorcycles or bicycles.
+- Urban planning lacks dynamic signage or automated signaling adaptation.
+- Infrastructure supports cars but offers limited structural support for mixed-use traffic flow.
+
+Component 5: Drivers
+Role: Make informed decisions while sharing space with motorcycles.
+Contribution:
+- Driver following the motorcycle may misjudge distance or acceleration.
+- Signal change pressure may lead to late braking or rushed maneuvers.
+- Unclear lateral space division could cause hesitation or unsafe merging behavior.
+
+Component 6: Weather Forecasting / Notification System
+Role: Enhance situational awareness based on environmental or dynamic hazards.
+Contribution:
+- No active signage or alerting visible.
+- Clear weather does not challenge visibility, but system is non-contributory in this context.
+- No dynamic messaging or speed advisories active near the intersection.
+
+Summary:
+This urban intersection scene carries moderate risk due to a combination of mixed vehicle types, tight signal timing, and a lack of clear structural support for motorcycles. While visibility is good, the absence of dedicated space and the complexity of signal transitions increases the burden on both human drivers and vehicle systems.

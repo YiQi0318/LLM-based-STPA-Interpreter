@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of misjudgment in speed control or vehicle stability due to snow-covered roads, reduced contrast, and urban layout complexity.
+
+Component 1: Road Surface and Maintenance
+Role: Provide safe traction and reliable driving conditions.
+Contribution:
+- Road is covered with snow, significantly reducing friction.
+- Surface features and markings are not visible due to snow coverage.
+- Increased chance of skidding, delayed braking, or lane ambiguity.
+
+Component 2: Road Markings and Signage
+Role: Indicate legal and navigational boundaries.
+Contribution:
+- Lane markings are mostly obscured or lost in the snow.
+- Speed limit sign (60) is clearly visible and positioned properly.
+- Visual lane boundaries are unclear, especially for new or unfamiliar drivers.
+
+Component 3: Vehicle Subsystems
+Role: Perceive road conditions and manage safe navigation.
+Contribution:
+- Lane-keeping and visual guidance systems will struggle due to lack of visible lines.
+- Traction and stability control systems may be active or intermittently engaged.
+- Sign detection is feasible, but overall navigation confidence is reduced.
+
+Component 4: Roadway Management Authority
+Role: Maintain road visibility and minimize environmental hazards.
+Contribution:
+- No snow clearing or lane visibility enhancements observed.
+- No secondary safety systems (e.g., reflectors, snow poles) to assist during snow.
+- Maintenance not responsive to active weather impacts on driving safety.
+
+Component 5: Drivers
+Role: Interpret signage, conditions, and operate safely.
+Contribution:
+- May misjudge speed or spacing due to invisible lane boundaries.
+- Risk of over-speeding or underestimating stopping distance.
+- Snow glare may reduce visual comfort or cue clarity.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide environmental hazard alerts and real-time guidance.
+Contribution:
+- No dynamic signage or alerts for snow-related driving conditions.
+- System does not appear to influence behavior or inform drivers.
+- Environmental awareness support is absent.
+
+Summary:
+This snowy urban scenario presents a high-risk environment where lane cues are obscured and traction is reduced. Although the speed limit is clear, the lack of visual lane definition and real-time condition mitigation creates systemic strain on both human and automated navigation.

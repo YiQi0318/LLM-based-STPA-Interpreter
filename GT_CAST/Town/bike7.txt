@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of vehicle-bicycle conflict due to lack of dedicated infrastructure, shared lane ambiguity, and presence of fast-moving traffic in a visually cluttered environment.
+
+Component 1: Road Surface and Maintenance
+Role: Provide physical safety and clear guidance for all road users.
+Contribution:
+- Road surface is dry and in good condition with no visible damage.
+- No textured or colored markings to indicate bike-friendly lanes or shoulders.
+- Lane visual guidance is minimal and non-specific to vehicle type.
+
+Component 2: Road Markings and Signage
+Role: Communicate traffic expectations and spatial organization.
+Contribution:
+- A centerline is visible but no edge or bike lane markings are present.
+- Speed limit sign (60 km/h) is clearly visible, possibly high for a mixed-use corridor.
+- No signage indicating bicycle presence or right-of-way adjustments.
+
+Component 3: Vehicle Subsystems
+Role: Perceive environment and adjust behavior based on dynamic actors.
+Contribution:
+- Bicycle tracking may be challenging due to scale, side positioning, and background complexity.
+- Lack of infrastructure guidance increases dependency on object detection and predictive modeling.
+- Systems may struggle with determining cyclist trajectory and buffer zone.
+
+Component 4: Roadway Management Authority
+Role: Design and maintain infrastructure for safe co-existence of vehicles and bicycles.
+Contribution:
+- No bike lanes or protective buffers visible.
+- Speed limit may be excessive given the presence of a vulnerable road user.
+- Urban layout lacks calming measures, curb protections, or cycle-aware signage.
+
+Component 5: Drivers
+Role: Maintain safe interaction with vulnerable road users.
+Contribution:
+- Driver may underestimate space required when passing the cyclist.
+- Lane ambiguity could lead to unsafe overtaking or tailgating.
+- Visual distractions from parked and moving vehicles increase cognitive load.
+
+Component 6: Weather Forecasting / Notification System
+Role: Alert users of dynamic risk or environmental changes.
+Contribution:
+- Clear weather reduces environmental hazard but no support system is visible.
+- No electronic warnings, dynamic signals, or cyclist alerts in operation.
+- Passive environment with no adaptive safety enhancement.
+
+Summary:
+This scene presents a moderate to high safety risk for the cyclist due to inadequate road design for shared use, high posted speed, and lack of visual or structural protection. The absence of cycle-specific markings and signage limits both driver awareness and automated system adaptability in real-time.

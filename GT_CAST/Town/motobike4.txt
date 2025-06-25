@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential for lane discipline error or near-miss incidents in a mixed-use residential area with limited visual guidance and absence of dedicated motorcycle infrastructure.
+
+Component 1: Road Surface and Maintenance
+Role: Support stable vehicle movement and lane distinction.
+Contribution:
+- Surface is dry and in good condition, free of potholes or obstructions.
+- No visible debris or friction-reducing material.
+- Physically safe but lacking in painted lane boundaries for full spatial awareness.
+
+Component 2: Road Markings and Signage
+Role: Provide regulatory and structural driving cues.
+Contribution:
+- A single centerline is visible; no additional markings for edge, parking, or bike lanes.
+- No signage present to guide speed, direction, or shared vehicle usage.
+- The visual structure of the roadway is minimal and may cause confusion in shared-use scenarios.
+
+Component 3: Vehicle Subsystems
+Role: Detect lanes, vehicles, and environmental context for safe automation.
+Contribution:
+- Lane detection limited to single centerline may cause uncertainty in lateral tracking.
+- Absence of reference markings increases reliance on GPS or heuristics.
+- Obstacle avoidance systems may not be challenged unless motorbike presence is introduced.
+
+Component 4: Roadway Management Authority
+Role: Provide infrastructure capable of supporting varied road users.
+Contribution:
+- No indication of adaptation for motorcycles or bicycles in shared residential corridors.
+- No dynamic signage or road texture differentiation.
+- Environment reflects minimal maintenance for guidance features beyond the physical surface.
+
+Component 5: Drivers
+Role: Maintain safe control and interaction with other road users.
+Contribution:
+- Drivers may misjudge lateral space in absence of visual constraints.
+- Lack of signs and additional markings increases cognitive load for navigation decisions.
+- In shared-use or overtaking scenarios, risk of encroachment or misalignment is elevated.
+
+Component 6: Weather Forecasting / Notification System
+Role: Enhance situational awareness in variable conditions.
+Contribution:
+- Clear weather presents no hazard, but no system is visible to assist in degraded conditions.
+- No warning systems, electronic signage, or context-aware elements in place.
+- Forecasting tools absent or passive.
+
+Summary:
+This residential road presents a low-complexity environment under ideal weather, but with limited structural guidance and no accommodations for motorcyclists or lane sharing. In higher traffic scenarios or under uncertain behavior, the absence of visual and regulatory cues could elevate operational risk.

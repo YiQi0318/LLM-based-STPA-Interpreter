@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of lane discipline issues or missed hazard detection due to snow-covered lanes, speed management ambiguity, and mixed road usage by motorbikes and vehicles.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure safe traction and delineation of lane boundaries.
+Contribution:
+- Road is snow-covered, erasing most lane markings.
+- Uneven snow coverage introduces patches of low-traction and unclear spatial structure.
+- No evidence of snow removal or surface treatment for safe driving.
+
+Component 2: Road Markings and Signage
+Role: Provide navigational cues and regulatory information.
+Contribution:
+- Centerline is barely visible; edge lines and bike lanes are not present.
+- Speed limit sign (30) is clearly visible, but lane usage and position cues are lacking.
+- No signs or markings specific to shared use with motorcycles or bicycles.
+
+Component 3: Vehicle Subsystems
+Role: Detect road elements, maintain stability, and respond to dynamic objects.
+Contribution:
+- Lane-tracking features likely impaired due to faded markings and snow cover.
+- Motorcycles may be harder to detect in snowy conditions with reduced contrast.
+- Subsystems face challenges maintaining lateral stability and accurate object prediction.
+
+Component 4: Roadway Management Authority
+Role: Ensure infrastructure safety and clarity for mixed vehicle usage.
+Contribution:
+- Snow maintenance appears neglected; surface and curb visibility degraded.
+- No bike lane delineation or surface texture adjustments for motorcycles.
+- Speed regulation signage exists but is not supported by contextual safety measures.
+
+Component 5: Drivers
+Role: Adjust driving based on cues, conditions, and other road users.
+Contribution:
+- Drivers may misjudge motorcycle position or intent due to low surface visibility.
+- Unclear lane divisions and snow may reduce confidence in overtaking or following distance.
+- Increased risk of maneuvering error or inadequate response to motorbike dynamics.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide hazard alerts based on environmental changes.
+Contribution:
+- No adaptive warning systems or alerts visible in the environment.
+- No indication of snow hazard messaging or speed adjustments.
+- System lacks integration with seasonal or visibility-reducing weather patterns.
+
+Summary:
+This snowy mixed-use road introduces moderate operational risk, particularly for interactions between cars and motorcycles. The absence of clear lane markings, no bike-specific infrastructure, and untreated snow reduce the ability of both human and machine operators to maintain safety and predictability.

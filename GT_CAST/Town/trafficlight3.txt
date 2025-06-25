@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased risk of intersection misjudgment due to snow-covered surface, yellow signal ambiguity, and low traction at a decision-critical point.
+
+Component 1: Road Surface and Maintenance
+Role: Provide vehicle stability and clear spatial boundaries.
+Contribution:
+- Entire surface is snow-covered, eliminating visual lane boundaries.
+- Potentially reduced friction and extended stopping distances at the intersection.
+- Curved curb edges partially buried, further reducing spatial reference.
+
+Component 2: Road Markings and Signage
+Role: Convey traffic control instructions and lane structure.
+Contribution:
+- No visible road markings due to snow.
+- No painted stop lines, arrows, or lane dividers for intersection management.
+- Traffic light present but lacks supporting surface cues for proper alignment.
+
+Component 3: Vehicle Subsystems
+Role: Interpret surroundings, guide decisions, and maintain safety.
+Contribution:
+- Lane perception systems likely fail or disengage due to lack of markings.
+- Sensor misinterpretation possible if curbs or terrain boundaries are buried.
+- Braking and traction systems under stress in slick snow-covered conditions.
+
+Component 4: Roadway Management Authority
+Role: Provide safe, adaptive infrastructure under varied conditions.
+Contribution:
+- No visible evidence of snow clearing or anti-skid treatment at the intersection.
+- Infrastructure provides only static control through traffic light; no adaptive features.
+- Visual support tools (reflectors, snow posts, digital indicators) absent.
+
+Component 5: Drivers
+Role: Evaluate intersection timing, positioning, and behavior.
+Contribution:
+- Yellow light demands split-second judgment, complicated by low traction.
+- Lack of stop line or lane guidance increases uncertainty in approach.
+- Drivers may under- or over-commit due to reduced visual and tactile feedback.
+
+Component 6: Weather Forecasting / Notification System
+Role: Warn and inform users of relevant conditions.
+Contribution:
+- No active signage or alerting about snowy surface or decision hazards.
+- No feedback loop between environment and driver/system.
+- Missed opportunity for speed or caution prompt before critical intersection.
+
+Summary:
+This image shows a snow-covered intersection with a yellow traffic light, where surface traction is compromised and visual cues are mostly absent. The combination of timing sensitivity, snow-related uncertainty, and lack of guidance systems makes this a high-risk moment for both human and automated control.

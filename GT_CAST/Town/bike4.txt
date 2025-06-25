@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential for conflict at signalized intersection due to undefined bicycle lane structure, unclear prioritization, and mixed traffic in a visually complex urban environment.
+
+Component 1: Road Surface and Maintenance
+Role: Provide stable and distinguishable travel paths.
+Contribution:
+- Surface is clean and dry, with no apparent damage or obstruction.
+- No dedicated bicycle lane or surface cues for cyclist alignment.
+- Uniform surface texture provides no spatial prioritization for different road users.
+
+Component 2: Road Markings and Signage
+Role: Inform traffic behavior and enforce path separation.
+Contribution:
+- A single yellow centerline is visible; no directional or boundary markings.
+- No road markings or signage specific to bicycle behavior or intersection approach.
+- Signal is present and green, but not supported with auxiliary guidance for cyclists.
+
+Component 3: Vehicle Subsystems
+Role: Detect and predict road users' paths for safe interaction.
+Contribution:
+- Cyclist detection required without aid of dedicated road markers.
+- Green signal interpreted as free passage, but no spatial logic to predict cyclist lateral motion.
+- Urban structures may cast shadows affecting detection or classification reliability.
+
+Component 4: Roadway Management Authority
+Role: Provide road infrastructure supporting multimodal safety.
+Contribution:
+- Intersection lacks cycle-specific signage, markings, or protective buffering.
+- No raised platforms, bike boxes, or visual separation to guide conflict-free passage.
+- Signal is generic and not adaptive to cyclist behavior or flow.
+
+Component 5: Drivers
+Role: Navigate intersections with awareness of vulnerable road users.
+Contribution:
+- Without markings, drivers must infer cyclist trajectory.
+- Risk of misunderstanding right-of-way or misjudging relative speed.
+- High urban visual density may contribute to inattentional blindness.
+
+Component 6: Weather Forecasting / Notification System
+Role: Support environmental awareness and risk forecasting.
+Contribution:
+- Clear weather and daylight provide good visibility.
+- No dynamic feedback, cyclist alerts, or variable speed advisories in use.
+- System remains passive and unresponsive to active bicycle presence.
+
+Summary:
+This intersection scenario presents moderate risk for cyclist safety. While the environment is physically safe and signalized, the absence of visual structure or cyclist-specific infrastructure places high cognitive demand on both drivers and autonomous systems, increasing the probability of late reaction or miscoordination.

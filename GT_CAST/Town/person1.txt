@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of pedestrian conflict or misinterpretation of crossing signals due to snow-covered conditions, low visibility, and inadequate infrastructure support.
+
+Component 1: Road Surface and Maintenance
+Role: Provide visual and physical support for safe travel.
+Contribution:
+- Surface is completely snow-covered, concealing all lane and crosswalk markings.
+- No evidence of snow removal or traction treatment.
+- Smooth, indistinct surface increases braking distance and lane ambiguity.
+
+Component 2: Road Markings and Signage
+Role: Guide driver behavior and support safe crossing.
+Contribution:
+- Centerline barely visible; pedestrian crossing markings entirely missing.
+- Pedestrian signal is functional (red for vehicles), but limited in size and visibility.
+- No tactile or visual enhancements like reflective paint, signage, or warning strips.
+
+Component 3: Vehicle Subsystems
+Role: Detect road boundaries, signals, and pedestrian activity.
+Contribution:
+- Vision systems may struggle with pedestrian detection due to snow background blending and contrast reduction.
+- Lane-tracking is likely disabled or unreliable.
+- Sensors must depend on pedestrian movement rather than contextual markings.
+
+Component 4: Roadway Management Authority
+Role: Maintain road safety under weather and urban conditions.
+Contribution:
+- Snow not cleared; sidewalks and pedestrian areas also snow-covered.
+- Signal is static and not reinforced with supporting infrastructure.
+- Crosswalk guidance is visually absent, reducing predictability for both drivers and pedestrians.
+
+Component 5: Drivers
+Role: React appropriately to pedestrian presence and signal status.
+Contribution:
+- May miss or misinterpret pedestrian intent due to absence of markings.
+- Snow and low ambient light reduce clarity of signal and movement.
+- Potential for delayed or abrupt reaction at crossing point.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide situational awareness and hazard alerts.
+Contribution:
+- No alerts present for pedestrian zone, snow hazard, or signal timing.
+- System lacks real-time updates or integration with road state awareness.
+- Missed opportunity to reduce uncertainty through contextual warnings.
+
+Summary:
+This snowy pedestrian crossing zone is compromised by the lack of clear markings, low contrast visibility, and static signaling infrastructure. The risk of conflict is elevated due to minimal infrastructure support and degraded environmental perception, affecting both driver judgment and system reliability.

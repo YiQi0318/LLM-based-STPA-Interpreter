@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated likelihood of misjudgment or unsafe interaction due to limited infrastructure for motorcycles, lack of signage, and minimal lane definition.
+
+Component 1: Road Surface and Maintenance
+Role: Provide stable driving conditions and surface-level visual guidance.
+Contribution:
+- Surface is clean and dry with no visible damage or debris.
+- Lacks texture variation or additional cues for boundaries or lateral positioning.
+- Physically safe but under-informative for nuanced vehicle interactions.
+
+Component 2: Road Markings and Signage
+Role: Guide safe navigation and enforce traffic norms.
+Contribution:
+- A single yellow centerline is present; no edge lines or lane width indicators.
+- No regulatory or informational signs present (e.g., speed limit, yield, or shared lane markers).
+- Intersection is visible ahead, but there is no warning signage or signal at this stage.
+
+Component 3: Vehicle Subsystems
+Role: Perceive and respond to lane structure, road actors, and dynamic elements.
+Contribution:
+- Lane-tracking may function minimally, relying on centerline only.
+- No auxiliary visual indicators to assist in object prediction or turn handling.
+- Motorbike detection depends on positioning and contrast; limited redundancy if occluded.
+
+Component 4: Roadway Management Authority
+Role: Design and manage infrastructure for mixed-use traffic environments.
+Contribution:
+- No dedicated infrastructure for motorcycles or mixed-traffic cues.
+- Lacks proactive design elements such as signage for narrow road segments or shared paths.
+- Static environment without dynamic adaptation or responsive signaling.
+
+Component 5: Drivers
+Role: Interpret conditions and respond appropriately to surroundings.
+Contribution:
+- Drivers behind or alongside the motorcycle may misjudge spacing or overtaking distance.
+- Lack of markings makes it difficult to anticipate oncoming or turning paths.
+- Absence of signs may lead to inconsistency in behavior or hesitation at intersections.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide situational alerts tied to environmental or traffic factors.
+Contribution:
+- Weather is clear and not affecting visibility, but no alerting infrastructure is evident.
+- No smart signage or dynamic message boards for upcoming intersections or speed regulation.
+- Passive system presence in a static roadway context.
+
+Summary:
+This suburban road scene contains moderate risk, primarily due to underdeveloped lane guidance and a lack of specific accommodations for motorcycles. The environment appears safe under ideal conditions, but its lack of cues and oversight introduces potential for human or system-level misjudgment in high-speed or variable behavior scenarios.

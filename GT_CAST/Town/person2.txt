@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of pedestrian-related incident or delayed reaction due to visual obstructions, sun glare, and snow-covered road conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure surface traction and visual lane guidance.
+Contribution:
+- Road is fully snow-covered, obscuring all lane markings.
+- Snow may reduce traction and impair braking effectiveness.
+- No treatment (salting/plowing) visible to mitigate surface risks.
+
+Component 2: Road Markings and Signage
+Role: Define traffic rules and spatial boundaries.
+Contribution:
+- Lane boundary is faintly visible; no crosswalk or pedestrian markings.
+- Traffic light is present and red, but small and partially affected by glare.
+- Lack of clear crosswalk guidance may confuse both drivers and pedestrians.
+
+Component 3: Vehicle Subsystems
+Role: Detect surroundings and support safe navigation.
+Contribution:
+- Lane-keeping systems likely impaired by snow and low contrast.
+- Forward camera sensors may be affected by glare, reflection, and occlusions from nearby vehicles.
+- Pedestrian detection systems may face challenges due to snowy background and close proximity.
+
+Component 4: Roadway Management Authority
+Role: Maintain infrastructure usability in all weather conditions.
+Contribution:
+- Snow removal and pedestrian path maintenance appear inadequate.
+- Signal placement is not optimized for sun glare or driver visibility from all angles.
+- No tactile or visual aids to guide safe pedestrian crossing.
+
+Component 5: Drivers
+Role: Make decisions based on visible cues and surroundings.
+Contribution:
+- Large vehicle ahead obstructs signal view.
+- Sun glare from the left further reduces visibility of the road scene.
+- Pedestrian nearby may not be easily seen or anticipated by following drivers.
+
+Component 6: Weather Forecasting / Notification System
+Role: Enhance environmental awareness and risk mitigation.
+Contribution:
+- No dynamic alert system or signage warning of pedestrian zones or icy surfaces.
+- No sun glare alert, despite its impact on visibility.
+- System lacks integration with real-time visual hazard feedback.
+
+Summary:
+This snow-covered urban intersection with active pedestrian presence presents moderate to high risk due to visual obstruction, sun glare, and limited surface clarity. The combination of obstructed sight lines, unclear lane boundaries, and environmental noise reduces reaction accuracy for both humans and autonomous systems.

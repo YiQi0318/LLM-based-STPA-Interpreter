@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: High risk of cyclist-vehicle intersection conflict due to ambiguous signaling context, lack of protected lane guidance, and inadequate infrastructure for safe bicycle navigation.
+
+Component 1: Road Surface and Maintenance
+Role: Provide structurally sound, high-visibility conditions for all users.
+Contribution:
+- Road is dry and in good physical condition.
+- Lane markings are clearly visible but oriented toward vehicle use.
+- No surface indicators for bicycle routing or separation from car traffic.
+
+Component 2: Road Markings and Signage
+Role: Define vehicle and cyclist pathways and communicate priority.
+Contribution:
+- Center and edge lines are defined, but no bicycle lane or guidance markers.
+- Traffic light is yellow (transition state), increasing decision pressure.
+- No signage indicating bicycle crossing priority, shared road use, or cyclist alerts.
+
+Component 3: Vehicle Subsystems
+Role: Interpret the cyclist’s motion and the traffic signal state for safe planning.
+Contribution:
+- Cyclist is centered in the lane but blends visually into the background.
+- Signal is yellow, leading to prediction uncertainty in both motion planning and braking.
+- Absence of dedicated guidance for cyclist reduces reliability of trajectory models.
+
+Component 4: Roadway Management Authority
+Role: Provide infrastructure and traffic systems suitable for multimodal use.
+Contribution:
+- No marked bicycle lanes or protection at the intersection.
+- Traffic light is not bicycle-specific or adaptive to cyclist position.
+- Urban planning favors vehicles, with limited structural support for vulnerable road users.
+
+Component 5: Drivers
+Role: Anticipate cyclist movements and adapt accordingly.
+Contribution:
+- Cyclist position may be interpreted as vehicular or ambiguous.
+- Yellow light may trigger abrupt decisions (e.g., speeding up or hard braking).
+- Drivers may not expect cyclists at lane center without supporting infrastructure.
+
+Component 6: Weather Forecasting / Notification System
+Role: Issue contextual alerts and modify control systems based on environment.
+Contribution:
+- Conditions are clear and visibility is high, minimizing weather-based hazard.
+- No dynamic signs, adaptive lighting, or cyclist-specific feedback present.
+- No system present to provide real-time risk moderation or guidance.
+
+Summary:
+This scene introduces significant risk at a major intersection due to a transition-state traffic signal, absence of bicycle-specific infrastructure, and ambiguous positioning of the cyclist. Both automated systems and drivers may misinterpret cyclist behavior, leading to late or incorrect responses in a high-stakes traffic zone.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential for cyclist-vehicle miscommunication or delay at a multi-lane stop-controlled intersection with no bicycle-specific infrastructure or signaling support.
+
+Component 1: Road Surface and Maintenance
+Role: Maintain a stable and interpretable travel surface.
+Contribution:
+- Surface is clean, dry, and well-maintained.
+- Clear “STOP” markings are present and repeated for emphasis.
+- Despite surface clarity, no bike lane textures, colored zones, or cyclist-specific cues exist.
+
+Component 2: Road Markings and Signage
+Role: Direct safe user behavior and define interaction points.
+Contribution:
+- “STOP” markings are bold and visible across lanes, but meant for vehicle traffic.
+- No dedicated markings for bicycles (e.g., dashed crossing, bike box, or lateral guidance).
+- Cyclist appears centered in the lane, indicating lack of a separate path.
+
+Component 3: Vehicle Subsystems
+Role: Detect cyclists and interpret road controls effectively.
+Contribution:
+- Cyclist is easily visible but ambiguous due to shared positioning within vehicle lane.
+- STOP markers are interpreted as a hard boundary but lack auxiliary context (e.g., turn arrows or cycle zones).
+- Without dedicated guidance, systems must rely heavily on real-time prediction and classification.
+
+Component 4: Roadway Management Authority
+Role: Design intersection to safely accommodate diverse users.
+Contribution:
+- No physical accommodations (lane separation, bike traffic signal, buffer zones).
+- Intersection appears designed for vehicle flow, with no modifications for vulnerable road users.
+- Infrastructure fails to differentiate modal priorities.
+
+Component 5: Drivers
+Role: Yield, stop, and maneuver safely around cyclists.
+Contribution:
+- Drivers may be unclear whether the cyclist is stopping, merging, or crossing diagonally.
+- Lane-sharing may lead to overtaking or pressure on cyclist during restart.
+- Without cyclist-specific signs or position constraints, driver expectations vary.
+
+Component 6: Weather Forecasting / Notification System
+Role: Offer environmental and risk-related guidance.
+Contribution:
+- Conditions are sunny and pose no visibility challenges.
+- No electronic signage, countdown signals, or cyclist alert systems visible.
+- Passive setup depends entirely on manual interpretation of fixed signals.
+
+Summary:
+This scene contains a well-maintained but vehicle-prioritized intersection where cyclists are not given dedicated space or signaling. Despite strong surface markings for STOP behavior, the lack of modal distinction increases the likelihood of delay, confusion, or unsafe positioning during multi-user negotiation.

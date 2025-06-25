@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Heightened collision or control risk due to wet surface conditions, mixed traffic types (motorbike and car), signalized intersection pressure, and limited lane definition.
+
+Component 1: Road Surface and Maintenance
+Role: Provide safe, high-friction travel surface with clear markings.
+Contribution:
+- Road is visibly wet, likely reducing friction and increasing stopping distance.
+- No visible hydroplaning, but pooling near curbs may affect stability.
+- Lack of reflective or skid-resistant treatment reduces grip during braking/turning.
+
+Component 2: Road Markings and Signage
+Role: Structure vehicle behavior and communicate intersection logic.
+Contribution:
+- Lane markings are faded or missing, particularly critical near the intersection.
+- Green traffic light is clearly visible but unsupported by turn lanes, arrows, or stop lines.
+- No visual guidance for motorcycle or multi-vehicle alignment within lanes.
+
+Component 3: Vehicle Subsystems
+Role: Interpret surface state, traffic signals, and dynamic agents.
+Contribution:
+- Wet road may affect braking models and require recalibration of stopping trajectories.
+- Lane-tracking impaired by faint markings and reflective surface.
+- Motorbike tracking may be challenging due to reduced contrast and lateral offset.
+
+Component 4: Roadway Management Authority
+Role: Manage safety through infrastructure design and maintenance.
+Contribution:
+- No anti-skid surface treatment visible for rainy conditions.
+- Traffic signal is working, but lack of markings or road geometry assistance at the intersection increases ambiguity.
+- Road environment is under-optimized for adverse weather or vehicle type diversity.
+
+Component 5: Drivers
+Role: Navigate safely under guidance of infrastructure and external conditions.
+Contribution:
+- Drivers may misjudge braking distance or motorcycle position under wet conditions.
+- Absence of markings reduces confidence in spacing and turn behavior.
+- Risk of miscoordination increases at a busy intersection without visual cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Alert drivers to changes in road conditions or visibility.
+Contribution:
+- No active signage or alerts indicating wet conditions or stopping distance adjustments.
+- No dynamic system visible to modify signal timing or warn of hydroplaning risk.
+- Passive infrastructure without responsive feedback to current weather state.
+
+Summary:
+This intersection in rainy conditions poses moderate-to-high operational risk. The combination of wet pavement, mixed vehicle types, and lack of clear lane or turn indicators reduces reliability for both human and automated driving systems, increasing the chances of error at the point of intersection.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased risk of signal misinterpretation or control delay due to snowy conditions, poor contrast, and limited lane visibility in a residential zone.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure traction and visible lane delineation.
+Contribution:
+- Road surface is fully covered with snow, eliminating standard lane boundaries.
+- No evidence of plowing or sanding.
+- Likely reduction in grip and increased braking distance.
+
+Component 2: Road Markings and Signage
+Role: Provide clear navigational and regulatory cues.
+Contribution:
+- Yellow centerline faintly visible; edge and crosswalk markings absent.
+- Traffic signal present but small and partially washed out by overcast conditions.
+- No additional signage visible to reinforce traffic rules.
+
+Component 3: Vehicle Subsystems
+Role: Interpret environment and support driving control.
+Contribution:
+- Vision-based systems may struggle to detect signal and road edges.
+- Lack of lane markings may disable or impair lane-keeping assistance.
+- Perception systems must rely heavily on GPS or other fallback methods.
+
+Component 4: Roadway Management Authority
+Role: Maintain road readiness and signal clarity.
+Contribution:
+- Signal placement is minimally visible and lacks prominence in snow/fog.
+- No physical or digital snow hazard mitigation evident.
+- Poor maintenance reduces both human and machine confidence in the environment.
+
+Component 5: Drivers
+Role: Observe, interpret, and act on environmental signals.
+Contribution:
+- Drivers may miss the traffic signal due to visual blending with background.
+- Lane position uncertainty may lead to drift or misalignment.
+- Reduced surface feedback adds to reaction time and decision uncertainty.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide proactive hazard awareness and environmental context.
+Contribution:
+- No alerts present for snowy road conditions or visibility limitations.
+- System provides no dynamic updates or speed guidance.
+- Weather-aware infrastructure appears absent.
+
+Summary:
+This residential snow scene presents a deceptively simple but risky environment. Poor lane visibility, weak signal contrast, and a lack of responsive infrastructure raise challenges for both driver judgment and autonomous systems, particularly in interpreting right-of-way and maintaining control.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Visual confusion or failure to respond to traffic control due to backlighting, low-contrast snow surface, and poor visibility of the signal.
+
+Component 1: Road Surface and Maintenance
+Role: Provide safe traction and lane visibility.
+Contribution:
+- Entire road is snow-covered, obscuring lane lines and curb boundaries.
+- No tire tracks or texture cues to aid lane estimation.
+- Flat and featureless snow blanket may reduce driver or system confidence.
+
+Component 2: Road Markings and Signage
+Role: Inform and organize traffic flow visually.
+Contribution:
+- Faint yellow centerline visible, but no side or intersection markings.
+- Traffic signal is active, but washed out due to direct sunlight and glare.
+- No supplementary signage or surface arrows to assist positioning.
+
+Component 3: Vehicle Subsystems
+Role: Detect lane, signs, signals, and obstacles.
+Contribution:
+- Vision-based lane tracking likely ineffective due to snow cover.
+- Sun glare may interfere with camera detection of signal state.
+- LIDAR and radar may compensate, but visual cues are mostly absent.
+
+Component 4: Roadway Management Authority
+Role: Support safe road use through infrastructure design and upkeep.
+Contribution:
+- No visible snow removal effort.
+- Signal placement does not account for glare or sun angle.
+- Lacks reinforcement measures such as reflective signposts or shaded signal hoods.
+
+Component 5: Drivers
+Role: Observe and react to roadway and traffic signals.
+Contribution:
+- Low visibility of the signal due to sun glare may delay driver reaction.
+- Minimal surface cues cause potential uncertainty about intersection limits.
+- Increased chance of abrupt stopping, missed signal, or unintended movement.
+
+Component 6: Weather Forecasting / Notification System
+Role: Inform users of visibility or traction hazards.
+Contribution:
+- No dynamic alerts for reduced visibility or signal interference.
+- System does not adapt or notify based on sun angle or snow presence.
+- Absence of environmental feedback to improve situational awareness.
+
+Summary:
+This snow-covered street with a sun-facing traffic light presents a visually degraded scene. Poor signal visibility, low-contrast ground, and absent cues challenge both manual and automated systems. This intersection carries elevated perceptual risk despite structurally low traffic complexity.

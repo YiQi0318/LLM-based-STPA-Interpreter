@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential for misinterpretation or unsafe maneuvering due to limited lane demarcation, signal-only control, and motorbike-specific visibility constraints.
+
+Component 1: Road Surface and Maintenance
+Role: Provide stable conditions for maneuvering and braking.
+Contribution:
+- Road surface is dry and well-maintained.
+- No potholes, debris, or surface irregularities visible.
+- No textural differences to indicate bike lanes or shoulders.
+
+Component 2: Road Markings and Signage
+Role: Indicate road structure, regulations, and user priorities.
+Contribution:
+- Single yellow centerline present; no side markings or dedicated bike/motorcycle lanes.
+- Green traffic light visible and functioning but lacks contextual signage or lane control.
+- No auxiliary signs (e.g., speed, intersection warning) near signal.
+
+Component 3: Vehicle Subsystems
+Role: Detect road boundaries, traffic controls, and dynamic actors.
+Contribution:
+- Lane tracking depends entirely on the single centerline; system may have limited lateral accuracy.
+- Motorcycle detection must rely on motion or LIDAR due to lack of road context.
+- Signal detection is strong, but maneuvering logic may lack guidance near intersections.
+
+Component 4: Roadway Management Authority
+Role: Provide infrastructure that supports diverse vehicle types and safe intersection behavior.
+Contribution:
+- No dedicated or marked space for motorcycles.
+- Signalized control exists but is not augmented with clear lane direction or indicators.
+- Intersection lacks pre-signal indicators, slowing areas, or structural cues.
+
+Component 5: Drivers
+Role: Observe and respond safely to road, signal, and adjacent vehicles.
+Contribution:
+- Drivers may struggle to anticipate motorbike intent due to ambiguous lane structure.
+- Misjudgment may occur during passing, lane-sharing, or stopping.
+- Signal presence helps, but no road-based alignment reduces predictability.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide hazard alerts and contextual environment info.
+Contribution:
+- Clear weather means no hazard, but no dynamic system is present to aid in decision-making.
+- No feedback mechanisms, such as dynamic signage or adaptive signaling.
+- Environment is static and lacks responsiveness to mixed-use conditions.
+
+Summary:
+This simple urban scene with a motorbike and signalized control presents a low to moderate level of risk. While the weather and surface are ideal, the lack of markings and contextual infrastructure introduces ambiguity—particularly in supporting safe navigation for motorcycles and predicting interactions with surrounding traffic.
