@@ -1,0 +1,8 @@
+{
+    "mapped_actions": [
+        {
+            "user_input": "The AUV is braking when traffic light from yellow to red",
+            "mapped_action": "The most relevant control actions from the list for the given user input are:\n\n2. Object detection sends the brake action command to the kinematic model.\n3. The kinematic model requests the brake command to the actuation system to actuate the action."
+        }
+    ]
+}
