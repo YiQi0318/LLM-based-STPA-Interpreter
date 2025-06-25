@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Mild to moderate risk of visual misinterpretation or lane deviation due to low-contrast environment and faded markings in cloudy noon lighting.
+
+Component 1: Road Surface and Maintenance
+Role: Provide smooth, predictable surface for traction and maneuvering.
+Contribution:
+- Road surface is dry and uniform in texture.
+- No visible defects, but color and tone are low in visual contrast.
+- Maintenance is functionally sufficient, though not optimized for visual clarity.
+
+Component 2: Road Markings and Signage
+Role: Define travel paths and lane structure for drivers and automation.
+Contribution:
+- Markings are faded, particularly near the center and shoulders.
+- Cloudy light further reduces visibility and boundary recognition.
+- No reflective enhancements or textured surfaces to aid detection.
+
+Component 3: Vehicle Subsystems
+Role: Assist with environmental perception and motion regulation.
+Contribution:
+- Lane-keeping systems may perform inconsistently under reduced marking visibility.
+- Vision-based systems may have difficulty distinguishing lane lines.
+- ADAS features reliant on marking contrast may degrade or disengage.
+
+Component 4: Roadway Management Authority
+Role: Maintain visual and physical infrastructure.
+Contribution:
+- Faded markings suggest deferred maintenance or long repainting cycles.
+- No evidence of lighting-aware or adaptive visual systems.
+- Infrastructure is passive and non-responsive to environmental shifts.
+
+Component 5: Drivers
+Role: Interpret road information and maintain lane control.
+Contribution:
+- Reduced marking clarity under flat lighting increases mental workload.
+- Potential for slower reactions, misaligned driving, or unintentional drift.
+- Reliance on visual estimation over reliable cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Inform and guide behavior during adverse or ambiguous conditions.
+Contribution:
+- No signs of active or dynamic notification systems.
+- No visual or digital cues to inform drivers of visibility limitations.
+- Lacks real-time integration with environmental perception metrics.
+
+Summary:
+This image represents a structurally sound but visually weakened scenario. Cloudy conditions and faded markings combine to reduce cue clarity, affecting both driver accuracy and automated system performance. While not acutely hazardous, it increases the likelihood of minor alignment and perception errors.

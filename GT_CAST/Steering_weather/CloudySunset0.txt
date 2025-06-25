@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential for misalignment or decreased automation reliability due to low-contrast visibility and faint lane markings in cloudy sunset conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Support safe vehicle operation with reliable traction and visibility.
+Contribution:
+- Surface is dry and in good structural condition.
+- No debris or surface damage detected.
+- Visual texture is uniform, but lacks high contrast with markings.
+
+Component 2: Road Markings and Signage
+Role: Provide lane guidance and spatial awareness.
+Contribution:
+- Lane lines are faded and difficult to distinguish under soft lighting.
+- Lack of retroreflectivity or enhanced contrast features.
+- Markings do not accommodate variable lighting scenarios such as sunset/cloud cover.
+
+Component 3: Vehicle Subsystems
+Role: Detect lanes, regulate position, and assist with navigation.
+Contribution:
+- Lane-keeping systems may fail or provide low-confidence outputs.
+- Vision-based systems may struggle to track center or boundaries accurately.
+- Visual input degradation limits function of many ADAS tools.
+
+Component 4: Roadway Management Authority
+Role: Ensure infrastructure supports visual and operational safety.
+Contribution:
+- Lane markings appear overdue for refresh or enhancement.
+- No additional visual aids (e.g., cat’s eyes, reflective paint) to support visibility.
+- No adaptive or weather-aware features in the road infrastructure.
+
+Component 5: Drivers
+Role: Interpret conditions and navigate vehicle appropriately.
+Contribution:
+- Low visibility of markings may result in drift or delayed decisions.
+- Visual fatigue or misjudgment may occur under soft, indirect lighting.
+- Increased cognitive load without supporting cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Inform drivers of condition-related hazards.
+Contribution:
+- No signage or system alerting to limited lane visibility.
+- No real-time condition feedback to adjust driver behavior.
+- Missed opportunity to integrate lighting awareness into system alerts.
+
+Summary:
+The physical condition of the road is good, but the visual conditions pose a risk due to low contrast and faded markings. This affects both human perception and automated system functionality, creating moderate navigation uncertainty in cloudy sunset environments.

@@ -1,0 +1,46 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Vehicle confusion or unsafe behavior due to unclear lane structure and weather-affected surface.
+
+Component 1: Road Surface and Maintenance
+Role: Provides the physical environment for driving.
+Contribution:
+- Surface appears dry, but wear is noticeable.
+- Some discoloration could lead to reduced visibility of markings.
+- Maintenance may have neglected full surface repainting or repair.
+
+Component 2: Road Markings and Signage
+Role: Guides driver positioning and movement.
+Contribution:
+- Arrow marking is worn and faint.
+- Lane lines are visible but inconsistent.
+- Lack of uniform markings can confuse vehicle lane tracking systems.
+
+Component 3: Vehicle Subsystems
+Role: Sensors and control systems interacting with environment.
+Contribution:
+- Cameras may not detect all markings.
+- Lane centering or autonomous features may become unreliable.
+- Inaccurate road interpretation increases risk of drift or delay.
+
+Component 4: Roadway Management Authority
+Role: Manages road safety and infrastructure quality.
+Contribution:
+- Paint fading not addressed.
+- No additional signage or markings compensate for surface ambiguity.
+- Preventive quality checks may not be enforced regularly.
+
+Component 5: Drivers
+Role: Human users interpreting road conditions.
+Contribution:
+- May misinterpret arrows or lane guidance.
+- Drivers could perform incorrect merges or fail to stay centered.
+- Relying on partial markings increases likelihood of error.
+
+Component 6: Weather Forecasting / Notification System
+Role: Informs about driving environment conditions.
+Contribution:
+- System may not communicate when visibility of markings is compromised.
+- No adaptive guidance or alerts for degraded visual surfaces.
+
+Summary:
+The system shows a breakdown in lane visibility and environmental clarity. Combined effects from worn markings, partial lane guidance, and lack of supportive signage contribute to increased potential for incorrect driver actions or autonomous misinterpretation.

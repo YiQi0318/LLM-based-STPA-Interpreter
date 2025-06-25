@@ -1,0 +1,46 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Vehicle control risk or misjudgment due to widespread water accumulation and reduced marking visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Structural integrity and water management of road.
+Contribution:
+- Extensive water patches indicate very poor drainage.
+- Uneven texture or wear may increase slipping hazard.
+- Inadequate maintenance for weather resilience.
+
+Component 2: Road Markings and Signage
+Role: Visual lane definition.
+Contribution:
+- Markings are partially submerged and degraded.
+- Low contrast with road surface in wet conditions.
+- No indicators to alert drivers to faded or submerged markings.
+
+Component 3: Vehicle Subsystems
+Role: Functional safety mechanisms.
+Contribution:
+- Traction loss likely in hydroplaning conditions.
+- Lane assistance may malfunction without visible lane inputs.
+- Braking systems may not fully compensate under wet impact.
+
+Component 4: Roadway Management Authority
+Role: Oversight and preventive action.
+Contribution:
+- Ineffective water drainage design or response.
+- Missing temporary warnings for slick or pooled areas.
+- Lack of proactive maintenance leads to long-term hazard buildup.
+
+Component 5: Drivers
+Role: Response to perceived and actual road conditions.
+Contribution:
+- Vision-based misinterpretation of lane alignment.
+- Overcorrection or hesitance in maneuvering.
+- Assumes infrastructure will provide sufficient feedback.
+
+Component 6: Weather Forecasting / Notification System
+Role: Risk communication.
+Contribution:
+- No localized alerts about surface pooling or poor visibility.
+- No dynamic signage or adjustments observed.
+
+Summary:
+High water coverage and degraded visual cues create system-wide risk across physical, technical, and human layers. The absence of adaptive signaling and poor infrastructure resilience exacerbate the hazard.

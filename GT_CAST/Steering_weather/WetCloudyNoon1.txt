@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential for driver misjudgment or lane drift due to localized surface water and low-contrast lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Core driving surface.
+Contribution:
+- Visible patch of water near center lane suggests minor drainage inefficiency.
+- Slight surface discoloration may affect traction and visibility.
+- Maintenance likely reactive; no clear signs of drainage improvements.
+
+Component 2: Road Markings and Signage
+Role: Visual lane demarcation.
+Contribution:
+- Lane markings are partially worn and low in contrast.
+- In wet conditions, markings may be hard to distinguish from surface.
+- No additional signage or reflective reinforcement is visible.
+
+Component 3: Vehicle Subsystems
+Role: Environmental sensors and dynamic safety controls.
+Contribution:
+- Lane detection may intermittently fail due to marking degradation.
+- ABS or traction systems may activate prematurely on wet patches.
+- Systems relying on visual input may yield false or no signal.
+
+Component 4: Roadway Management Authority
+Role: Oversight for surface and visual guidance maintenance.
+Contribution:
+- Lack of repainting and water management planning.
+- No temporary alerts to guide or warn drivers of fading visuals.
+- Surface and marking conditions suggest infrequent inspections.
+
+Component 5: Drivers
+Role: Human perception and control.
+Contribution:
+- Drivers may misinterpret lane paths or water depth.
+- Subtle visual distortion can lead to delayed reactions or steering errors.
+- Reliance on degraded infrastructure undermines driver trust and confidence.
+
+Component 6: Weather Forecasting / Notification System
+Role: Real-time risk awareness and communication.
+Contribution:
+- No visible alerts for wet pavement or degraded visuals.
+- Static infrastructure appears to lack real-time hazard indication capabilities.
+- Drivers are left to infer risk unaided.
+
+Summary:
+While less severe than fully saturated scenarios, this condition represents a transitional risk environment. Faded lane markings and isolated water patches reduce both machine and human capacity for accurate road interpretation and safe navigation.

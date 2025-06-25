@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Moderate risk of lane departure or vehicle guidance degradation due to poor lane visibility under cloudy sunset lighting.
+
+Component 1: Road Surface and Maintenance
+Role: Provide traction and ensure visual consistency.
+Contribution:
+- Surface appears dry and in good condition.
+- No pooling or major surface defects observed.
+- Maintenance is adequate, though visual contrast is low under current lighting.
+
+Component 2: Road Markings and Signage
+Role: Offer visual guidance for lane maintenance.
+Contribution:
+- Lane markings are faint and blend with the pavement in low-angle light.
+- No reflective or high-contrast paint used to support varied visibility.
+- Markings may be insufficient for safe navigation under dim or diffuse light.
+
+Component 3: Vehicle Subsystems
+Role: Perceive lanes and manage control inputs.
+Contribution:
+- Lane-keeping assistance may underperform due to faint lines.
+- Vision-based systems may misread edges or return false negatives.
+- Environmental perception confidence may drop in current visual state.
+
+Component 4: Roadway Management Authority
+Role: Design and maintain visually and physically safe roadways.
+Contribution:
+- No evidence of recent marking refresh or visibility enhancements.
+- Lane design does not accommodate variable lighting conditions.
+- No infrastructure present to support vision under poor contrast.
+
+Component 5: Drivers
+Role: Interpret visual feedback and maintain control.
+Contribution:
+- Visual ambiguity from diffuse light and low contrast increases interpretation time.
+- Risk of drifting or hesitation in uncertain lane areas.
+- Greater chance of visual fatigue or late corrections.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicate conditions affecting driving performance.
+Contribution:
+- No visible alerts for low-visibility or lighting concerns.
+- System does not appear to support lighting-aware navigation assistance.
+- Missed opportunity for behavior adaptation or hazard awareness.
+
+Summary:
+Although physical conditions are dry and unobstructed, visual clarity is compromised by low-contrast markings and overcast sunset light. This increases the cognitive and perceptual load on both drivers and automation systems, moderately raising the risk of trajectory error or lane-keeping failure.

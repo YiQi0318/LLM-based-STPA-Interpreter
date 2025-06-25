@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of lane deviation or delayed driver response due to low-contrast visual conditions and faded lane markings under cloudy lighting.
+
+Component 1: Road Surface and Maintenance
+Role: Maintain safe, reliable travel surface.
+Contribution:
+- Surface is dry and clear, but shows slight wear.
+- No visible standing water or debris.
+- Maintenance appears functional, though texture contrast is low.
+
+Component 2: Road Markings and Signage
+Role: Provide lane guidance and navigational cues.
+Contribution:
+- Lane markings are faint and inconsistent in visibility.
+- Low-angle lighting from sunset and cloud cover reduces contrast.
+- No enhanced visual aids (e.g., reflective paint, bold contrast lines) present.
+
+Component 3: Vehicle Subsystems
+Role: Detect lanes, assist control, and maintain vehicle path.
+Contribution:
+- Lane detection may be less reliable due to faded markings.
+- Vision-based systems may misinterpret or miss lane edges in low contrast.
+- Driver-assist features dependent on markings may underperform.
+
+Component 4: Roadway Management Authority
+Role: Maintain infrastructure quality and safety systems.
+Contribution:
+- No recent repainting of lane lines evident.
+- Markings are inadequately visible under varied lighting.
+- No supporting infrastructure (e.g., reflective signs, adaptive marking) in place.
+
+Component 5: Drivers
+Role: Perceive and navigate based on road cues.
+Contribution:
+- Cloudy lighting and weak line contrast may cause visual misinterpretation.
+- Drivers may drift or delay decisions due to poor boundary definition.
+- Eye strain or uncertainty may lead to compensatory behaviors.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide situational awareness and risk alerts.
+Contribution:
+- No dynamic warnings or feedback regarding reduced visibility.
+- System does not appear to adjust to lighting/weather context.
+- Lack of integration limits support for real-time driving behavior adjustment.
+
+Summary:
+While the surface is physically safe, the combination of faded markings and muted ambient light creates a visually ambiguous environment. This reduces effectiveness of both human and automated lane-following systems, introducing moderate risk in scenarios requiring precise navigation or quick decision-making.

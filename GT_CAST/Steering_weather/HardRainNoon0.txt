@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of vehicle misalignment or hydroplaning due to heavy rainfall, surface water coverage, and degraded lane visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure safe driving conditions by providing traction and drainage.
+Contribution:
+- Road surface is visibly saturated with water from sustained rain.
+- Reflective sheen indicates poor friction levels.
+- Drainage infrastructure appears inadequate for the volume of rainfall.
+
+Component 2: Road Markings and Signage
+Role: Provide critical visual cues for lane positioning.
+Contribution:
+- Lane markings are faint and obscured under wet and reflective conditions.
+- No enhanced visibility features (e.g., reflective paint, tactile surfaces) present.
+- Rainfall significantly degrades the ability to use markings for navigation.
+
+Component 3: Vehicle Subsystems
+Role: Detect road boundaries and support safe operation.
+Contribution:
+- Vision-based lane detection systems likely impaired or disengaged.
+- Hydroplaning and delayed braking responses likely due to low traction.
+- Autonomous features may default to manual control or show erratic behavior.
+
+Component 4: Roadway Management Authority
+Role: Maintain safe road infrastructure under all weather conditions.
+Contribution:
+- No visible weather mitigation measures (signage, textured surfacing).
+- Lane markings not maintained to support visibility in heavy rain.
+- Surface not equipped for high rainfall performance.
+
+Component 5: Drivers
+Role: Navigate safely using visual and sensory feedback.
+Contribution:
+- Poor visibility and lane definition increase cognitive load and error likelihood.
+- Risk of drifting or unintentional lane departure under limited guidance.
+- Control becomes more reactive and less predictable.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide timely alerts about environmental driving hazards.
+Contribution:
+- No warning signage or dynamic alerts present for heavy rain.
+- Drivers receive no structured information about surface risk or control adaptation.
+- Weather feedback system appears inactive or absent.
+
+Summary:
+This image illustrates a high-risk operating environment where persistent heavy rain, poor drainage, and degraded markings converge to challenge both human and machine safety systems. The lack of responsive infrastructure or environmental alerting substantially raises the potential for driving error or incident.

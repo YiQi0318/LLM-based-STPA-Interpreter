@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of vehicle misalignment or slip due to widespread water pooling and partially obscured lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Provide stable, drainable driving surface.
+Contribution:
+- Extensive wet patches across all visible lanes.
+- Poor drainage and road slope lead to standing water.
+- Surface treatment not optimized for wet traction.
+
+Component 2: Road Markings and Signage
+Role: Define vehicle positioning and directional flow.
+Contribution:
+- Markings are faded and intermittently submerged.
+- Lane boundaries are difficult to interpret in wet conditions.
+- No visible reflective or weather-adaptive lane treatments.
+
+Component 3: Vehicle Subsystems
+Role: Ensure control, stability, and navigation support.
+Contribution:
+- Lane keeping systems may disengage due to missing visual cues.
+- Hydroplaning likelihood is high due to surface conditions.
+- Braking and steering systems are challenged in maintaining control.
+
+Component 4: Roadway Management Authority
+Role: Monitor and maintain infrastructure integrity and hazard mitigation.
+Contribution:
+- No evidence of enhanced drainage or surface maintenance.
+- Absence of temporary signage or visual warnings for dangerous road conditions.
+- Maintenance appears to be reactive rather than anticipatory.
+
+Component 5: Drivers
+Role: Interpret environment and make control decisions.
+Contribution:
+- May lose track of lane alignment under wet and low-contrast visuals.
+- Uncertainty can lead to overcorrection, lane drift, or abrupt maneuvering.
+- Drivers lack support cues to adapt behavior appropriately.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide dynamic awareness of road risk factors.
+Contribution:
+- No alerts or dynamic signage to warn of road slipperiness.
+- Lacks integration with real-time weather or road sensor systems.
+- Failure to provide preemptive behavioral prompts for hazard zones.
+
+Summary:
+This situation represents a high-risk wet driving environment where obscured markings and persistent water reduce both mechanical and human capacity for safe operation. The combined lack of mitigation infrastructure and alert mechanisms further degrades system reliability.

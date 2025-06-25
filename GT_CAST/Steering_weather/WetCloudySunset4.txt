@@ -1,0 +1,46 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Critical risk of hydroplaning or unsafe maneuvering due to near-complete road surface saturation and indistinct lane boundaries.
+
+Component 1: Road Surface and Maintenance
+Role: Supports friction, visibility, and flow.
+Contribution:
+- Water fully envelops many sections, greatly reducing tire grip.
+- Pavement condition suggests insufficient weather readiness.
+- Water pooling not addressed in engineering or repair.
+
+Component 2: Road Markings and Signage
+Role: Provide structure in navigation.
+Contribution:
+- Lane lines nearly invisible under glare and water.
+- No contrast-enhanced or reflective features implemented.
+- Guidance disappears in worst-case areas.
+
+Component 3: Vehicle Subsystems
+Role: Safeguard driving operations.
+Contribution:
+- Lane following algorithms may disengage or err.
+- Human drivers and systems both lose path reference.
+- Hydroplaning threshold reached faster due to saturation.
+
+Component 4: Roadway Management Authority
+Role: Oversight and readiness.
+Contribution:
+- Lack of mitigation or alert response.
+- Persistent issues reflect backlog or misprioritization.
+- Road unfit for normal operation under moderate rain.
+
+Component 5: Drivers
+Role: Interpret and respond to current road state.
+Contribution:
+- Visibility of lane paths nearly eliminated.
+- May rely on erroneous guesswork for positioning.
+- Increased chance of overcorrection or unintended exit.
+
+Component 6: Weather Forecasting / Notification System
+Role: Translate weather into actionable risk data.
+Contribution:
+- No signs or digital messages indicating danger.
+- Lack of alert infrastructure integration.
+
+Summary:
+This is a highly dangerous scenario where road surface saturation and visual degradation coincide to erase operational clarity. Both driver and vehicle systems are left without viable guidance or warning, constituting a systemic breakdown.

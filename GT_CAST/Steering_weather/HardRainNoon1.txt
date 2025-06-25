@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: High potential for lane departure or vehicle instability due to heavy rainfall, low traction, and low lane visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Support vehicle stability and facilitate water runoff.
+Contribution:
+- Surface is uniformly saturated from heavy rain.
+- Slight reflection indicates water buildup across the lane area.
+- Drainage may be insufficient for extreme rainfall rates.
+
+Component 2: Road Markings and Signage
+Role: Provide lane demarcation and navigation assistance.
+Contribution:
+- Lane markings are barely distinguishable in wet conditions.
+- No reflective or textured paint evident for enhanced visibility.
+- Visual guidance is compromised under rain and glare.
+
+Component 3: Vehicle Subsystems
+Role: Provide environmental interpretation and motion control.
+Contribution:
+- Lane detection and vision-based controls likely degraded or disabled.
+- Increased braking distance and instability expected due to low grip.
+- Automated features may disengage or yield incorrect assumptions.
+
+Component 4: Roadway Management Authority
+Role: Maintain road safety under weather impact.
+Contribution:
+- No signs of weather-adaptive infrastructure (grooved pavement, signage).
+- Markings have not been maintained to support adverse weather conditions.
+- Lack of temporary mitigation or alert systems for current road state.
+
+Component 5: Drivers
+Role: Process environmental input and control vehicle behavior.
+Contribution:
+- Visual field compromised by rain and faded lines.
+- Driver may struggle with lane placement and distance judgment.
+- High stress and potential for overcorrection or delayed reaction.
+
+Component 6: Weather Forecasting / Notification System
+Role: Deliver warnings and adaptive alerts.
+Contribution:
+- No visible alerting system for severe weather conditions.
+- System does not appear integrated with current road-state sensing.
+- Lacks capacity to inform or adjust driver expectations during rain.
+
+Summary:
+This heavy rain scenario reflects a severe systemic vulnerability. The combination of worn markings, pooled water, and lack of infrastructure response impairs both manual and automated driving. Without mitigation, it poses a substantial hazard for maintaining vehicle alignment and control.

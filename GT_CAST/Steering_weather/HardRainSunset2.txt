@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: High probability of vehicle control failure or perception error due to heavy rainfall, low traction, and obscured visual guidance.
+
+Component 1: Road Surface and Maintenance
+Role: Support stable movement and water dispersion.
+Contribution:
+- Entire surface appears saturated due to ongoing heavy rain.
+- Reflective sheen indicates significant water coverage.
+- Drainage system appears overwhelmed or insufficient for this intensity.
+
+Component 2: Road Markings and Signage
+Role: Provide lane boundaries and alignment cues.
+Contribution:
+- Lane markings are faint and difficult to distinguish through the rain.
+- Water and light reflection obscure nearly all visual lane indicators.
+- Markings lack reflective material or texture for visibility in extreme wet conditions.
+
+Component 3: Vehicle Subsystems
+Role: Enable lane-keeping, stability control, and automation.
+Contribution:
+- Lane assist and vision-based systems likely fail or disengage.
+- Hydroplaning risk is high due to water accumulation.
+- Braking distance increased, and traction control may be activated constantly.
+
+Component 4: Roadway Management Authority
+Role: Maintain safe infrastructure under all weather conditions.
+Contribution:
+- No signs of weather-adaptive infrastructure (e.g., grooved pavement, drainage channels).
+- Lane markings are inadequate for heavy rain scenarios.
+- No warnings, dynamic signage, or physical indicators present.
+
+Component 5: Drivers
+Role: Perceive and respond to road conditions.
+Contribution:
+- Drivers may lose lane awareness entirely.
+- Visibility is severely degraded by rain and road glare.
+- Reaction accuracy and control precision significantly reduced.
+
+Component 6: Weather Forecasting / Notification System
+Role: Alert drivers to high-risk weather and surface conditions.
+Contribution:
+- No signage or alerting system visible despite heavy rainfall.
+- No automatic speed limit reductions or adaptive warning indicators.
+- System appears to lack integration with real-time weather data and road state.
+
+Summary:
+This image reflects an extreme-condition scenario in which heavy rain renders the road markings nearly invisible and the surface hazardous. Both human drivers and automated systems would struggle to maintain proper alignment and control. The absence of any mitigation from infrastructure or communication systems significantly heightens the risk of critical failure.

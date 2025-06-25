@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased likelihood of vehicle drift or reduced traction due to large water patches and degraded lane markings under light rain conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Structural foundation for vehicle movement and drainage.
+Contribution:
+- Significant water accumulation across multiple lanes.
+- Indicates poor drainage design or lack of surface slope.
+- Maintenance insufficient for preventing standing water after rainfall.
+
+Component 2: Road Markings and Signage
+Role: Provides visual reference for lane positioning.
+Contribution:
+- Markings are heavily obscured by water.
+- Faded lines reduce visibility, especially in central and left lanes.
+- No enhanced reflective or high-contrast materials used for wet conditions.
+
+Component 3: Vehicle Subsystems
+Role: Automated and manual systems for safe operation.
+Contribution:
+- Lane assist and vision-dependent features may fail due to submerged lines.
+- Hydroplaning risk elevated due to water presence.
+- Braking and steering responsiveness may be inconsistent in wet zones.
+
+Component 4: Roadway Management Authority
+Role: Oversees infrastructure maintenance and safety protocols.
+Contribution:
+- No signs of proactive drainage design or corrective maintenance.
+- Lane repainting and water dispersion strategies are not evident.
+- No visible warnings or temporary road condition indicators deployed.
+
+Component 5: Drivers
+Role: Interprets environment and executes driving decisions.
+Contribution:
+- Likely to misinterpret lane position or lose visual reference.
+- Increased risk of unintended lateral movement or delayed response.
+- Drivers must rely on instinct rather than infrastructure support.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provides environmental condition awareness.
+Contribution:
+- No active warnings or signage for wet surface conditions.
+- Weather integration into road systems appears absent.
+- Lacks support for driver pre-awareness of hydroplaning-prone zones.
+
+Summary:
+The scenario represents a hazardous condition in which environmental factors, unclear markings, and lack of system alerts converge to create increased accident potential. Both autonomous and manual vehicle systems are challenged by the degraded infrastructure under light rain.

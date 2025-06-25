@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of vehicle instability or lane departure due to extensive wet surface coverage and limited lane visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Provides physical support and traction.
+Contribution:
+- Large surface area is visibly wet, indicating active rainfall or residual accumulation.
+- Pooling near the center and edges suggests drainage is not optimal.
+- Surface treatment may lack anti-slip properties under wet conditions.
+
+Component 2: Road Markings and Signage
+Role: Directs traffic and defines lanes.
+Contribution:
+- Lane markings are partially obscured by water or glare.
+- Faded or broken lines reduce clarity, especially in wet conditions.
+- No reflective enhancements or adaptive markings visible.
+
+Component 3: Vehicle Subsystems
+Role: Supports lane tracking, stability, and safety systems.
+Contribution:
+- Lane assist systems may misread or lose sight of lane boundaries.
+- Wet traction limits braking response and maneuvering accuracy.
+- Automated features like adaptive cruise may perform inconsistently.
+
+Component 4: Roadway Management Authority
+Role: Responsible for road condition and safety support.
+Contribution:
+- Inadequate infrastructure to handle water dispersion.
+- No dynamic signage, alerts, or high-friction treatments applied.
+- Visual and drainage maintenance appear insufficient.
+
+Component 5: Drivers
+Role: Make operational decisions based on road feedback.
+Contribution:
+- Difficulty estimating lane alignment under poor visibility.
+- Risk of overcorrecting or drifting due to misjudged markings.
+- Increased likelihood of hesitation or late decision-making in wet zones.
+
+Component 6: Weather Forecasting / Notification System
+Role: Delivers weather-aware risk information.
+Contribution:
+- No visible signage or alerts indicating slippery or low-visibility conditions.
+- System may lack integration with localized surface data.
+- Missed opportunity for preventive driver behavior adjustment.
+
+Summary:
+This scenario presents a system-wide risk due to wet pavement and degraded visual cues. Both human and automated systems face challenges interpreting the road, increasing the probability of unsafe actions without proper infrastructure and warning support.

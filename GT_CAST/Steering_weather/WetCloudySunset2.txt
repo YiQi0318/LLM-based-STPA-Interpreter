@@ -1,0 +1,46 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of vehicle lane deviation and unstable response due to persistent surface water and deteriorated markings.
+
+Component 1: Road Surface and Maintenance
+Role: Support safe operation through consistent structure.
+Contribution:
+- Multiple visible water pools reduce grip.
+- Slight visual cues of subsurface erosion or patchwork.
+- Maintenance likely reactive rather than planned.
+
+Component 2: Road Markings and Signage
+Role: Define safe trajectory and spacing.
+Contribution:
+- Water obscures several lane segments.
+- Existing markings lack resilience to remain visible.
+- No physical or digital augmentation for wet clarity.
+
+Component 3: Vehicle Subsystems
+Role: Detect and respond to lane/environment cues.
+Contribution:
+- May incorrectly interpret ambiguous lane boundaries.
+- Hydroplaning or slipping risk increases in affected areas.
+- Adaptive cruise or lane features become unreliable.
+
+Component 4: Roadway Management Authority
+Role: Ensure continual road safety.
+Contribution:
+- System failed to adapt surface for drainage efficacy.
+- Neglected marking upgrades or post-rain inspection.
+- Lack of responsive warning systems.
+
+Component 5: Drivers
+Role: Navigate safely under degraded input.
+Contribution:
+- Risky adjustments due to visual confusion.
+- Failure to react to loss of lane feedback promptly.
+- Errors propagate from unclear environment.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide hazard awareness.
+Contribution:
+- No indication of intelligent warning system active.
+- Static signage insufficient for dynamic road state.
+
+Summary:
+Compromised physical conditions and unreliable marking visibility undermine both manual and automated driving safety, showing systemic weakness in design, upkeep, and communication.

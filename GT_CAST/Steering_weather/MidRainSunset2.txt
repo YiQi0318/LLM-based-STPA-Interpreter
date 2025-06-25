@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Heightened chance of vehicle instability or lane tracking failure due to moderate rainfall, widespread surface water, and low-visibility lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure safe surface under all weather conditions.
+Contribution:
+- Road is visibly wet with extensive water patches.
+- Pooling and surface film suggest inefficient drainage design.
+- Surface integrity may be compromised in certain zones, elevating hydroplaning risk.
+
+Component 2: Road Markings and Signage
+Role: Visually define lanes and navigation paths.
+Contribution:
+- Lane markings are partially submerged and poorly visible.
+- Water reflection reduces visual contrast for both drivers and sensors.
+- No reflective or raised markings for rain resilience.
+
+Component 3: Vehicle Subsystems
+Role: Aid vehicle control and environmental perception.
+Contribution:
+- Lane-keeping systems may disengage due to weak line contrast.
+- Braking and traction systems may activate in response to slippage.
+- Vision and sensor systems may be unreliable due to water and glare interference.
+
+Component 4: Roadway Management Authority
+Role: Maintain infrastructure and minimize environmental risks.
+Contribution:
+- No visible intervention for wet-condition hazards.
+- Lane markings appear overdue for repainting or enhancement.
+- Lack of mitigation infrastructure (e.g., warning signs, drainage retrofits).
+
+Component 5: Drivers
+Role: Make operational decisions based on road input.
+Contribution:
+- May experience difficulty identifying lanes under current visibility.
+- Risk of overcorrection or unsafe maneuvers increases with unclear cues.
+- Wet patches and visual degradation raise driver uncertainty.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide road users with weather-related hazard awareness.
+Contribution:
+- No dynamic alerts or signage warning of slippery surface conditions.
+- No integration with on-road conditions detected.
+- System does not help drivers proactively adapt behavior to rainfall.
+
+Summary:
+This is a high-risk mid-rain scenario where large surface wetness and poor visual guidance interact to undermine safety. Drivers and automated systems face compromised lane detection, traction, and reaction reliability, with no visible mitigation from infrastructure or alert systems.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Possibility of vehicle lane deviation or reduced automation reliability due to faint markings and slight wet surface conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Physical foundation for vehicle motion and safety.
+Contribution:
+- Slightly damp surface suggests recent light rain or residual moisture.
+- No severe pooling, but subtle wetness may impact traction.
+- Surface quality appears intact, but drainage performance is uncertain.
+
+Component 2: Road Markings and Signage
+Role: Guide vehicle lane tracking and alignment.
+Contribution:
+- Lane markings are faded and partially obscured in some sections.
+- Lack of strong visual contrast under wet conditions.
+- No high-visibility paint or reflective aids to support low-light/wet detection.
+
+Component 3: Vehicle Subsystems
+Role: Perceive environment and manage stability.
+Contribution:
+- Lane assist and camera-based systems may struggle with faded lines.
+- Tire grip might be reduced slightly due to surface dampness.
+- Automation reliability may decrease in borderline detection conditions.
+
+Component 4: Roadway Management Authority
+Role: Maintain safety infrastructure and surface conditions.
+Contribution:
+- Markings appear worn without recent maintenance.
+- No visible mitigation measures for wet weather visibility.
+- Maintenance cycle for repainting may be delayed or infrequent.
+
+Component 5: Drivers
+Role: Manual interpretation and operational control.
+Contribution:
+- Drivers may find it difficult to discern exact lane edges.
+- Slight dampness may not be perceived as a traction hazard.
+- Reaction time or correction accuracy may be impacted by unclear markings.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide environmental condition awareness.
+Contribution:
+- No signage or alerts indicating recent rain or damp pavement.
+- Drivers receive no system-level warnings about reduced surface performance.
+- Absence of context-aware hazard messaging.
+
+Summary:
+This image shows a low to moderate risk environment where environmental and infrastructure cues are weakened. While no severe hazards are visible, faded lane markings and a damp surface can cumulatively undermine both manual and automated safety responses.

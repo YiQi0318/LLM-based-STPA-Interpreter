@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated risk of lane deviation or traction loss due to moderate rainfall, water patches, and weak lane marking visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a consistent, high-friction travel surface.
+Contribution:
+- Surface exhibits moderate rain coverage with several water patches.
+- Some uneven areas where water collects suggest drainage inefficiency.
+- Risk of hydroplaning increases in pooled sections.
+
+Component 2: Road Markings and Signage
+Role: Offer visual cues for navigation and lane guidance.
+Contribution:
+- Lane lines are faint and partially obscured by water glare.
+- Markings lack reflectivity or rain-adaptive materials.
+- Visual clarity is significantly reduced, especially in wet areas.
+
+Component 3: Vehicle Subsystems
+Role: Maintain control and assist with perception and response.
+Contribution:
+- Lane assist and vision-based systems may fail or disengage intermittently.
+- ABS or traction control may be activated in response to loss of grip.
+- Cameras may misinterpret reflections or fail to detect lane lines.
+
+Component 4: Roadway Management Authority
+Role: Maintain road safety infrastructure and respond to weather hazards.
+Contribution:
+- No proactive mitigation (e.g., improved drainage, reflective markings).
+- Absence of real-time alerts or visual warnings for wet zones.
+- Deferred surface maintenance contributes to hazard amplification.
+
+Component 5: Drivers
+Role: Interpret environment and operate vehicle under uncertainty.
+Contribution:
+- Likely to misjudge lane positions due to blurred visuals.
+- Wet conditions increase the chance of delayed or abrupt corrections.
+- Reduced trust in infrastructure cues can elevate decision-making stress.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide hazard alerts based on environmental changes.
+Contribution:
+- No evidence of real-time warnings or rain condition notifications.
+- Drivers remain uninformed of localized wet surface risks.
+- Lack of adaptive signage or condition-responsive feedback systems.
+
+Summary:
+This scenario presents a compromised driving environment where rain-induced water accumulation and degraded lane visibility jointly impair both driver and vehicle system performance. Without sufficient infrastructure support or alerts, the risk of instability and misalignment increases substantially.

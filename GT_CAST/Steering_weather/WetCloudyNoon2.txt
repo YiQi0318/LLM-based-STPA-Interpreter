@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased likelihood of misaligned driving or lane departure due to faded markings and minor water presence on a wet road.
+
+Component 1: Road Surface and Maintenance
+Role: Structural base for vehicular travel.
+Contribution:
+- Minor surface water remains in multiple spots.
+- Possible worn or uneven areas visible.
+- Maintenance does not appear to address standing water or texture consistency.
+
+Component 2: Road Markings and Signage
+Role: Lane visibility and spatial orientation.
+Contribution:
+- Markings are present but faded and intermittently clear.
+- Reduced visibility could impair driver judgment and vehicle sensor interpretation.
+- No enhancements such as reflective coating are evident.
+
+Component 3: Vehicle Subsystems
+Role: Systems that respond to environmental input.
+Contribution:
+- Automated lane detection systems may struggle with visibility gaps.
+- Tire and brake performance could be compromised by uneven grip zones.
+- Systems dependent on line clarity are vulnerable to intermittent markings.
+
+Component 4: Roadway Management Authority
+Role: Governs road condition, maintenance, and safety protocols.
+Contribution:
+- Lane repainting seems overdue.
+- No temporary signs or visual warnings for surface hazards or wear.
+- Infrastructure oversight appears delayed or lacking in preventive updates.
+
+Component 5: Drivers
+Role: Decision-makers and manual controllers in the system.
+Contribution:
+- May struggle to follow lanes precisely due to partial marking cues.
+- Can misjudge spacing or veer when transitioning between visible and faded zones.
+- Unclear visual cues may delay reaction time or provoke unsafe corrections.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicate environmental risks to users.
+Contribution:
+- No visible system communicating localized wet surface warnings.
+- Missed opportunity to inform or adjust behavior based on surface status.
+- Static signage appears absent.
+
+Summary:
+This scenario illustrates a partial but meaningful system breakdown. While not heavily saturated, the road suffers from deteriorating visual clarity and minor environmental hazards, impacting both automated vehicle functions and human situational awareness.

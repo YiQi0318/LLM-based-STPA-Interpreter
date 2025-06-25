@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased risk of vehicle deviation or crash due to inconsistent lane markings and surface water on a wet road.
+
+Component 1: Road Surface and Maintenance
+Role: Base infrastructure supporting vehicle movement.
+Contribution:
+- Water patches indicate poor surface drainage.
+- Slight surface discoloration or wear may reduce traction.
+- Maintenance does not appear to resolve pooling or surface wear.
+
+Component 2: Road Markings and Signage
+Role: Guide vehicles and define lane structure.
+Contribution:
+- Lane markings are inconsistently spaced and partially faded.
+- Visual lane separation is unclear in some areas.
+- No supplemental visual aids such as reflectors or colored lines.
+
+Component 3: Vehicle Subsystems
+Role: Hardware/software control systems under dynamic conditions.
+Contribution:
+- Risk of hydroplaning on wet patches with low-quality tires.
+- Lane-keeping systems may malfunction due to unclear markings.
+- Driver assistance technologies depend on clear lane visibility.
+
+Component 4: Roadway Management Authority
+Role: Authority for infrastructure upkeep and public safety.
+Contribution:
+- Failure to address line repainting and drainage improvement.
+- Absence of signage for temporary hazards or wet road warnings.
+- Preventive maintenance strategies appear underutilized.
+
+Component 5: Drivers
+Role: Manual control and decision-making under uncertainty.
+Contribution:
+- May misjudge lane paths due to inconsistent visuals.
+- Potential overreaction or unsafe lane correction behavior.
+- Decisions may be based on incomplete environmental feedback.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communication of weather-related road risks.
+Contribution:
+- No visible indicators of wet surface warnings.
+- Lack of environmental alerts increases driver exposure to surprise hazards.
+- System may not localize warnings effectively for surface-level risks.
+
+Summary:
+The observed road condition reveals a system-level safety vulnerability, where poor water management, degraded visual cues, and a lack of environmental feedback contribute to heightened risk. Driver behavior, vehicle capabilities, and missing systemic safeguards all factor into a potentially hazardous scenario.

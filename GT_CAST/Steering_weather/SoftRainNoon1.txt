@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Possibility of mild control deviation or lane-tracking failure due to lightly faded lane markings and slightly damp pavement.
+
+Component 1: Road Surface and Maintenance
+Role: Provide consistent traction and surface reliability.
+Contribution:
+- The surface appears lightly damp with no visible pooling.
+- Slight discoloration or patching in the mid-lane zones.
+- Drainage appears sufficient, but surface maintenance could improve traction.
+
+Component 2: Road Markings and Signage
+Role: Guide driver and automated system behavior.
+Contribution:
+- Lane markings are visible but weak in contrast.
+- Fading is prominent, especially on the outer edges.
+- Lack of reflective material reduces effectiveness under wet or cloudy conditions.
+
+Component 3: Vehicle Subsystems
+Role: Enable lane detection, stability, and safe control.
+Contribution:
+- Automated systems may have difficulty maintaining alignment due to low marking visibility.
+- Slight surface moisture could reduce grip during rapid maneuvers.
+- Lane-keeping assistance and adaptive cruise may be intermittently degraded.
+
+Component 4: Roadway Management Authority
+Role: Maintain infrastructure readiness and visual cues.
+Contribution:
+- No evidence of recent line repainting or marking enhancements.
+- Damp conditions suggest a need for anti-slip treatments or markings adapted to wet visibility.
+- Lack of short-term visual warnings or adjustments.
+
+Component 5: Drivers
+Role: Interpret conditions and perform real-time adjustments.
+Contribution:
+- May misperceive lane width or edge under overcast lighting.
+- Low-contrast lines increase the chance of overcorrecting or unintended lane drift.
+- Reliance on faded infrastructure increases mental load.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicate real-time surface and visibility risks.
+Contribution:
+- No alerts or signage visible for damp surface or reduced line visibility.
+- System does not appear to assist in behavior adaptation.
+- Missed opportunity for dynamic communication in changing weather.
+
+Summary:
+This is a moderately safe road scenario that still poses a challenge under specific conditions. Weak visual markings and a lightly wet surface can disrupt both driver confidence and vehicle automation reliability, especially in situations requiring precise lane maintenance.

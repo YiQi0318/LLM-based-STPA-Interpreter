@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Decreased lane detection reliability and visual guidance accuracy due to faint markings and flat, diffuse lighting under cloudy noon conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Support safe vehicle handling and consistent surface condition.
+Contribution:
+- Surface is dry and smooth, with no visible defects or standing water.
+- Lacks high visual contrast, which could affect driver perception.
+- Surface integrity is acceptable, but not visually optimized for visibility.
+
+Component 2: Road Markings and Signage
+Role: Visually communicate lane structure and direction.
+Contribution:
+- Markings are noticeably faded, especially toward the left side.
+- Cloudy lighting reduces contrast between markings and pavement.
+- No visible reflectivity or tactile marking enhancements.
+
+Component 3: Vehicle Subsystems
+Role: Provide visual tracking and automation support.
+Contribution:
+- Lane-keeping and assistive systems may lose confidence in boundary detection.
+- Vision sensors may return uncertain or null lane information.
+- Automated features dependent on markings may operate intermittently.
+
+Component 4: Roadway Management Authority
+Role: Ensure infrastructure supports all-weather visibility and safety.
+Contribution:
+- Lane markings appear worn, lacking maintenance for visual resilience.
+- No apparent mitigation for cloudy or low-contrast lighting conditions.
+- No supplementary visual cues to aid perception (e.g., reflectors or cat's eyes).
+
+Component 5: Drivers
+Role: Interpret markings and maintain proper vehicle alignment.
+Contribution:
+- Flat lighting and weak markings reduce lane distinction.
+- Visual ambiguity may lead to hesitation or unintended drift.
+- Drivers must exert greater effort to compensate for missing cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Alert drivers to reduced visibility or related risks.
+Contribution:
+- No dynamic signage or alerts related to visual degradation.
+- Lack of system feedback for lighting-related driving challenges.
+- No behavior-adaptive warnings evident.
+
+Summary:
+Although road conditions are physically safe, the combination of faded markings and soft, cloudy lighting produces a low-contrast environment. This impairs both driver and vehicle subsystem perception, increasing the risk of subtle misalignment or guidance failures.

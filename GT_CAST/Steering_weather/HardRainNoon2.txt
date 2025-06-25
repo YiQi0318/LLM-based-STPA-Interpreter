@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: High risk of perception failure and vehicle control instability due to heavy rain, surface saturation, and diminished lane visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Enable safe vehicular travel by providing traction and water management.
+Contribution:
+- Entire surface is rain-slicked with evidence of water buildup.
+- Surface sheen suggests loss of friction across most of the road.
+- Drainage effectiveness appears insufficient for heavy rainfall scenarios.
+
+Component 2: Road Markings and Signage
+Role: Guide drivers and support automation through visual lane cues.
+Contribution:
+- Lane markings are faint and obscured by water and glare.
+- Lack of high-contrast or rain-resistant markings reduces detectability.
+- No signage present to alert drivers of visibility or grip reduction.
+
+Component 3: Vehicle Subsystems
+Role: Maintain control and respond to environmental conditions.
+Contribution:
+- Lane assist and camera-based guidance systems likely degraded.
+- High potential for hydroplaning and increased braking distance.
+- Sensors may fail to reliably interpret lane boundaries.
+
+Component 4: Roadway Management Authority
+Role: Infrastructure maintenance and adaptive hazard mitigation.
+Contribution:
+- No real-time alert systems or surface treatment for high rainfall conditions.
+- Paint maintenance and drainage solutions appear inadequate.
+- No supplementary visual or physical warning features in place.
+
+Component 5: Drivers
+Role: Interpret road cues and maintain control in poor visibility.
+Contribution:
+- Drivers may be unable to distinguish lanes or anticipate surface behavior.
+- Heavy rain reduces reaction time and increases error likelihood.
+- Risk of drifting or oversteering due to visual and traction degradation.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide dynamic alerts regarding environmental risks.
+Contribution:
+- No active signage or automated alerts visible during heavy rain.
+- System does not provide real-time warnings for slick road conditions.
+- No integrated weather-response infrastructure in use.
+
+Summary:
+This scenario exhibits systemic vulnerability under heavy rain. Low-contrast markings, poor drainage, and lack of adaptive communication severely compromise both human and automated driving. Without mitigations, the likelihood of vehicle deviation or control loss is significantly elevated.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of vehicle misalignment or reduced control due to patchy water presence and faint lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Base condition for vehicle traction and safety.
+Contribution:
+- Water patches visible, indicating inadequate drainage.
+- Surface appears uneven in tone, possibly affecting consistency in grip.
+- Preventive maintenance efforts appear limited or delayed.
+
+Component 2: Road Markings and Signage
+Role: Guide driver and vehicle positioning.
+Contribution:
+- Lane markings are faint and degraded in visibility.
+- Uneven visibility can lead to driver confusion during lane changes or merges.
+- No reflective enhancements to maintain visibility in wet conditions.
+
+Component 3: Vehicle Subsystems
+Role: In-vehicle safety and perception systems.
+Contribution:
+- Lane departure systems may fail due to unclear markings.
+- Hydroplaning risk if tires encounter residual water at speed.
+- Braking and stability systems under increased stress on mixed-surface conditions.
+
+Component 4: Roadway Management Authority
+Role: Maintenance, inspection, and hazard mitigation.
+Contribution:
+- Lack of lane repainting indicates reactive rather than proactive management.
+- No visible signs to inform drivers of potentially slick conditions.
+- Surface condition suggests need for drainage re-evaluation.
+
+Component 5: Drivers
+Role: Human interpretation and response.
+Contribution:
+- Drivers may struggle to identify lane centers or boundaries.
+- Risk of oversteering or understeering when encountering unclear sections.
+- Perception compromised by a combination of surface inconsistency and marking fade.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide awareness of environmental driving risks.
+Contribution:
+- No visual or electronic alerts observed for wet pavement.
+- Drivers may enter affected areas unaware of surface risk.
+- Absence of localized updates reduces system reliability.
+
+Summary:
+The image reflects a scenario with moderate but significant road surface and visual degradation. These factors compromise lane recognition and safe maneuvering, impacting both human drivers and vehicle autonomy systems.

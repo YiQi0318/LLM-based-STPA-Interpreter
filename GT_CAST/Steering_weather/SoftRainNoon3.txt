@@ -1,0 +1,85 @@
+Filename: SoftRainNoon3.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Lightly wet road surface with **minor water residue and isolated dark patches**; signs of soft or recent rainfall.
+- Time: Noon or early afternoon — bright natural lighting with diffuse shadows.
+- Road: Multi-lane highway; **lane markings are clearly visible**, though the surface shows slight glossiness and light reflection.
+- Environment Complexity: Low — no vehicles, obstructions, or moving elements present.
+- Sensor Visibility Risk: Low to Moderate — surface reflectivity and patchiness could slightly impair visual lane detection, especially at edges and center transitions.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets glossy patches or faded textures as lane lines or road boundaries. [H1, H2]
+- UCA1.2: AV fails to steer due to low visual confidence in a slightly occluded lane segment. [H2, H3]
+- UCA1.3: AV steers prematurely, influenced by false surface cues. [H1, H2]
+- UCA1.4: AV delays steeringCAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential driver uncertainty or automation instability due to light wetness and minimally visible lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Provides traction and water management for vehicle movement.
+Contribution:
+- Surface shows patchy wetness, likely from recent light rain.
+- No deep pooling, but damp areas may affect tire grip subtly.
+- Maintenance appears acceptable, though drainage assessment is unclear.
+
+Component 2: Road Markings and Signage
+Role: Deliver lane structure and alignment cues.
+Contribution:
+- Lane markings are faint and lack high contrast.
+- Wet conditions further reduce marking visibility.
+- No supplemental aids (reflective paint, raised markers) are evident.
+
+Component 3: Vehicle Subsystems
+Role: Lane detection, stability, and control systems.
+Contribution:
+- Vision-based lane keeping may misread or ignore faded markings.
+- Minor wetness could reduce overall system performance for automated functions.
+- Brake or steering adjustments may be slower under partial grip loss.
+
+Component 4: Roadway Management Authority
+Role: Ensure infrastructure is clear, visible, and safe.
+Contribution:
+- Lane paint maintenance appears overdue.
+- No indicators of recent repainting or surface treatment.
+- Preventive design for rain-readiness may not be prioritized.
+
+Component 5: Drivers
+Role: Interpret roadway and make manual control decisions.
+Contribution:
+- Unclear markings may delay or mislead lane-change judgment.
+- Surface wetness not visually emphasized, potentially underestimating risk.
+- Increased reliance on driver estimation when infrastructure cues are weak.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide contextual risk data and alerting.
+Contribution:
+- No electronic or physical signage warning of wet pavement.
+- System does not appear to communicate localized surface state.
+- Missed opportunity for behavior adaptation or speed modulation cues.
+
+Summary:
+This image shows a moderately degraded operational scenario. Although the conditions are not extreme, a combination of wet pavement and poor lane marking clarity could impair driver performance or autonomous system accuracy, particularly during transitions or lane changes.
+due to excessive caution under visually uncertain input. [H2, H3]
+- UCA1.5: AV applies prolonged steering without validated alignment feedback. [H1, H3]
+- UCA2.1: AV ends steering before actual realignment is confirmed. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV reacts too early to false lane features created by mid-glare and wet patches.
+- t1: UCA1.5 → Steering input is extended beyond optimal range due to unclear edge contrast.
+- t2: UCA2.1 → Correction ends before the AV achieves proper center position.
+
+Causality:
+- t0: Wet textures and surface gloss mislead vision system, triggering incorrect steering.
+- t1: Prolonged correction from weak boundary feedback causes lateral offset.
+- t2: AV prematurely concludes maneuver before lane confirmation is complete.
+
+Final Loss: The AV becomes off-center or unstable in its lane, potentially drifting under low-friction conditions or unclear lane registration.
+
+Safe Scenario Log (Mitigated):
+- t0: AV verifies lane boundaries using multiple modalities before responding.
+- t1: Steering input is applied gradually and monitored with real-time feedback.
+- t2: Maneuver concludes only when lane alignment is confirmed and trajectory is stable.
+
+Final Safe Outcome: The AV handles soft rain and bright midday conditions with controlled and validated steering, maintaining accurate and reliable lane alignment.

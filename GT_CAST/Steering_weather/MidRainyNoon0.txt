@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased potential for lane misalignment or reduced control accuracy due to moderate rain, wet pavement, and low-contrast markings.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure safe vehicle operation during varied weather.
+Contribution:
+- Surface is wet, with some visible streaks from moderate rain.
+- Slightly uneven texture and water dispersion suggest suboptimal drainage.
+- Risk of traction loss if conditions worsen.
+
+Component 2: Road Markings and Signage
+Role: Provide essential lane and navigation guidance.
+Contribution:
+- Lane lines are faded and partially obscured by wet sheen.
+- Rain and glare further reduce marking visibility.
+- No reflective or rain-resistant line treatments detected.
+
+Component 3: Vehicle Subsystems
+Role: Maintain control and situational awareness.
+Contribution:
+- Lane-keeping and visual guidance systems may lose reliability.
+- Braking and stability controls may respond inconsistently under wet friction conditions.
+- Sensor interpretation is challenged by low visual contrast and wet surfaces.
+
+Component 4: Roadway Management Authority
+Role: Oversee infrastructure maintenance and driver support systems.
+Contribution:
+- No visual or electronic alerts about wet road conditions.
+- Faded markings suggest deferred repainting or inspection schedules.
+- No temporary safety measures deployed during rain.
+
+Component 5: Drivers
+Role: Monitor and adapt to driving conditions.
+Contribution:
+- Difficulty detecting lane boundaries accurately in current visibility.
+- Potential for delayed or incorrect steering input.
+- Increased stress and reliance on degraded environmental cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide timely risk communication.
+Contribution:
+- No real-time signage or rain-condition alerts observed.
+- System does not appear to inform drivers about current road slipperiness.
+- Lacks integration between rain events and driver behavior support.
+
+Summary:
+This situation represents a moderate weather hazard scenario, where fading lane markings and rain-induced visibility degradation pose a safety concern. Both human and machine guidance systems face interpretation challenges, raising the risk of lane deviation or delayed response without adequate mitigation.

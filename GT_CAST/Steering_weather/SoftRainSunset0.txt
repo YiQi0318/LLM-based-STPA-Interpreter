@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Loss of vehicle stability or navigation accuracy due to heavy road wetness and low-visibility lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Maintain a safe and drainable road platform.
+Contribution:
+- Large water patches dominate the scene, indicating poor drainage.
+- Road texture appears smooth, limiting friction and water dispersion.
+- Surface not treated or maintained for wet condition resilience.
+
+Component 2: Road Markings and Signage
+Role: Support spatial guidance and lane discipline.
+Contribution:
+- Lane markings are mostly submerged and heavily faded.
+- Difficult to distinguish lanes under reflection and water coverage.
+- No supplemental visual aids such as reflective paint or markers.
+
+Component 3: Vehicle Subsystems
+Role: Assist with lane keeping, braking, and environment interpretation.
+Contribution:
+- Lane detection systems may become inoperative.
+- Braking and steering responses compromised due to hydroplaning risk.
+- Vision systems may deliver false or no data under current conditions.
+
+Component 4: Roadway Management Authority
+Role: Oversee road safety, maintenance, and emergency communication.
+Contribution:
+- Lack of intervention to address severe water accumulation.
+- No signage or surface enhancements observed to warn or guide.
+- Reactive maintenance approach evident from surface degradation.
+
+Component 5: Drivers
+Role: Navigate based on environmental cues and infrastructure.
+Contribution:
+- May be unable to maintain lane due to visual ambiguity.
+- High likelihood of delayed reactions or compensatory maneuvers.
+- Operating under misleading cues increases mental load and hazard.
+
+Component 6: Weather Forecasting / Notification System
+Role: Deliver weather-based hazard alerts and risk information.
+Contribution:
+- No signs of integrated alerting mechanisms or dynamic signage.
+- Real-time feedback about slipperiness or lane conditions is missing.
+- Drivers remain unaware of specific localized risks.
+
+Summary:
+This case presents a critical loss scenario in which heavy surface wetness, degraded markings, and absent communication measures converge. Both human and automated driving systems face significant interpretive and operational challenges, with minimal support from infrastructure.

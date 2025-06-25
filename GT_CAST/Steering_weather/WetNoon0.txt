@@ -1,0 +1,46 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Road safety compromise due to lane ambiguity and wet surface patches, potentially causing driver error or vehicle instability.
+
+Component 1: Road Surface and Maintenance
+Role: Fundamental driving surface condition.
+Contribution:
+- Noticeable water patches indicate drainage inefficiency.
+- Potential surface texture variation may affect grip.
+- Maintenance does not appear to resolve pooling or surface wear.
+
+Component 2: Road Markings and Signage
+Role: Visual orientation and path definition for drivers.
+Contribution:
+- Lane markings are inconsistently spaced and partially faded.
+- Visual lane separation is unclear in some areas.
+- No reflective or enhanced markings for wet or low-light conditions.
+
+Component 3: Vehicle Subsystems
+Role: Onboard systems interacting with road conditions.
+Contribution:
+- Vehicle control may degrade when hydroplaning over wet patches.
+- Lane assist features may fail due to poorly visible markings.
+- Tires with insufficient tread increase risk under wet conditions.
+
+Component 4: Roadway Management Authority
+Role: Road design, inspection, and upkeep responsibilities.
+Contribution:
+- Neglected repainting and drainage enhancements.
+- Absence of signage for temporary hazards or wet road warnings.
+- Preventive maintenance strategies appear underutilized.
+
+Component 5: Drivers
+Role: Manual control and decision-making under uncertainty.
+Contribution:
+- May misinterpret lane boundaries or react late.
+- Limited visibility and ambiguous road cues may prompt unsafe maneuvers.
+- Driver trust in road infrastructure may lead to overconfidence in unsafe zones.
+
+Component 6: Weather Forecasting / Notification System
+Role: Convey real-time road hazard information.
+Contribution:
+- No apparent alerts or visual signals warning of slick surface or water presence.
+- System may fail to communicate localized hazards effectively.
+
+Summary:
+This case involves combined failures across road design, maintenance, visual guidance, and environmental communication. Unclear lane boundaries and standing water increase the likelihood of driver error and vehicle instability under wet conditions.

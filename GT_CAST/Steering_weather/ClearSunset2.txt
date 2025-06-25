@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of visual misinterpretation or momentary lane-tracking error due to shadow contrast and limited marking clarity under sunset lighting.
+
+Component 1: Road Surface and Maintenance
+Role: Provide structural support and driving consistency.
+Contribution:
+- Surface is dry and appears smooth and even.
+- Sharp light-shadow boundary present due to setting sun.
+- No drainage issues or physical defects detected.
+
+Component 2: Road Markings and Signage
+Role: Define lane structure and provide visual guidance.
+Contribution:
+- Markings are visible but begin to lose clarity within shadowed areas.
+- No reflectivity or color contrast enhancements visible.
+- Inconsistent visibility across light and shadow transitions.
+
+Component 3: Vehicle Subsystems
+Role: Detect lanes and maintain lateral positioning.
+Contribution:
+- Vision systems may be confused by the light/shadow boundary.
+- Lane-keeping may operate less reliably during high-contrast transitions.
+- Sudden lighting changes may momentarily interrupt sensor perception.
+
+Component 4: Roadway Management Authority
+Role: Maintain surface and marking visibility in varying conditions.
+Contribution:
+- Markings lack adaptation for sun-glare or shadow resistance.
+- No evidence of retroreflective paint or dual-contrast lane markings.
+- Road design does not appear to consider dynamic lighting changes.
+
+Component 5: Drivers
+Role: Visually interpret and respond to road cues.
+Contribution:
+- Light/shadow contrast can disrupt lane edge recognition.
+- Potential for hesitation or slight drift during rapid brightness transition.
+- Reliance on brief visual correction over consistent cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Alert road users to dynamic visibility hazards.
+Contribution:
+- No active signage or warnings regarding sunset glare or shadow bands.
+- No feedback system to adapt user behavior based on lighting.
+- Visual hazard awareness support is absent.
+
+Summary:
+This clear sunset scene presents a moderate visual hazard, primarily due to the sharp shadow boundary across the roadway. While physical conditions are optimal, visual discontinuity may challenge both automated and manual navigation systems, particularly when markings fade under shadow.

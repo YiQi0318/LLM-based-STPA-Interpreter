@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Temporary visual confusion or tracking loss due to high-contrast lighting and inconsistent lane marking visibility at sunset.
+
+Component 1: Road Surface and Maintenance
+Role: Provide physical continuity and traction.
+Contribution:
+- Dry and intact surface, no damage or pooling observed.
+- High glare and strong shadow gradient due to sunset.
+- Visual continuity of surface disrupted by lighting transitions.
+
+Component 2: Road Markings and Signage
+Role: Visually define lane boundaries for drivers and automated systems.
+Contribution:
+- Lane markings visible in direct sunlight but obscure within shadows.
+- Faded appearance under low-angle lighting reduces overall reliability.
+- No high-visibility paint or reflectivity to offset sunset contrast.
+
+Component 3: Vehicle Subsystems
+Role: Maintain orientation and enable perception-based lane control.
+Contribution:
+- Shadow zones may reduce accuracy of camera-based lane detection.
+- Sudden changes in lighting may momentarily confuse sensors.
+- Automation performance may degrade or require fallback to manual control.
+
+Component 4: Roadway Management Authority
+Role: Ensure visual clarity and environmental adaptability of infrastructure.
+Contribution:
+- Lack of adaptive markings for variable light environments.
+- No enhancements to support visibility under strong shadows or sun glare.
+- Visual maintenance appears insufficient to handle dynamic lighting.
+
+Component 5: Drivers
+Role: Interpret visual cues and execute control decisions.
+Contribution:
+- Sudden shadowed regions disrupt marking continuity and perception.
+- Glare or shadow-induced confusion may lead to minor lateral errors.
+- Drivers must compensate visually for missing or faint cues.
+
+Component 6: Weather Forecasting / Notification System
+Role: Alert drivers to environment-based navigation hazards.
+Contribution:
+- No electronic or visual alerts for sun glare or light transitions.
+- Lack of dynamic messaging during periods of high visual strain.
+- System does not adapt to time-of-day hazards like sunset conditions.
+
+Summary:
+Although the surface is dry and traffic-ready, the sunset light gradient causes perceptual risk by obscuring lane markings in shadowed areas. Both human drivers and automated systems may struggle briefly with lane tracking, especially in the absence of enhanced visual infrastructure or dynamic warnings.

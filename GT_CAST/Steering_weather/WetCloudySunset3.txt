@@ -1,0 +1,46 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Loss of directional control or hazard misjudgment due to extensive water presence and obscured lanes.
+
+Component 1: Road Surface and Maintenance
+Role: Platform integrity and fluid management.
+Contribution:
+- Water stretches nearly the full lane width in areas.
+- Likely accumulation from poor surface leveling.
+- Repair scheduling may not prioritize safety-critical updates.
+
+Component 2: Road Markings and Signage
+Role: Directional and positional information.
+Contribution:
+- Faded markings lead to uncertainty under wet reflection.
+- No visibility optimization for poor lighting or wet roads.
+- Absence of clear reflective cues impairs interpretation.
+
+Component 3: Vehicle Subsystems
+Role: Environmentally reactive modules.
+Contribution:
+- Sensors may misjudge water as clear surface.
+- Lane departure warnings disabled or inaccurate.
+- Loss of friction leads to lower braking performance.
+
+Component 4: Roadway Management Authority
+Role: Upkeep, inspection, and mitigation.
+Contribution:
+- No signs of rapid response or temporary visual guidance.
+- Failure to evaluate post-storm safety performance.
+- No manual or automatic mitigation tools visible.
+
+Component 5: Drivers
+Role: Responsible actor using system feedback.
+Contribution:
+- Misinterpretation of road boundaries and surface condition.
+- Steering adjustments based on poor visual data.
+- High stress or split-second decisions increase error rate.
+
+Component 6: Weather Forecasting / Notification System
+Role: Augment situational awareness.
+Contribution:
+- No real-time feedback or hazard alert systems detected.
+- No integration of weather and surface state warning logic.
+
+Summary:
+A combination of severe surface wetness and lack of marking clarity creates a hazardous and high-uncertainty environment. The breakdown affects both technical vehicle systems and manual operation alike.

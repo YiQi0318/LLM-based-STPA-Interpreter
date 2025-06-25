@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of delayed reaction or lane deviation due to poor marking visibility and flat ambient lighting under cloudy midday conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Provide safe and uniform driving platform.
+Contribution:
+- Surface appears dry and intact with no visible damage or debris.
+- Texture is consistent but low in contrast.
+- No drainage issues, though surface lacks visual variation.
+
+Component 2: Road Markings and Signage
+Role: Define lanes and guide driver/system navigation.
+Contribution:
+- Lane markings are faded and difficult to discern under diffuse light.
+- No reflective or contrast-enhancing materials visible.
+- Markings not optimized for low-angle sunlight or overcast conditions.
+
+Component 3: Vehicle Subsystems
+Role: Enable lane tracking, stability, and driver assistance.
+Contribution:
+- Visual lane-following systems may lose confidence or disengage.
+- Lane centering and departure warnings may be unreliable.
+- Overall reduction in environmental perception accuracy.
+
+Component 4: Roadway Management Authority
+Role: Ensure visual clarity and structural readiness.
+Contribution:
+- No signs of recent repainting or visual upgrade of markings.
+- No adaptive infrastructure present to enhance visual guidance under changing light.
+- System does not appear responsive to visibility needs.
+
+Component 5: Drivers
+Role: Interpret visual cues and operate vehicle safely.
+Contribution:
+- May misjudge lane position due to faded markings and flat lighting.
+- Increased reliance on memory or estimation of lane edges.
+- Cognitive strain may elevate error potential in lane transitions.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicate condition-based driving risks.
+Contribution:
+- No alerts or dynamic signage addressing limited visibility.
+- No context-aware driver notification observed.
+- System does not compensate for ambiguous visual environments.
+
+Summary:
+Although physical conditions are dry and unobstructed, visual cues are weak due to low-contrast markings and ambient cloudy light. These factors challenge both human perception and automated systems, creating moderate navigation uncertainty in an otherwise structurally safe environment.

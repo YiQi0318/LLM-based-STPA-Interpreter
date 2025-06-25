@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased likelihood of driver uncertainty or system misalignment due to isolated water patches and degraded lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Surface condition for safe vehicle operation.
+Contribution:
+- Presence of a large, visible water patch suggests insufficient drainage.
+- Surface shows mild discoloration or wear in specific areas.
+- Maintenance does not appear to address localized pooling or texture issues.
+
+Component 2: Road Markings and Signage
+Role: Visual orientation and lane boundary definition.
+Contribution:
+- Markings are faded and inconsistent in contrast.
+- Water presence may temporarily obscure parts of the lane lines.
+- No reflective or reinforced markings present to counter low-visibility conditions.
+
+Component 3: Vehicle Subsystems
+Role: Onboard safety and navigation support.
+Contribution:
+- Lane-keeping systems may falter in identifying correct lanes.
+- Wet surface could reduce effectiveness of braking and stability systems.
+- Vision-based automation systems face reliability issues in degraded marking environments.
+
+Component 4: Roadway Management Authority
+Role: Infrastructure management and hazard prevention.
+Contribution:
+- Lane repainting and drainage systems appear under-maintained.
+- No visible alerts, cones, or markings to indicate road condition risks.
+- Lacks proactive hazard mitigation or temporary interventions.
+
+Component 5: Drivers
+Role: Decision-makers under sensory and visual feedback.
+Contribution:
+- Driver may hesitate or miscalculate lane alignment.
+- Reaction time could be delayed by inconsistent lane visuals.
+- Reliance on degraded road cues elevates risk of overcorrection.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicates risk conditions to drivers and systems.
+Contribution:
+- No active signage or alert system visible for wet road warnings.
+- Drivers may be unaware of slippery zones until directly encountered.
+- Static systems fail to communicate dynamic road state.
+
+Summary:
+This scenario reveals an environment where visual degradation and surface hazards exist at a manageable but significant level. When unaddressed, these conditions challenge both human drivers and automated systems, making error more likely in high-speed or high-traffic situations.

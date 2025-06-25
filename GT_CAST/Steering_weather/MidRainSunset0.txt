@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased potential for control instability or lane recognition failure due to surface wetness, pooled water, and faint lane markings during moderate rain.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure safety through adequate friction and drainage.
+Contribution:
+- Widespread water patches visible across multiple lanes.
+- Surface shows irregularities where water accumulates.
+- Lack of proper drainage exacerbates hydroplaning risks.
+
+Component 2: Road Markings and Signage
+Role: Provide lane guidance and spatial awareness.
+Contribution:
+- Lane markings are faint and largely obscured by water glare.
+- Visibility significantly reduced in central and right lanes.
+- No reflective or raised markings adapted for wet visibility conditions.
+
+Component 3: Vehicle Subsystems
+Role: Enable automated and assisted control functions.
+Contribution:
+- Lane-keeping assistance likely degraded due to obscured markings.
+- Braking and steering systems face reduced efficiency in wet zones.
+- Perception sensors may misread lane structure or return null input.
+
+Component 4: Roadway Management Authority
+Role: Manage road quality and driver communication.
+Contribution:
+- Markings appear worn and neglected, especially under wet exposure.
+- No real-time signage or physical indicators for hazardous conditions.
+- Absence of adaptive infrastructure or weather-prepared maintenance strategy.
+
+Component 5: Drivers
+Role: Interpret the road and operate the vehicle under uncertainty.
+Contribution:
+- Drivers may misjudge vehicle position relative to lanes.
+- Standing water can induce oversteering or panic braking.
+- Visual stress and reduced confidence increase reaction time errors.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide environment-driven hazard alerts.
+Contribution:
+- No visible notification of wet or slippery conditions.
+- System lacks adaptive or real-time warning capability.
+- Missed opportunity to guide driver behavior during active rainfall.
+
+Summary:
+This scene represents a moderate to high-risk road condition with multiple compounding factors: pooled water, degraded lane markings, and the absence of real-time alerts. These conditions limit both human and machine control fidelity, increasing the chance of lane departure or loss of stability.

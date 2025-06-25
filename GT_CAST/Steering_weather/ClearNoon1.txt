@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Low probability of lane deviation or visual misjudgment due to sun glare and moderately faded lane markings under direct noon sunlight.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a reliable base for safe travel and control.
+Contribution:
+- Road is clean, dry, and structurally intact.
+- High ambient brightness introduces glare and reduces shadow definition.
+- Surface condition is physically safe but visually reflective.
+
+Component 2: Road Markings and Signage
+Role: Guide drivers and automated systems with lane layout cues.
+Contribution:
+- Markings are present but moderately faded and low in contrast.
+- High sun angle washes out the markings against the pale pavement.
+- No retroreflective material or high-contrast color reinforcement evident.
+
+Component 3: Vehicle Subsystems
+Role: Provide environment detection and automated lane support.
+Contribution:
+- Visual lane detection may degrade in bright zones due to low contrast.
+- Slight tracking imprecision possible under glare exposure.
+- Systems may experience lower confidence in boundary assessment.
+
+Component 4: Roadway Management Authority
+Role: Maintain visibility and infrastructure responsiveness.
+Contribution:
+- Markings appear aged and ineffective under bright daylight.
+- No infrastructure adaptation visible for high-glare lighting (e.g., paint refresh or enhancements).
+- Standard maintenance appears sufficient for dry weather but not visual clarity.
+
+Component 5: Drivers
+Role: Observe and respond to road cues for navigation and safety.
+Contribution:
+- Drivers may experience temporary visual difficulty interpreting faded lines.
+- Reduced line distinction could delay lane change or merge decisions.
+- Bright light may cause eye strain or hesitation.
+
+Component 6: Weather Forecasting / Notification System
+Role: Support awareness and adaptation to environmental hazards.
+Contribution:
+- No warning signage or visual feedback systems are active.
+- Forecast systems appear detached from direct sun hazard communication.
+- No support for glare-induced visibility loss provided.
+
+Summary:
+In this bright noon scenario, the physical environment is optimal, but visual cue quality is reduced by faded markings and glare. This situation presents minimal operational risk, but modest degradation in perception performance for both drivers and autonomous systems may occur.

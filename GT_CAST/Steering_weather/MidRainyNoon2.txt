@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of reduced control or unintended lane deviation due to mid-level rain, wet surface, and partially faded lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Ensure traction and water dispersion.
+Contribution:
+- Wet surface with visible rain streaks and minor puddling.
+- Slight irregularities in the surface may contribute to grip variation.
+- Maintenance appears functional but not fully optimized for rainy conditions.
+
+Component 2: Road Markings and Signage
+Role: Provide visual lane boundaries and navigation guidance.
+Contribution:
+- Markings are faded and less visible under wet and rainy conditions.
+- Water and glare reduce line contrast significantly.
+- No rain-optimized or reflective materials observed in the markings.
+
+Component 3: Vehicle Subsystems
+Role: Support automated lane control and driver assistance.
+Contribution:
+- Lane-keeping systems may lose track due to poor visual contrast.
+- Hydroplaning risk is moderate with surface wetness and tire interaction.
+- Braking, traction, and steering may respond with reduced efficiency.
+
+Component 4: Roadway Management Authority
+Role: Manage surface condition, signage, and road safety interventions.
+Contribution:
+- No dynamic alerts or visual indicators of slippery conditions present.
+- Preventive drainage design seems limited.
+- Markings appear overdue for repainting or enhancement.
+
+Component 5: Drivers
+Role: Visually interpret road cues and control the vehicle.
+Contribution:
+- May misinterpret lane location or adjust late due to faded lines.
+- Increased stress due to rain and low visibility conditions.
+- Greater potential for overcorrection or inconsistent steering.
+
+Component 6: Weather Forecasting / Notification System
+Role: Deliver environmental hazard awareness.
+Contribution:
+- No visible system alerting drivers to increased road slickness.
+- Absence of condition-adaptive signs or warnings limits proactive behavior.
+- Real-time weather-road integration appears lacking.
+
+Summary:
+This image depicts a moderate-risk rainy driving environment where wet pavement and degraded lane markings introduce perceptual and control challenges. The cumulative effect undermines both automated and human performance, increasing the chance of control loss or alignment error.

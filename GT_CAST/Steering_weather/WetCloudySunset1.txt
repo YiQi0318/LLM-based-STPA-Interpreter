@@ -1,0 +1,46 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Elevated accident potential due to water coverage obscuring lane boundaries and visual degradation.
+
+Component 1: Road Surface and Maintenance
+Role: Road reliability and hazard resistance.
+Contribution:
+- Water coverage continues across multiple lanes.
+- Surface wear increases risk under braking or acceleration.
+- Maintenance lacking in water management strategy.
+
+Component 2: Road Markings and Signage
+Role: Driver guidance infrastructure.
+Contribution:
+- Lane visibility hindered by water film and fading.
+- Markings are unreliable for human or autonomous perception.
+- Reflective coating absent or ineffective in wet state.
+
+Component 3: Vehicle Subsystems
+Role: Vehicle-road interface systems.
+Contribution:
+- Vision-dependent systems will misinterpret lanes.
+- Traction control stress increases over wet patches.
+- Braking behavior affected by uneven water layer.
+
+Component 4: Roadway Management Authority
+Role: Maintenance and hazard prevention.
+Contribution:
+- No evidence of pre-rain preparations or real-time alerts.
+- Long-term degradation suggests poor performance tracking.
+- Emergency measures (cones, signs) missing.
+
+Component 5: Drivers
+Role: Operational decision-making.
+Contribution:
+- Underestimate loss of grip and lane confusion.
+- Delayed or incorrect steering due to visual misinterpretation.
+- Lack of feedback increases anxiety or overcompensation.
+
+Component 6: Weather Forecasting / Notification System
+Role: Risk signaling infrastructure.
+Contribution:
+- No data delivered to drivers through signs or warnings.
+- Absence of predictive response for pooling regions.
+
+Summary:
+The system is operating under degraded visual and physical safety conditions. Both technical (vehicle) and human agents are impacted by the road authority’s failure to prevent or respond to water-induced risks.

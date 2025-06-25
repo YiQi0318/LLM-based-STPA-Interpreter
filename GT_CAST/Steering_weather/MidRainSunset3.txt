@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Risk of vehicle hydroplaning or improper lane tracking due to moderate rain, pooled water, and reduced lane marking visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a safe driving surface with effective water management.
+Contribution:
+- Multiple areas show pooling and surface saturation.
+- Indicates suboptimal drainage or uneven grading.
+- Surface condition may lead to loss of traction and hydroplaning in certain zones.
+
+Component 2: Road Markings and Signage
+Role: Maintain visual lane guidance and navigation support.
+Contribution:
+- Markings are faded and partially submerged in rainwater.
+- Glare and water film obscure visibility further.
+- No reflective paint or adaptive markings evident for rainy conditions.
+
+Component 3: Vehicle Subsystems
+Role: Support control through perception and response mechanisms.
+Contribution:
+- Lane-keeping and vision-based systems may disengage or fail to recognize lane edges.
+- Braking and traction systems may activate under instability from water patches.
+- Safety features reliant on markings are compromised by low contrast and water interference.
+
+Component 4: Roadway Management Authority
+Role: Maintain and adapt infrastructure for safety.
+Contribution:
+- No temporary warning signs or visual indicators for road hazards due to rain.
+- Poor marking maintenance and lack of drainage upgrades increase risk.
+- Wet-condition operational preparedness appears minimal.
+
+Component 5: Drivers
+Role: Interpret infrastructure and operate vehicle manually.
+Contribution:
+- May struggle to recognize exact lane position due to obscured lines.
+- Sudden wet patches may cause abrupt responses or skidding.
+- Increased cognitive load due to mixed visibility and surface feedback.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicate risk and environmental changes.
+Contribution:
+- No visible alerts or dynamic signs for wet or hazardous conditions.
+- System does not provide real-time information about road slipperiness.
+- Lack of integration reduces driver's ability to anticipate environmental hazards.
+
+Summary:
+This image reflects a high-risk scenario under active or recent rainfall, where pooled water and degraded lane markings compromise both human and automated driving functions. The absence of alerting systems and poor surface condition significantly elevate the chance of control loss or lane departure.

@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased likelihood of hydroplaning or misjudged lane position due to pooled water and reduced lane marking visibility during moderate rain.
+
+Component 1: Road Surface and Maintenance
+Role: Provide stable and drainable driving conditions.
+Contribution:
+- Surface exhibits multiple visible water pools.
+- Texture and slope suggest inadequate drainage in several areas.
+- Wet surface reduces friction and increases risk of skidding or loss of control.
+
+Component 2: Road Markings and Signage
+Role: Visually delineate lanes and aid navigation.
+Contribution:
+- Lane markings are faded and partially hidden by water accumulation.
+- Reflections and glare reduce visual contrast.
+- Markings are not optimized for wet visibility (e.g., no reflectivity or raised markings).
+
+Component 3: Vehicle Subsystems
+Role: Assist with environmental perception and operational stability.
+Contribution:
+- Lane keeping and vision-based systems may fail or become unreliable.
+- Braking and steering responses may be delayed in slick zones.
+- Hydroplaning or traction loss more likely under these wet conditions.
+
+Component 4: Roadway Management Authority
+Role: Maintain road safety, signage, and structural readiness.
+Contribution:
+- No active signage or visual indicators warning about wet conditions.
+- Markings have not been adequately maintained or updated for weather resilience.
+- Drainage improvements and temporary hazard controls appear absent.
+
+Component 5: Drivers
+Role: Interpret environmental cues and operate vehicle.
+Contribution:
+- May misjudge lane center or adjacent vehicle distance.
+- Stress or delayed decisions may arise from unclear markings and water.
+- Behavior influenced by visual uncertainty and low road feedback.
+
+Component 6: Weather Forecasting / Notification System
+Role: Deliver warnings and environmental risk updates.
+Contribution:
+- No alerts or signage to inform drivers of slippery or flooded zones.
+- Lack of real-time hazard messaging leaves drivers unprepared.
+- System appears disconnected from on-road weather impact monitoring.
+
+Summary:
+This image reflects a moderate to high-risk roadway scenario due to visible water pooling and degraded visual guidance. The absence of dynamic warnings and substandard infrastructure resilience undermine safety for both manual and autonomous vehicle systems.

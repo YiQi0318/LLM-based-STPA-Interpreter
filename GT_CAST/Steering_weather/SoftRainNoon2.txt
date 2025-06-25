@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Increased likelihood of vehicle drift or misjudgment due to lightly wet pavement and partially visible lane markings.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a stable, high-friction environment for vehicles.
+Contribution:
+- Several patches of light wetness are visible.
+- No standing water, but road appears unevenly dried.
+- Surface quality is decent, though micro-drainage effectiveness is unclear.
+
+Component 2: Road Markings and Signage
+Role: Aid driver and system in maintaining lane discipline.
+Contribution:
+- Lane markings are present but somewhat faded and low-contrast.
+- Wet surface slightly reduces the visibility of markings.
+- No reflective or textured lane enhancements visible.
+
+Component 3: Vehicle Subsystems
+Role: Assist navigation, control, and road perception.
+Contribution:
+- Automated lane detection systems may underperform with faded lines.
+- Slightly wet conditions may lower responsiveness of traction control.
+- Confidence in automated path tracking is reduced.
+
+Component 4: Roadway Management Authority
+Role: Ensure proper upkeep of visual and physical road systems.
+Contribution:
+- Markings appear aged and due for maintenance.
+- No real-time condition adaptation systems observed (e.g., smart signage).
+- Preventive repainting or reflective upgrades not implemented.
+
+Component 5: Drivers
+Role: Visual processing and manual vehicle control.
+Contribution:
+- May misread faint lane lines during wet or overcast conditions.
+- Risk of mild steering inaccuracies or delayed lane recognition.
+- Judgment based on incomplete infrastructure feedback.
+
+Component 6: Weather Forecasting / Notification System
+Role: Communicate road condition hazards to users.
+Contribution:
+- No visible alerts or signage warning of damp surface.
+- Drivers are not notified about the potential for traction loss.
+- No system feedback based on light rain or microclimate status.
+
+Summary:
+This image reflects a mildly degraded condition where wet patches and weak visual guidance slightly compromise vehicle safety. While not severe, the cumulative effect of these minor issues can challenge both human and automated systems—particularly in transitional maneuvers or low-light settings.

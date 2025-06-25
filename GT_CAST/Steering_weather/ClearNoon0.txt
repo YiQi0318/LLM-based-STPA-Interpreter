@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Minimal chance of lane interpretation error, with possible mild visual degradation from glare and faded lane markings under bright clear noon conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Support safe vehicle operation through structural stability and friction.
+Contribution:
+- Surface is clean, dry, and smooth.
+- No visible debris or irregularities.
+- High sunlight reflectance could reduce visual distinction of fine surface details.
+
+Component 2: Road Markings and Signage
+Role: Provide spatial orientation and lane delineation.
+Contribution:
+- Markings are present but somewhat faded.
+- Low visual contrast under bright midday light may hinder clarity.
+- No enhancements (e.g., retroreflective materials) for optimal visibility in strong sunlight.
+
+Component 3: Vehicle Subsystems
+Role: Support automated perception, lane tracking, and driver assistance.
+Contribution:
+- Vision-based lane detection systems may operate at reduced confidence.
+- Marking fade and glare could cause minor path prediction uncertainty.
+- Automation reliability is slightly affected but generally functional.
+
+Component 4: Roadway Management Authority
+Role: Ensure infrastructure visibility, safety, and condition maintenance.
+Contribution:
+- No evidence of recent repainting or visual optimization.
+- Lack of contrast-adaptive markings reduces clarity in high-illumination settings.
+- Visual maintenance suitable for dry conditions but not peak sunlight effectiveness.
+
+Component 5: Drivers
+Role: Use visual input to guide safe driving behavior.
+Contribution:
+- Bright sunlight and faded markings may slow visual recognition of lane structure.
+- Minimal distraction or hesitation possible when interpreting lane shifts or merges.
+- Overall visual comfort may be reduced in extended exposure.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide guidance for environmental visibility and driving conditions.
+Contribution:
+- No active alerts or visual systems indicating visibility reduction from glare.
+- No forecast-linked signage or adaptive feedback detected.
+- Missed opportunity for awareness of high-sun visual strain risks.
+
+Summary:
+This is a low-risk daylight driving scenario in ideal physical conditions. However, faded markings and glare reduce visual sharpness for both human and machine systems, introducing a slight potential for degraded perception during lane alignment or transitions.

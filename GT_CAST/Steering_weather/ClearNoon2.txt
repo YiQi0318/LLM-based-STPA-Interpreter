@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Minimal risk of lane interpretation error due to weak contrast from sun glare and moderate fading of road markings under bright noon conditions.
+
+Component 1: Road Surface and Maintenance
+Role: Provide physical consistency and traction.
+Contribution:
+- Surface appears clean, dry, and structurally intact.
+- Bright sunlight highlights slight surface texture variations.
+- No defects or pooling observed, though glare is noticeable.
+
+Component 2: Road Markings and Signage
+Role: Define lane paths and spatial awareness.
+Contribution:
+- Lane markings are present but moderately faded.
+- High ambient light reduces their contrast against the asphalt.
+- No use of reflectivity or adaptive visual enhancement for high glare.
+
+Component 3: Vehicle Subsystems
+Role: Detect lanes and support automated control.
+Contribution:
+- Vision-based systems may experience minor contrast-related detection dropouts.
+- Lane assist features likely functional but operating with low confidence margins.
+- Sudden exposure to bright light zones may reduce visual continuity.
+
+Component 4: Roadway Management Authority
+Role: Ensure visual safety and infrastructure readiness.
+Contribution:
+- Markings show signs of wear and reduced reflectivity.
+- No compensatory treatments (e.g., reflective paint or embossed lines).
+- Design does not appear tailored for optimal performance in bright daylight.
+
+Component 5: Drivers
+Role: Interpret visual feedback and manage vehicle control.
+Contribution:
+- Faded lines may blend into the pavement under glare.
+- Potential for delayed or ambiguous lane decisions.
+- Driver effort slightly increased to interpret lane layout clearly.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide hazard alerts related to environmental conditions.
+Contribution:
+- No signage or visual warnings addressing glare or visual noise.
+- System lacks environmental context integration for visibility challenges.
+- No mitigation messaging for high-brightness driving periods.
+
+Summary:
+This bright noon driving scenario presents a mostly safe surface with moderate visual drawbacks. Faded markings and intense lighting may slightly reduce both human and system-based lane interpretation, increasing the chance of transient alignment imprecision without posing high risk.

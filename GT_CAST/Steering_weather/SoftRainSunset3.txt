@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Potential for vehicle control error or near-miss due to widespread water accumulation and obscured lane boundaries.
+
+Component 1: Road Surface and Maintenance
+Role: Ensures surface safety and drainage.
+Contribution:
+- Significant water pooling is present across multiple lanes.
+- Poor drainage or surface grading likely contributes to retention.
+- Surface texture may be insufficient for wet grip or skid resistance.
+
+Component 2: Road Markings and Signage
+Role: Lane guidance and spatial orientation.
+Contribution:
+- Markings are submerged or washed out in many areas.
+- Line clarity is inconsistent, especially in central lanes.
+- No visual aids like reflectors or anti-glare paint are visible.
+
+Component 3: Vehicle Subsystems
+Role: Supports driver and safety automation.
+Contribution:
+- Lane assist and vision-based guidance systems may be disabled.
+- Wet surface reduces braking efficiency and stability.
+- Sensor interpretation is degraded due to visual ambiguity.
+
+Component 4: Roadway Management Authority
+Role: Maintain infrastructure and support safe driving.
+Contribution:
+- No visible mitigation for known hydroplaning-prone areas.
+- Reactive rather than proactive marking and drainage policy evident.
+- No temporary alert mechanisms (e.g., signage, cones) in use.
+
+Component 5: Drivers
+Role: Interpret road conditions and react accordingly.
+Contribution:
+- May misjudge lane paths or overreact to unclear visuals.
+- Higher likelihood of lateral drift, especially during lane changes.
+- Reliance on degraded infrastructure increases cognitive load.
+
+Component 6: Weather Forecasting / Notification System
+Role: Hazard communication to road users.
+Contribution:
+- No active signage or alerts warning of road surface wetness.
+- Lacking integration with current road condition telemetry.
+- Missed opportunity for preventive behavioral adaptation.
+
+Summary:
+The scene illustrates a highly degraded driving environment under wet conditions. Faded or submerged markings and poor water management present challenges to both manual and autonomous operation, increasing the risk of deviation or incident.

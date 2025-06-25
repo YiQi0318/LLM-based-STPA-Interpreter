@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Loss of visual guidance and potential for hydroplaning due to heavy rainfall, road surface saturation, and low marking visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Provide traction and support water removal.
+Contribution:
+- Entire surface is saturated by continuous heavy rain.
+- Surface shows pooling and extensive reflective glare.
+- Drainage system appears overwhelmed or underdesigned for high-intensity rain.
+
+Component 2: Road Markings and Signage
+Role: Guide vehicle positioning and provide safety cues.
+Contribution:
+- Lane markings are barely visible through the water layer.
+- Rainfall and reflection eliminate contrast needed for both human and sensor detection.
+- Markings are not adapted for wet-weather visibility (e.g., reflective or textured paint).
+
+Component 3: Vehicle Subsystems
+Role: Maintain control and perception accuracy.
+Contribution:
+- Lane detection systems likely fail or operate with high uncertainty.
+- Hydroplaning and delayed braking responses are likely due to poor friction.
+- Automation may disengage entirely or behave unpredictably.
+
+Component 4: Roadway Management Authority
+Role: Design and maintain road readiness for weather.
+Contribution:
+- No visible indicators or systems to mitigate wet road risk.
+- Lane markings are insufficient for adverse weather operation.
+- Emergency signage, lighting, or temporary speed enforcement absent.
+
+Component 5: Drivers
+Role: Control vehicle using environmental inputs.
+Contribution:
+- Visual overload and low contrast impair decision-making.
+- High risk of misjudging lane position or braking distance.
+- Confidence in infrastructure support significantly reduced.
+
+Component 6: Weather Forecasting / Notification System
+Role: Warn users of active road risks.
+Contribution:
+- No dynamic signage or alerts present during hazardous rain conditions.
+- System does not provide in-situ environmental hazard feedback.
+- Failure to prompt behavior adjustment in response to worsening conditions.
+
+Summary:
+This represents a high-risk driving environment with near-total loss of lane visibility and surface control reliability under heavy rain. Systemic issues—such as insufficient marking contrast, poor drainage, and lack of hazard alerting—contribute to a critically unsafe scenario for both manual and autonomous navigation.

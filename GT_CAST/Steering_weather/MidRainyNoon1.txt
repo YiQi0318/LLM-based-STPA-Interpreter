@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Possibility of lane tracking error or loss of traction due to moderate rain, wet pavement, and faded lane visibility.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a safe and functional surface under all weather conditions.
+Contribution:
+- Road appears wet with irregular water film patterns.
+- Slight accumulation in low areas suggests imperfect drainage.
+- Surface likely has reduced friction in current state.
+
+Component 2: Road Markings and Signage
+Role: Visually indicate lane structure and direction.
+Contribution:
+- Markings are faint and further obscured by the rain.
+- Visibility compromised due to surface reflectivity and rain-induced glare.
+- Lack of reflective paint or raised lane indicators.
+
+Component 3: Vehicle Subsystems
+Role: Enable vehicle perception and control assistance.
+Contribution:
+- Lane departure and lane-centering systems may misread or disengage.
+- Stability and ABS systems may be triggered prematurely.
+- Sensors may struggle with line detection in wet conditions.
+
+Component 4: Roadway Management Authority
+Role: Maintain clear, safe, and weather-resilient infrastructure.
+Contribution:
+- Markings do not appear refreshed or adapted to wet environments.
+- No temporary signs or alerts related to weather hazards.
+- Road design does not adequately handle moderate rainfall accumulation.
+
+Component 5: Drivers
+Role: Interpret road cues and adapt to conditions.
+Contribution:
+- Visual uncertainty due to rain and weak lane contrast.
+- Higher chance of unintentional lane deviation or overcompensation.
+- Mental fatigue may increase under prolonged low-visibility conditions.
+
+Component 6: Weather Forecasting / Notification System
+Role: Provide weather-responsive warnings and road hazard data.
+Contribution:
+- No electronic or static signage warning of slippery conditions.
+- No evidence of dynamic speed or traction advisory.
+- System lacks real-time integration with road surface status.
+
+Summary:
+This mid-rain condition introduces systemic strain on both driver perception and automated vehicle functions. Inadequate visual guidance and wet surface dynamics combine to elevate the likelihood of trajectory deviations or system disengagements, especially in areas requiring precision maneuvering.

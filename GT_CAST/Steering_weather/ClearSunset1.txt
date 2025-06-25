@@ -1,0 +1,47 @@
+CAST Step 3 - Analyze Each Component in the Loss
+Assumed Loss: Visual tracking degradation due to sharp lighting transitions from sunset shadows and weak lane contrast in partially shaded zones.
+
+Component 1: Road Surface and Maintenance
+Role: Provide a safe, navigable driving surface.
+Contribution:
+- Dry and structurally intact surface.
+- High contrast between brightly lit and shaded regions due to sunset.
+- No physical surface issues, but strong visual discontinuity present.
+
+Component 2: Road Markings and Signage
+Role: Guide vehicle alignment and orientation.
+Contribution:
+- Lane markings are partially lost in shadow zones.
+- Sunset glare and contrast drop-off reduce readability.
+- Markings lack reflective or adaptive properties to maintain consistency.
+
+Component 3: Vehicle Subsystems
+Role: Maintain lane centering and detect navigational cues.
+Contribution:
+- Vision-based lane detection systems may misinterpret shadowed zones.
+- Transition areas could cause temporary sensor ambiguity or system disengagement.
+- Automation confidence reduced in inconsistent visibility zones.
+
+Component 4: Roadway Management Authority
+Role: Design and maintain infrastructure for visibility.
+Contribution:
+- No adaptive solutions present for dynamic lighting (e.g., shadow-resistant markings).
+- Faded markings reduce effectiveness during low-angle sunlight.
+- Shadow zone safety not accounted for in marking design.
+
+Component 5: Drivers
+Role: Visually interpret road and act accordingly.
+Contribution:
+- Markings harder to track in shaded regions, leading to short-term confusion.
+- May result in under-correction, overcorrection, or hesitation.
+- Visual strain increased by sudden light shifts.
+
+Component 6: Weather Forecasting / Notification System
+Role: Inform about transient visibility hazards (e.g., sun glare, shadow).
+Contribution:
+- No alerts or signage related to low sun angle or shadow patterns.
+- System does not appear responsive to environmental lighting state.
+- Missed opportunity for warning in high-glare zones.
+
+Summary:
+Despite optimal dry conditions, this scene introduces moderate perceptual risk due to the high contrast lighting typical of sunset. Faded markings in shadow regions diminish lane visibility, affecting both human and machine lane-tracking reliability, particularly in mixed illumination zones.
