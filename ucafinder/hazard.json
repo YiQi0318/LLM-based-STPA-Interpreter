@@ -1,0 +1,12 @@
+{
+    "knowledge": [
+        {
+            "index": "H1",
+            "hazard": "Loss of property"
+        },
+        {
+            "index": "H2",
+            "hazard": "Human damage"
+        }
+    ]
+}
