@@ -1,0 +1,20 @@
+{
+    "contribution_rates": [
+        {
+            "id": "UCA1",
+            "description": "Apologies for the confusion, but it seems like you've left the control action blank. Please provide the control action so that I can analyze it for you.",
+            "contribution_rate": 33.33333333333333
+        },
+        {
+            "id": "UCA2",
+            "description": "Based on the control action provided, the associated unsafe control actions (UCAs) could be:\n\n[UCA1] Object detection does not send the brake action command to the kinematic model (H1, H2)\nThis could result in the system failing to stop when an object is detected, potentially causing property damage or harm to humans.\n\n[UCA2] Object detection sends the brake action command to the kinematic model when it is not necessary (H1)\nThis could cause unnecessary wear and tear on the system or result in unexpected stops, potentially causing property damage.\n\n[UCA3] Object detection sends the incorrect brake action command to the kinematic model (H1, H2)\nIf the brake action command sent does not correspond to the actual situation, it could lead to inadequate braking or over-braking, which could damage property or harm humans.\n\n[UCA4] Object detection sends the brake action command to the kinematic model too late (H1, H2)\nA delay in sending",
+            "contribution_rate": 33.33333333333333
+        },
+        {
+            "id": "UCA3",
+            "description": "Based on the control action \"The kinematic model requests the brake command to the actuation system to actuate the action\", the following unsafe control actions (UCAs) could be identified:\n\n[UCA1] The kinematic model fails to request the brake command to the actuation system (H1, H2)\nThis could result in a loss of property (H1) and human damage (H2) as the vehicle may not stop when needed, potentially causing accidents.\n\n[UCA2] The kinematic model requests the brake command incorrectly to the actuation system (H1, H2)\nThis could also lead to loss of property (H1) and human damage (H2) due to incorrect braking action, causing accidents or damaging the vehicle.\n\n[UCA3] The kinematic model requests the brake command to the actuation system when it is not needed (H1)\nThis could lead to unnecessary wear and tear on the vehicle, potentially resulting in loss of property (H1",
+            "contribution_rate": 33.33333333333333
+        }
+    ],
+    "summary": "Each UCA (Unwanted Consequence Area), namely UCA1, UCA2 and UCA3, contributes equally to a collision with each having a contribution rate of 33.33%. This implies that they all have the same level of impact or influence on the occurrence of the collision."
+}
