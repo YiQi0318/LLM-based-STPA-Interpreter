@@ -1,0 +1,47 @@
+UCA 1.1: Vehicle fails to detect the red light and does not initiate braking.
+UCA 1.2: Traffic light is detected, but braking is not executed due to actuator fault.
+UCA 1.3: Braking command is issued but lost due to a communication failure.
+UCA 1.4: Braking is not provided because the vehicle misclassifies the traffic signal (e.g., sees red as yellow).
+UCA 1.5: Braking is not performed due to overriding acceleration input (e.g., stuck accelerator or driver override).
+UCA 1.6: Vehicle brakes even though the traffic light is green.
+UCA 1.7: Vehicle brakes when no traffic light is present (false detection).
+UCA 1.8: Vehicle brakes suddenly due to reflection or misreading of stop sign as red light.
+UCA 1.9: Braking occurs due to malfunction in vision system interpreting environment incorrectly.
+UCA 1.10: Braking is triggered by a non-critical object (e.g., pedestrian far from road).
+UCA 1.11: Braking is initiated far before the intersection, causing traffic disruption.
+UCA 1.12: Braking begins while still in fast-moving traffic, causing rear-end collision risk.
+UCA 1.13: Early braking causes lane departure due to sudden deceleration.
+UCA 1.14: Braking starts after the vehicle has entered the intersection.
+UCA 1.15: Late braking causes violation of red light, risking side collision.
+UCA 1.16: Delay in braking results from sensor latency or algorithm lag.
+UCA 1.17: Braking is delayed due to prioritization of other subsystems (e.g., navigation override).
+UCA 1.18: Braking force applied is too weak, unable to stop in time.
+UCA 1.19: Braking is too strong, causing vehicle skid or instability.
+UCA 1.20: Braking affects only one axle, causing drift or loss of control.
+UCA 1.21: Vehicle brakes but doesn’t come to a full stop.
+UCA 1.22: Braking is applied with incorrect timing due to GPS mismatch.
+UCA 2.1: Vehicle fails to initiate the right turn at an intersection.
+UCA 2.2: Navigation system instructs a right turn, but the vehicle continues straight.
+UCA 2.3: Vehicle skips the turn because lane detection fails to align properly.
+UCA 2.4: Vehicle does not turn due to sensor occlusion or poor visibility.
+UCA 2.5: Vehicle hesitates indefinitely and stalls at the turn, blocking traffic.
+UCA 2.6: Vehicle turns right on a no-right-turn lane (e.g., restricted turn).
+UCA 2.7: Right turn is executed accidentally due to sensor confusion (e.g., lane boundary or fence).
+UCA 2.8: Right turn is performed at a high speed, resulting in off-road exit.
+UCA 2.9: Vehicle turns into a closed or barricaded road.
+UCA 2.10: Turn is executed in response to incorrect GPS data.
+UCA 2.11: Turn is initiated before reaching the corner, cutting across curb or lane.
+UCA 2.12: Early turn causes collision with right-side sidewalk or guardrail.
+UCA 2.13: Vehicle begins turning before checking for pedestrians or cyclists.
+UCA 2.14: Vehicle overshoots the turn and cannot recover the maneuver.
+UCA 2.15: Late turning causes the vehicle to veer into the wrong lane.
+UCA 2.16: Delay in turning causes rear-end collision from following vehicle.
+UCA 2.17: Turn is started after route has been recalculated due to late action.
+UCA 2.18: Turning radius is too sharp, causing vehicle instability.
+UCA 2.19: Turn is executed with inconsistent steering angles, causing zigzag motion.
+UCA 2.20: Turn occurs while braking is still applied, destabilizing motion.
+UCA 2.21: Turning conflicts with obstacle avoidance system, leading to erratic behavior.
+UCA 2.22: Turn fails due to slippery road (ice, rain), leading to loss of control.
+UCA 2.23: Vehicle turns into a wrong side of a divided road.
+
+
