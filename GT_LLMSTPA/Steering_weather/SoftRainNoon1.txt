@@ -1,0 +1,38 @@
+Filename: SoftRainNoon1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Lightly wet pavement with **subtle discoloration and minor moisture streaks**, likely from a soft or recent drizzle.
+- Time: Noon or early afternoon — **bright, evenly lit environment** with low shadow intensity.
+- Road: Multi-lane highway, slightly curved; **lane markings are highly visible**, and moisture does not heavily obscure them.
+- Environment Complexity: Low — clear of vehicles, pedestrians, and dynamic obstacles.
+- Sensor Visibility Risk: Low — small reflective surface variations may introduce minor noise, but visibility is generally excellent for perception systems.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misreads mild surface streaks or faded lines as lane boundaries. [H1, H2]
+- UCA1.2: AV does not steer due to false assumption of unclear lane geometry. [H2, H3]
+- UCA1.3: AV initiates steering too early based on subtle road texture cues. [H1, H2]
+- UCA1.4: AV delays steering to revalidate what is already a visible lane structure. [H2, H3]
+- UCA1.5: AV overcorrects due to misjudged lateral feedback. [H1, H3]
+- UCA2.1: Steering ends too early due to overconfidence in position accuracy. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Light texture variation prompts a steering response before proper validation.
+- t1: UCA1.5 → AV steers longer than needed, slightly drifting across centerline.
+- t2: UCA2.1 → AV ends correction without fully verifying return to lane center.
+
+Causality:
+- t0: Misinterpreted pavement glossiness misguides AV into early lane change behavior.
+- t1: Minor overcorrection occurs due to limited visual validation in reflective patches.
+- t2: AV exits maneuver under the false belief of full realignment.
+
+Final Loss: AV slightly deviates from lane center or demonstrates a minor lateral shift due to over- or under-reacting to subtle visual feedback.
+
+Safe Scenario Log (Mitigated):
+- t0: AV uses fused perception to ignore minor surface variations before initiating steering.
+- t1: AV applies smooth, short-duration corrections matched to confident lane detection.
+- t2: Steering ends after alignment is confirmed through visual and inertial data consistency.
+
+Final Safe Outcome: AV performs stable and accurate steering behavior under light wet-road conditions and strong daylight, maintaining reliable lane tracking.

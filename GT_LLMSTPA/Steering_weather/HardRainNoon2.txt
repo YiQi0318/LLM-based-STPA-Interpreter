@@ -1,0 +1,38 @@
+Filename: HardRainNoon2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: **Heavy rainfall** with visible raindrops and water sheeting; road surface is wet with flowing textures and partial glare.
+- Time: Noon or early afternoon; **bright, diffused light**, slightly muted by cloud coverage and rain.
+- Road: Multi-lane highway with a visible curve; **lane markings are faint but intermittently visible**, distorted by water streaks and reflections.
+- Environment Complexity: Low — clear of vehicles, pedestrians, or roadside activity; defined by barrier walls.
+- Sensor Visibility Risk: High — **rainwater texture, reflection, and motion blur** degrade visual sensor performance, making lane boundary tracking less reliable.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misclassifies water movement, reflections, or surface glare as lane lines. [H1, H2]
+- UCA1.2: AV avoids steering due to occluded or intermittent lane markings. [H2, H3]
+- UCA1.3: AV initiates steering prematurely based on distorted perception input. [H1, H2]
+- UCA1.4: Steering is delayed while trying to confirm lane position amidst visual noise. [H2, H3]
+- UCA1.5: Steering persists too long due to feedback latency or uncertainty. [H1, H3]
+- UCA2.1: AV ends maneuver without verified alignment due to feedback disruption. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV misinterprets flowing surface water as lane edges and steers too early.
+- t1: UCA1.5 → Continuous correction despite feedback uncertainty leads to lane instability.
+- t2: UCA2.1 → Premature termination of correction before confirmation of center position.
+
+Causality:
+- t0: Water and light distortion impair perception of lane geometry.
+- t1: Steering control is not adjusted in real time due to unreliable feedback.
+- t2: Maneuver ends based on misclassified alignment or visual dropout.
+
+Final Loss: AV drifts laterally or ends up misaligned due to poor steering judgment caused by extreme environmental conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV waits for high-confidence lane detection through radar/lidar validation before initiating action.
+- t1: Steering is incrementally controlled, constantly reassessed under adverse conditions.
+- t2: Completion of maneuver depends on multi-sensor lane alignment confirmation.
+
+Final Safe Outcome: The AV safely navigates heavy midday rainfall using robust perception fusion and cautious steering strategy, maintaining consistent lateral control.

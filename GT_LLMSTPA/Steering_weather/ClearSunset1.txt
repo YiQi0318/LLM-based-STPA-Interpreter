@@ -1,0 +1,38 @@
+Filename: ClearSunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry — **no water accumulation or rain effects** visible on the pavement.
+- Time: Sunset — **strong direct sunlight** from a low angle casts long, dark shadows across the road and creates abrupt brightness transitions.
+- Road: Multi-lane highway with a gradual curve; **lane markings are partially shadowed**, but overall intact and discernible.
+- Environment Complexity: Low — no traffic, pedestrians, or active roadside elements; bordered by uniform concrete barriers.
+- Sensor Visibility Risk: Moderate to High — **harsh shadow boundaries and bright glare zones** can mislead vision-based lane detection or introduce instability in brightness-based edge processing.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV mistakes sharply defined shadows as lane boundaries or edge lines. [H1, H2]
+- UCA1.2: AV hesitates to steer due to uncertain perception of lanes across light/dark transitions. [H2, H3]
+- UCA1.3: AV steers too early from misclassification of contrast shifts as curvature features. [H1, H2]
+- UCA1.4: AV delays steering while attempting to resolve sharp brightness differences. [H2, H3]
+- UCA1.5: Steering persists longer than required due to low-confidence feedback in high-contrast zones. [H1, H3]
+- UCA2.1: AV ends correction early, misinterpreting bright patch alignment as centered trajectory. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV initiates premature steering based on false shadow-edge features.
+- t1: UCA1.5 → Correction continues into the next road segment due to unstable feedback from vision.
+- t2: UCA2.1 → Correction ends before proper centering is validated under visual occlusion or distortion.
+
+Causality:
+- t0: Low-angle sunset light introduces complex shadow artifacts across lane boundaries.
+- t1: AV lacks reliable confidence to adjust correction timing under visual variability.
+- t2: Termination of maneuver is based on incorrect visual cues without sensor fusion validation.
+
+Final Loss: AV becomes laterally unstable or off-center due to contrast-driven perception errors and premature or prolonged steering correction.
+
+Safe Scenario Log (Mitigated):
+- t0: AV filters shadow and glare effects using adaptive perception tuned for strong contrast environments.
+- t1: Steering inputs are time-bounded and informed by fused sensor readings (IMU + HD maps).
+- t2: Correction ends only after full alignment confirmation through stable trajectory tracking across shadowed and lit regions.
+
+Final Safe Outcome: Despite harsh lighting transitions at sunset, the AV maintains stable lane adherence using robust perception filtering and trajectory validation mechanisms.

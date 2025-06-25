@@ -1,0 +1,38 @@
+Filename: SoftRainNoon4.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Damp road surface with **faint residual puddles and low moisture levels**; recently rained or light drizzle.
+- Time: Noon or early afternoon, evidenced by bright lighting and minimal shadowing.
+- Road: Multi-lane highway with mild curvature; **lane markings are clearly visible**, though faint reflection is present in some areas.
+- Environment Complexity: Low — no traffic or obstacles present; bordered by concrete barriers.
+- Sensor Visibility Risk: Low to Moderate — while puddling is minimal, **glare from overhead light and slight water film** could reduce contrast or confuse lane edge boundaries.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misreads surface gloss as lane lines due to midday glare. [H1, H2]
+- UCA1.2: AV hesitates due to unclear perception in low-contrast regions of the lane. [H2, H3]
+- UCA1.3: AV initiates steering prematurely, reacting to false lane interpretations. [H1, H2]
+- UCA1.4: AV delays steering to verify uncertain lane geometry. [H2, H3]
+- UCA1.5: AV maintains steering too long due to unverified road curvature or positioning. [H1, H3]
+- UCA2.1: AV terminates steering early due to mistaken confidence in alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Glare-induced lane misinterpretation triggers early steering.
+- t1: UCA1.5 → AV drifts laterally due to prolonged correction based on uncertain cues.
+- t2: UCA2.1 → Steering stops before complete centering is confirmed.
+
+Causality:
+- t0: Vision system reacts to false lane edges from reflective light on damp surface.
+- t1: Correction continues without clear lane boundary, leading to instability.
+- t2: Visual misalignment not fully resolved, but correction ends prematurely.
+
+Final Loss: The AV becomes slightly misaligned or veers off-center, increasing the risk of lane departure or poor lane discipline.
+
+Safe Scenario Log (Mitigated):
+- t0: AV validates lane features across sensors before steering.
+- t1: Steering corrections are real-time and responsive to subtle lane variations.
+- t2: Correction ends only after trajectory is stabilized and visually confirmed.
+
+Final Safe Outcome: The AV adapts to minor reflectivity and midday brightness through deliberate steering behavior, maintaining accurate and stable positioning in the lane.

@@ -1,0 +1,38 @@
+Filename: HardRainSunset0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: **Intense rain** with clearly visible rain streaks and high surface reflectivity; standing water and streaming texture patterns indicate heavy precipitation.
+- Time: Sunset or very late afternoon; **light is low and diffused**, contributing to glare and reduced color contrast on the pavement.
+- Road: Multi-lane highway with a slight curve; **lane markings are barely visible** due to water distortion and glare reflection.
+- Environment Complexity: Low — clear of traffic and pedestrians; surrounded by static concrete barriers.
+- Sensor Visibility Risk: Very High — **heavy rain, reflection, and low-angle sunset glare** drastically impair visual input reliability and tracking of lane geometry.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misclassifies reflections or flowing water patterns as lane lines. [H1, H2]
+- UCA1.2: AV avoids or hesitates to steer because markings are indistinct or missing. [H2, H3]
+- UCA1.3: AV initiates steering prematurely based on visual artifacts. [H1, H2]
+- UCA1.4: AV delays steering, waiting too long for clearer detection. [H2, H3]
+- UCA1.5: AV holds steering input excessively due to lack of feedback closure. [H1, H3]
+- UCA2.1: AV ends steering too early, mistaking distorted feedback as confirmation. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV begins steering in response to surface gloss mistaken for lane markings.
+- t1: UCA1.5 → Steering continues without resolution due to persistent poor feedback in vision.
+- t2: UCA2.1 → AV stops correcting without ensuring lane centering, risking drift.
+
+Causality:
+- t0: Rain glare and pavement texture trick vision algorithms.
+- t1: AV lacks reliable lane geometry, cannot confirm alignment during maneuver.
+- t2: Termination is based on misleading feedback from visual or inertial data under degraded sensing.
+
+Final Loss: AV misaligns within the lane or crosses into adjacent lanes due to severely degraded perception under heavy rain and low light.
+
+Safe Scenario Log (Mitigated):
+- t0: AV initiates steering only after lane detection is cross-confirmed by radar/lidar.
+- t1: Steering correction is modulated, with real-time compensation for perception dropouts.
+- t2: Completion of maneuver is based on fusion-confirmed alignment, not isolated visual data.
+
+Final Safe Outcome: AV withstands extreme weather by leveraging robust sensor fusion and cautious control timing to maintain a stable and safe trajectory.

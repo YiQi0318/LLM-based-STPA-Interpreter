@@ -1,0 +1,38 @@
+Filename: CloudyNoon0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Dry, overcast sky — **no rainfall or water on the road surface**.
+- Time: Midday or early afternoon — **flat and diffused lighting** from a fully clouded sky.
+- Road: Multi-lane highway with a subtle curve; **lane markings are clear and visible**, though uniform lighting reduces their visual contrast slightly.
+- Environment Complexity: Low — no nearby vehicles, signage, or distractions; consistent side barriers define the road.
+- Sensor Visibility Risk: Low to Moderate — **lack of strong shadows or highlights** minimizes visual cues, making contrast-sensitive lane detection slightly less effective.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV falsely identifies uniform surface textures or faint shadows as lane edges. [H1, H2]
+- UCA1.2: AV hesitates to steer due to lack of strong visual distinction between lane and pavement. [H2, H3]
+- UCA1.3: AV initiates steering prematurely in response to surface artifacts or degraded contrast. [H1, H2]
+- UCA1.4: AV delays steering while awaiting stronger perceptual clarity. [H2, H3]
+- UCA1.5: AV continues steering longer than necessary due to weak positional confirmation. [H1, H3]
+- UCA2.1: AV ends steering too early, misjudging alignment in a low-contrast scene. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV reacts to subtle surface variation as if it were lane boundaries.
+- t1: UCA1.5 → Prolonged correction occurs due to poor contrast feedback inhibiting precise correction.
+- t2: UCA2.1 → AV halts correction prematurely from over-reliance on muted visual confirmation.
+
+Causality:
+- t0: Lack of lighting dynamics causes AV to rely on weak or misleading visual features.
+- t1: Reduced visual gradient delays or prolongs steering adjustment.
+- t2: Misclassification of alignment leads to premature correction termination.
+
+Final Loss: AV could exhibit slight lane deviation or instability due to flat visual perception under overcast lighting.
+
+Safe Scenario Log (Mitigated):
+- t0: AV validates lane perception using sensor fusion (camera + HD map or inertial guidance).
+- t1: Steering input is smoothly adjusted and refined using time-bound and threshold-based control logic.
+- t2: Final alignment check ensures AV position using fused data confidence rather than visual assumptions.
+
+Final Safe Outcome: AV performs stable steering and alignment under overcast noon conditions by applying multi-sensor validation and contrast-resilient control strategies.

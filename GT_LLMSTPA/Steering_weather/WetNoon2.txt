@@ -1,0 +1,38 @@
+Filename: WetNoon2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Mostly dry with some **faded moisture patches**; sunlight is strong, producing high surface brightness.
+- Time: Midday (noon), based on sharp shadows and bright illumination.
+- Road: Multi-lane highway, with **clear and well-defined lane markings**. A white directional arrow is visible on the surface.
+- Environment Complexity: Low — no nearby vehicles or obstacles; wide and open road curvature.
+- Sensor Visibility Risk: Low to Moderate — while the road is relatively dry, **intense lighting and glare** from the bright sun can reduce contrast and obscure painted markings (e.g., faded arrow).
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets road markings (e.g., arrows or lanes) due to sun glare. [H1, H2]
+- UCA1.2: AV skips necessary steering correction due to faded surface visuals. [H2, H3]
+- UCA1.3: AV steers too early before confirming visual guidance due to reflection. [H1, H2]
+- UCA1.4: AV delays steering input while processing overexposed areas. [H2, H3]
+- UCA1.5: Overextended steering due to inaccurate reading of road curvature under glare. [H1, H3]
+- UCA2.1: AV stops steering correction prematurely, not accounting for latent road geometry changes. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Bright lighting causes premature steering based on misread road marking (e.g., faded arrow misinterpreted).
+- t1: UCA1.5 → Continued steering leads to unintended lane deviation as curvature or arrow misread affects orientation.
+- t2: UCA2.1 → Steering ends early before AV finishes returning to lane center.
+
+Causality:
+- t0: Glare alters visual clarity, resulting in misperceived lane guidance.
+- t1: Prolonged action without compensation causes off-center trajectory.
+- t2: Final correction ends too early, locking in a suboptimal vehicle heading.
+
+Final Loss: Visual ambiguity due to glare and surface fade leads to improper lane following or position maintenance, increasing risk of lane departure.
+
+Safe Scenario Log (Mitigated):
+- t0: AV adjusts exposure dynamically and verifies surface markings (arrow, lane lines) before acting.
+- t1: Steering input is fine-tuned to reflect actual road curvature, despite sun interference.
+- t2: Final re-alignment continues until AV is fully centered and stabilized.
+
+Final Safe Outcome: AV maintains proper control and lane position even under bright midday light, using filtered perception and reliable steering logic.

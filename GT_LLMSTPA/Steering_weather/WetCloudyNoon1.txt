@@ -1,0 +1,38 @@
+Filename: WetCloudySunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet surface with widespread puddling and uneven moisture distribution, likely after rain.
+- Time: Cloudy late afternoon; diffused natural lighting with minimal shadowing.
+- Road: Multi-lane highway with a slight curve; **lane markings partially obscured** by reflective wet patches.
+- Environment Complexity: Low — road is empty with no dynamic agents or complex structures.
+- Sensor Visibility Risk: High — **reflections, puddles, and reduced contrast** significantly degrade the reliability of visual perception and lane tracking systems.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets puddle edges or reflections as lane boundaries. [H1, H2]
+- UCA1.2: AV does not steer due to insufficient confidence in visual lane detection. [H2, H3]
+- UCA1.3: AV initiates steering too early, influenced by visual misclassification. [H1, H2]
+- UCA1.4: AV delays steering while awaiting clearer lane recognition. [H2, H3]
+- UCA1.5: Steering duration is extended beyond optimal due to prolonged ambiguity in visual feedback. [H1, H3]
+- UCA2.1: Steering correction ends too early, before confirming full lane alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV responds to misleading visual cues from water patterns, initiating incorrect early steering.
+- t1: UCA1.5 → Overcorrection causes the AV to drift, as it cannot distinguish lane boundaries confidently.
+- t2: UCA2.1 → Steering ceases prematurely, causing off-center alignment.
+
+Causality:
+- t0: Reflections and water coverage create false interpretations of road structure.
+- t1: Lack of clear visual references prevents real-time lateral correction.
+- t2: Steering halts on false assumption of proper alignment.
+
+Final Loss: AV remains misaligned or encroaches on adjacent lane zones due to poor visibility and premature decision-making in wet conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV waits for high-confidence lane feature detection before initiating maneuver.
+- t1: AV applies measured corrections, accounting for perception noise due to water.
+- t2: Steering continues until true center alignment is verified by sensor fusion.
+
+Final Safe Outcome: The AV maintains safe and precise navigation by delaying and modulating steering based on validated environmental understanding despite degraded visual inputs.

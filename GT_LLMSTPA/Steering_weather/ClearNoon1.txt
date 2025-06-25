@@ -1,0 +1,38 @@
+Filename: ClearNoon1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear, dry — **no visual interference** from weather or water; clean and unobstructed pavement.
+- Time: Midday — **strong, direct sunlight** produces uniformly high visibility with minimal shadow presence.
+- Road: Multi-lane highway on a gentle curve; **lane markings are bright, consistent, and well defined** across the scene.
+- Environment Complexity: Low — no dynamic elements or road-side activity; road flanked by concrete barriers.
+- Sensor Visibility Risk: Very Low — **lighting and contrast are excellent** for visual systems, though high brightness might mildly affect sensor calibration if not compensated.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misclassifies minor road texture or lane marker wear as a boundary. [H1, H2]
+- UCA1.2: AV does not initiate steering due to momentary sensor overexposure. [H2, H3]
+- UCA1.3: AV begins steering too early based on overly sensitive lane tracking under optimal contrast. [H1, H2]
+- UCA1.4: AV delays steering waiting for redundant confirmation despite clear conditions. [H2, H3]
+- UCA1.5: AV continues steering too long due to rigid visual-only verification threshold. [H1, H3]
+- UCA2.1: AV prematurely ends steering based on high-confidence visual feedback lacking inertial validation. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV triggers steering based on edge detection sensitivity tuned for lower-contrast conditions.
+- t1: UCA1.5 → Steering persists due to overly conservative visual thresholds.
+- t2: UCA2.1 → AV concludes correction under false certainty derived from camera alone.
+
+Causality:
+- t0: Excess sensitivity in visual edge detection leads to early activation.
+- t1: Prolonged steering from lack of feedback integration despite clear markings.
+- t2: Over-trust in visual confidence score without multi-sensor validation.
+
+Final Loss: Slight unnecessary deviation or correction persistence may occur, though no high-probability hazard is expected under such favorable conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV uses tuned visual thresholds appropriate for high-contrast scenes.
+- t1: Steering actions are tightly constrained, with real-time fusion from IMU and map alignment.
+- t2: Correction ends after confirming full alignment using visual + inertial confirmation.
+
+Final Safe Outcome: AV leverages the clarity of the midday scene for precise, stable lane tracking, correcting only when necessary and terminating adjustments based on confident, fused feedback.

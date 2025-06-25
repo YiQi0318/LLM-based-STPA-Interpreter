@@ -1,0 +1,38 @@
+Filename: ClearNoon2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry — **no precipitation or visible wetness** on the road.
+- Time: Noon or early afternoon — **bright, direct sunlight** with minimal shadow, high ambient visibility.
+- Road: Multi-lane highway with a smooth curve; **lane markings are sharp, continuous, and high contrast** under direct illumination.
+- Environment Complexity: Low — no surrounding traffic or pedestrians; roadway bordered by consistent barrier elements.
+- Sensor Visibility Risk: Low — **excellent lighting and contrast**, although high luminance can sometimes cause sensor saturation in certain areas.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets small surface imperfections or textures as lane features. [H1, H2]
+- UCA1.2: AV avoids steering due to overexposure in high-sun regions. [H2, H3]
+- UCA1.3: AV initiates steering early in response to hyper-contrast edge interpretation. [H1, H2]
+- UCA1.4: AV delays steering unnecessarily despite clear lane visibility. [H2, H3]
+- UCA1.5: AV maintains correction longer than necessary due to reliance on camera over IMU. [H1, H3]
+- UCA2.1: AV concludes correction too early, assuming central alignment from a partial visual match. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV begins steering too soon in response to non-lane road artifacts highlighted by intense sunlight.
+- t1: UCA1.5 → Correction is sustained too long due to overly strict visual alignment thresholds.
+- t2: UCA2.1 → AV ends maneuver prematurely, lacking confirmation of complete lateral positioning.
+
+Causality:
+- t0: High visibility sharpens non-lane surface features, potentially misleading detection.
+- t1: Camera bias dominates steering judgment, prolonging action under minor uncertainty.
+- t2: Termination logic is visually triggered before full alignment validation.
+
+Final Loss: AV may show minor lane centering error or lateral instability under strong lighting, despite the generally ideal conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV confirms lane interpretation using map data and inertial guidance, rejecting false edges.
+- t1: Steering is bounded and adjusted based on IMU confirmation of centerline proximity.
+- t2: Final correction ends only after validated alignment from at least two independent sensors.
+
+Final Safe Outcome: AV performs stable, accurate steering in high-visibility conditions using calibrated thresholds and perception redundancy to ensure safe alignment.

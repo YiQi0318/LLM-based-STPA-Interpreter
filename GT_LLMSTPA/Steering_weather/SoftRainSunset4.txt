@@ -1,0 +1,38 @@
+Filename: SoftRainSunset4.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road surface with **scattered puddles and surface gloss**; suggests light or recent rain.
+- Time: Sunset or late afternoon with diffuse lighting and mild glare.
+- Road: Multi-lane highway, subtle curve; **lane markings are mostly visible** but pass through areas of reflection and dark wet patches.
+- Environment Complexity: Low — no other vehicles or objects; bordered by barriers.
+- Sensor Visibility Risk: Moderate to High — **reflections and irregular water patterns** may lead to inconsistent lane detection and momentary perception degradation.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets water edges or surface brightness as lane features. [H1, H2]
+- UCA1.2: AV fails to steer because water-covered markings are momentarily lost. [H2, H3]
+- UCA1.3: AV steers too early due to premature detection of distorted lane lines. [H1, H2]
+- UCA1.4: AV delays steering while awaiting improved clarity or cross-sensor confirmation. [H2, H3]
+- UCA1.5: AV holds steering too long in absence of clear positional feedback. [H1, H3]
+- UCA2.1: AV stops steering too early due to false confidence in trajectory stability. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Early steering initiated due to misinterpreted water patches or brightness.
+- t1: UCA1.5 → Prolonged steering in response to uncertainty causes AV to veer.
+- t2: UCA2.1 → Correction ends before proper re-centering, leaving vehicle off-path.
+
+Causality:
+- t0: Vision system overreacts to puddle reflectivity as lane geometry.
+- t1: Insufficient visual feedback extends correction beyond necessary bounds.
+- t2: AV prematurely terminates correction phase before visual alignment is confirmed.
+
+Final Loss: AV may deviate from the lane or remain misaligned due to soft-rain conditions affecting clarity of visual references.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering initiated only after high-confidence lane detection via fused sensors.
+- t1: Minor, real-time adjustments help maintain trajectory through ambiguous patches.
+- t2: Steering ends only after full lateral position is confirmed via perception validation.
+
+Final Safe Outcome: AV remains safely aligned despite environmental visual challenges, using robust steering behavior and perception redundancy to offset soft rain and surface reflectivity.

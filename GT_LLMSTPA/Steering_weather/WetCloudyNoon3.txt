@@ -1,0 +1,38 @@
+Filename: WetCloudySunset3.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road conditions with several dark patches and widespread puddling; strong signs of recent rain.
+- Time: Cloudy late afternoon; ambient light is diffused and low in contrast.
+- Road: Multi-lane highway with a visible curve; **lane markings are partially obscured** or visually broken by puddles.
+- Environment Complexity: Low — clear road with no visible vehicles or objects, bordered by barriers.
+- Sensor Visibility Risk: High — **reflection from puddles, patchy moisture**, and low light contrast significantly degrade vision-based lane detection.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misidentifies water reflections or puddles as structural road boundaries. [H1, H2]
+- UCA1.2: AV fails to steer due to unreliable or missing lane markings. [H2, H3]
+- UCA1.3: AV initiates steering too early based on visual misclassification of wet patches. [H1, H2]
+- UCA1.4: AV delays steering due to insufficient lane clarity. [H2, H3]
+- UCA1.5: Steering continues longer than needed, as the AV compensates for degraded lane recognition. [H1, H3]
+- UCA2.1: AV terminates steering too early before proper alignment is confirmed. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Misleading visual reflections lead to early and inaccurate steering.
+- t1: UCA1.5 → AV overcorrects and drifts due to inability to visually confirm position.
+- t2: UCA2.1 → Steering ends too early, leaving AV partially offset in the lane.
+
+Causality:
+- t0: Reflected water mimics road features, causing steering error.
+- t1: Continued steering without precise feedback causes lateral instability.
+- t2: AV exits steering phase prematurely, misjudging position correction.
+
+Final Loss: AV ends up misaligned or partially outside the intended lane due to visual distortion and unverified steering termination.
+
+Safe Scenario Log (Mitigated):
+- t0: AV delays steering until clear, validated lane input is confirmed.
+- t1: Real-time trajectory updates accommodate inconsistent visual surface.
+- t2: Final correction phase ensures full re-centering before input cessation.
+
+Final Safe Outcome: The AV successfully adapts to poor surface visibility

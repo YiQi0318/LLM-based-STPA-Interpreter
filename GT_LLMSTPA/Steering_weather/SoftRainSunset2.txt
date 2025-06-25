@@ -1,0 +1,38 @@
+Filename: SoftRainSunset2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road with large puddles and moisture saturation across the surface; consistent with light or recent rain.
+- Time: Sunset or late afternoon, with diffused ambient light and subtle glare areas.
+- Road: Multi-lane highway with a slight curve; **lane markings are intermittently obscured** by reflective water and discoloration.
+- Environment Complexity: Low — no surrounding vehicles or moving objects; visible structural barriers.
+- Sensor Visibility Risk: High — **moisture patches, surface gloss, and water accumulation** impair perception system accuracy, particularly for vision-based lane tracking.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets puddles or reflections as lane edges or road boundaries. [H1, H2]
+- UCA1.2: AV fails to steer due to momentary lane marking occlusion. [H2, H3]
+- UCA1.3: AV initiates steering early based on misread surface cues. [H1, H2]
+- UCA1.4: AV delays steering while attempting to resolve ambiguous or low-contrast visuals. [H2, H3]
+- UCA1.5: AV sustains steering longer than required due to poor lane confirmation. [H1, H3]
+- UCA2.1: AV ends steering prematurely without verifying true lateral alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV engages in steering based on distorted visual input caused by wet patches.
+- t1: UCA1.5 → AV drifts across the lane due to prolonged, uncertain correction phase.
+- t2: UCA2.1 → Correction ends too early, leaving AV misaligned or uncentered.
+
+Causality:
+- t0: Reflected water misguides lane detection, causing poor initiation.
+- t1: Lack of real-time visual feedback leads to overshoot or drift.
+- t2: False confidence from misread alignment ends correction prematurely.
+
+Final Loss: AV steers unsafely or off-center due to surface distortion, delayed correction feedback, and early termination of control.
+
+Safe Scenario Log (Mitigated):
+- t0: AV confirms reliable lane detection across multiple sensors before initiating steering.
+- t1: Steering is applied incrementally, adapting to visual inconsistencies.
+- t2: AV confirms full lane alignment before ending steering maneuver.
+
+Final Safe Outcome: The AV handles wet conditions confidently using validated perception and controlled steering execution, maintaining accurate lane tracking.

@@ -1,0 +1,36 @@
+Filename: MidRainSunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Moderate rain with **noticeable rainfall streaks and wet pavement**, featuring puddles and dark reflective patches.
+- Time: Sunset or late afternoon; **ambient light is soft and directional**, with variable contrast on the surface.
+- Road: Multi-lane highway with a curve; **lane markings are intermittently visible**, partially obstructed by water accumulation and glare.
+- Environment Complexity: Low — no dynamic elements or obstructions; static barriers line the road edges.
+- Sensor Visibility Risk: High — **rainfall, surface reflectivity, and inconsistent lighting** reduce clarity of lane markings and elevate visual misclassification risk.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets dark puddles or reflections as lane edges or road features. [H1, H2]
+- UCA1.2: AV fails to initiate steering due to uncertainty from wet or obscured lane boundaries. [H2, H3]
+- UCA1.3: AV begins steering too early based on misleading or ambiguous visual features. [H1, H2]
+- UCA1.4: AV delays steering action while awaiting improved lane visibility. [H2, H3]
+- UCA1.5: AV sustains steering longer than needed, resulting in lateral drift. [H1, H3]
+- UCA2.1: Steering ends early before proper lane centering is achieved. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Misleading wet surface patterns trigger premature and incorrect steering.
+- t1: UCA1.5 → AV continues adjusting without solid lane feedback, drifting off-center.
+- t2: UCA2.1 → Steering correction stops too early due to false visual confirmation of alignment.
+
+Causality:
+- t0: Puddle geometry and sunset reflection distort true lane appearance.
+- t1: Correction feedback is unreliable under rain-glare mix, causing extended input.
+- t2: AV ends maneuver under visual ambiguity, not actual alignment.
+
+Final Loss: AV drifts laterally or operates off-center due to misinterpreted reflections, excessive steering duration, or premature correction cessation.
+
+Safe Scenario Log (Mitigated):
+- t0: AV delays steering until it verifies lane features using fused sensor data.
+- t1: Steering is controlled and responsive, factoring in wet-road tracking distortion.
+- t2: Maneuver ends only after

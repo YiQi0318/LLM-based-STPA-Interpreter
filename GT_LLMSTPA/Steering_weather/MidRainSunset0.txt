@@ -1,0 +1,38 @@
+Filename: MidRainSunset0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Moderate rain with **distinct puddling, streaks, and reflective surface patches** across lanes.
+- Time: Sunset or late afternoon; lighting is soft and slanted, contributing to surface glare and uneven contrast.
+- Road: Multi-lane highway with a subtle curve; **lane markings are visible in some sections**, but obscured or distorted in others due to water accumulation and gloss.
+- Environment Complexity: Low — static environment with no visible vehicles or pedestrians, lined with road barriers.
+- Sensor Visibility Risk: High — **reflection, pooled water, and lighting artifacts** significantly impair camera-based lane detection and risk misinterpretation.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV falsely identifies reflections or wet texture as valid lane boundaries. [H1, H2]
+- UCA1.2: AV fails to initiate steering due to occluded lane lines or glare. [H2, H3]
+- UCA1.3: Steering begins too early based on ambiguous puddle or reflection pattern. [H1, H2]
+- UCA1.4: AV delays steering unnecessarily due to low-confidence lane estimation. [H2, H3]
+- UCA1.5: Steering duration extends beyond requirement due to poor perception feedback. [H1, H3]
+- UCA2.1: AV stops steering before visual confirmation of proper alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV begins maneuver due to visual misclassification caused by rain-soaked surface.
+- t1: UCA1.5 → AV overcorrects as sensor feedback remains unstable due to reflections.
+- t2: UCA2.1 → AV exits steering prematurely without alignment validation.
+
+Causality:
+- t0: Glare and water pooling generate false positives in lane detection.
+- t1: Incomplete or delayed feedback from vision system causes prolonged steering correction.
+- t2: Misjudged vehicle pose ends maneuver too early.
+
+Final Loss: The AV becomes laterally misaligned or unstable due to incorrect reaction to distorted surface visuals and lack of confirmation before ending corrective action.
+
+Safe Scenario Log (Mitigated):
+- t0: AV postpones action until confident, multi-sensor lane line recognition is achieved.
+- t1: AV applies bounded correction with ongoing trajectory verification.
+- t2: AV confirms full alignment before terminating steering behavior.
+
+Final Safe Outcome: Despite challenging visibility from sunset glare and wet conditions, the AV maintains safe navigation through validated perception and controlled steering maneuvers.

@@ -1,0 +1,38 @@
+Filename: ClearNoon0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry — **no rain, fog, puddles, or other surface anomalies**.
+- Time: Noon or early afternoon — **high, direct sunlight** produces excellent visibility and uniform road illumination.
+- Road: Multi-lane highway with a curve; **lane markings are bright, intact, and clearly defined**, standing out against the uniform road surface.
+- Environment Complexity: Low — no dynamic elements; bordered by continuous concrete barriers.
+- Sensor Visibility Risk: Very Low — **ideal conditions for visual perception**, though brightness consistency could slightly reduce edge variability for lane-tracking algorithms.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV falsely identifies road seams or texture inconsistencies as lane edges. [H1, H2]
+- UCA1.2: AV hesitates to steer due to misinterpreted uniformity in surface reflectance. [H2, H3]
+- UCA1.3: AV initiates steering too early in response to subtle non-lane surface patterns. [H1, H2]
+- UCA1.4: AV delays steering while unnecessarily verifying alignment under perfect conditions. [H2, H3]
+- UCA1.5: AV maintains correction beyond required duration due to rigid visual-only thresholds. [H1, H3]
+- UCA2.1: AV ends steering too early due to overconfidence in camera-only alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV triggers early correction based on over-sensitivity to bright surface detail.
+- t1: UCA1.5 → AV prolongs steering without inertial or contextual revalidation.
+- t2: UCA2.1 → AV concludes correction prematurely due to confident but insufficient visual confirmation.
+
+Causality:
+- t0: Over-optimized visual perception system responds to minor surface variation.
+- t1: Visual-only feedback delays correction completion.
+- t2: Final alignment decision lacks sensor fusion input, risking positional error.
+
+Final Loss: The AV may demonstrate slight but unnecessary lateral adjustment or steering delay under otherwise optimal conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV verifies lane cues using consistent visual patterning reinforced with prior-map and inertial data.
+- t1: Steering adjustments are bounded and verified against trajectory estimation.
+- t2: Final maneuver ends only after multi-sensor alignment check is successful.
+
+Final Safe Outcome: The AV operates precisely within the lane, leveraging clear daylight conditions with sensor fusion and contrast-robust perception.

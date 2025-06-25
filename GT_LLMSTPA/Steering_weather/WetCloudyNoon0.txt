@@ -1,0 +1,38 @@
+Filename: WetCloudySunset0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet surface with extensive puddling and water streaks; consistent with recent rainfall.
+- Time: Late afternoon under overcast/cloudy skies; diffused lighting with soft shadows.
+- Road: Multi-lane highway with visible curve; **lane markings are intermittently obscured** by reflective wet patches.
+- Environment Complexity: Low — no vehicles or pedestrians present, standard road barriers in view.
+- Sensor Visibility Risk: High — **surface reflections and puddles** reduce the accuracy of lane detection and steering alignment.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV interprets water reflections or patches as lane boundaries or barriers. [H1, H2]
+- UCA1.2: AV avoids steering due to low-confidence or ambiguous lane detection. [H2, H3]
+- UCA1.3: AV initiates steering too early based on misinterpreted surface cues. [H1, H2]
+- UCA1.4: AV delays steering waiting for lane clarification. [H2, H3]
+- UCA1.5: Steering held too long in the absence of clear feedback, resulting in lateral drift. [H1, H3]
+- UCA2.1: AV stops steering prematurely, before actual alignment is verified. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV detects lane markings distorted by water and initiates incorrect early steering.
+- t1: UCA1.5 → Overcorrection due to inconsistent visual input causes the vehicle to drift.
+- t2: UCA2.1 → Steering ends before true alignment is achieved, resulting in unstable trajectory.
+
+Causality:
+- t0: Reflection artifacts are falsely interpreted as navigable features.
+- t1: Feedback loop is impaired by wet-surface-induced visual noise.
+- t2: Premature correction termination results from misjudged lane centering.
+
+Final Loss: The AV may remain misaligned or exit its lane due to visual confusion from wet patches and insufficient correction feedback.
+
+Safe Scenario Log (Mitigated):
+- t0: AV uses sensor fusion and waits for confident lane detection before initiating steering.
+- t1: AV applies incremental, monitored corrections, compensating for visual artifacts.
+- t2: Steering continues until visual confirmation of center alignment is verified.
+
+Final Safe Outcome: The AV adapts t

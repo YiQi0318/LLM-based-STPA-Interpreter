@@ -1,0 +1,38 @@
+Filename: SoftRainNoon2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Lightly damp pavement with **subtle darkened areas and minor residual moisture**; suggests soft or recent rainfall.
+- Time: Noon or early afternoon — bright sunlight with minimal shadows.
+- Road: Multi-lane highway with a gentle curve; **lane markings are clearly visible**, but some patches of moisture create surface variation.
+- Environment Complexity: Low — no dynamic agents, static concrete barriers along road.
+- Sensor Visibility Risk: Low — mild surface discoloration may introduce minimal noise, but conditions are largely favorable for perception.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV falsely identifies damp patches as lane edges. [H1, H2]
+- UCA1.2: AV avoids steering due to minor lane visibility degradation. [H2, H3]
+- UCA1.3: Steering begins too early due to visual overreaction to surface contrast. [H1, H2]
+- UCA1.4: Steering is delayed from overcautious interpretation of subtle wetness. [H2, H3]
+- UCA1.5: Steering extends longer than needed, leading to unintended deviation. [H1, H3]
+- UCA2.1: Steering ends before trajectory is visually confirmed. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Damp visual textures cause false edge detection, triggering premature steering.
+- t1: UCA1.5 → Correction overextends without clear lateral reference.
+- t2: UCA2.1 → Early stop in adjustment phase leaves AV off-center.
+
+Causality:
+- t0: Slight visual artifacts from wet pavement cause premature steering command.
+- t1: AV adjusts with poor lateral feedback, drifting during correction.
+- t2: Steering concludes before verifying full alignment.
+
+Final Loss: AV may operate outside optimal lane bounds or deviate slightly due to misjudgment of surface cues and insufficient steering correction feedback.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering is initiated only after confirmed lane feature detection.
+- t1: Correction is managed gradually using visual and inertial reference data.
+- t2: Final maneuver concludes only after verifying lane centering.
+
+Final Safe Outcome: AV maintains stable and accurate path by integrating multi-modal feedback and deferring steering decisions until lane clarity is assured, even under slightly damp conditions.

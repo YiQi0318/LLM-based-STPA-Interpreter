@@ -1,0 +1,38 @@
+Filename: CloudyNoon1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Dry and overcast — **no rain, puddles, or visible surface distortion**.
+- Time: Noon or early afternoon — **flat lighting** from full cloud cover, with minimal shadows and reduced edge contrast.
+- Road: Multi-lane highway with a subtle curve; **lane markings are clearly visible**, though surface texture is uniform and low in contrast.
+- Environment Complexity: Low — empty road, consistent side barriers, no dynamic obstacles.
+- Sensor Visibility Risk: Low to Moderate — **cloudy daylight reduces contrast**, which may challenge vision-based systems when relying on texture or reflectivity cues.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV mistakes faint surface textures or seams for lane boundaries. [H1, H2]
+- UCA1.2: AV fails to steer due to difficulty distinguishing lane markings from low-contrast pavement. [H2, H3]
+- UCA1.3: AV begins steering early based on misperceived lane curvature from subtle gradients. [H1, H2]
+- UCA1.4: Steering is unnecessarily delayed due to lack of confident lane recognition. [H2, H3]
+- UCA1.5: AV maintains steering correction too long due to visually ambiguous feedback. [H1, H3]
+- UCA2.1: AV halts correction prematurely due to overconfidence in a flat-lighted visual frame. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV responds early to perceived lane cues distorted by uniform surface appearance.
+- t1: UCA1.5 → Correction duration is prolonged in absence of distinct visual feedback changes.
+- t2: UCA2.1 → Steering ends before true centering is confirmed due to ambiguous conditions.
+
+Causality:
+- t0: Cloudy sky leads to diffused lighting that lowers contrast between road and lane markings.
+- t1: Weak feedback signal prevents timely correction cutoff.
+- t2: Maneuver termination occurs without robust sensor confirmation.
+
+Final Loss: AV may become laterally misaligned or waver in its lane due to flat lighting degrading confidence in lane tracking.
+
+Safe Scenario Log (Mitigated):
+- t0: AV validates lane perception using camera input reinforced with map data or inertial tracking.
+- t1: Steering corrections are bounded and updated continuously with low-contrast adaptation.
+- t2: Steering concludes only after verification via robust, fused sensory confirmation.
+
+Final Safe Outcome: AV navigates flat-lit conditions with high reliability by relying on stable perception and feedback logic that does not depend solely on visual contrast.

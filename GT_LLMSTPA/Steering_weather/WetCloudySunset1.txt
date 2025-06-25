@@ -1,0 +1,38 @@
+Filename: WetCloudySunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road with **large puddles and extensive water spread**; likely aftermath of rainfall.
+- Time: Late afternoon or early evening under **cloudy conditions**, resulting in soft light and mild shadowing.
+- Road: Multi-lane highway; lane markings are present but **partially obscured by pooled water** and surface reflection.
+- Environment Complexity: Low — no moving objects or vehicles, with visible roadside barriers.
+- Sensor Visibility Risk: High — water reflections, surface distortion, and faded lane segments degrade vision system reliability and increase the risk of unsafe steering decisions.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV interprets puddles or reflections as structural road features (e.g., lane lines or curbs). [H1, H2]
+- UCA1.2: AV does not initiate steering due to low visual confidence in lane detection. [H2, H3]
+- UCA1.3: AV steers too early due to misleading boundary detection in a distorted surface view. [H1, H2]
+- UCA1.4: Steering delayed while waiting for clearer environmental interpretation. [H2, H3]
+- UCA1.5: AV maintains steering too long, drifting from intended path due to continuous vision uncertainty. [H1, H3]
+- UCA2.1: AV ends steering before full realignment is complete due to false lane center perception. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Misleading visual input (puddle/marking overlap) triggers premature and incorrect steering.
+- t1: UCA1.5 → Prolonged steering causes the vehicle to drift laterally beyond the lane boundary.
+- t2: UCA2.1 → Steering terminates early before lane re-centering is achieved, resulting in unsafe position.
+
+Causality:
+- t0: Reflected and distorted visuals reduce perception fidelity, resulting in incorrect action.
+- t1: Feedback lag and water-blurred lane cues prevent proper correction timing.
+- t2: Early cutoff in correction locks the AV into a misaligned path.
+
+Final Loss: AV risks deviating from lane center or crossing lane boundaries due to prolonged and unverified steering actions on a visually compromised road.
+
+Safe Scenario Log (Mitigated):
+- t0: AV defers steering until robust lane identification is confirmed via sensor fusion or enhanced filtering.
+- t1: Continuous feedback-based corrections adjust trajectory precisely despite wet reflections.
+- t2: Steering ends only after successful visual confirmation of central alignment.
+
+Final Safe Outcome: The AV handles steering with caution and adaptability, remaining centered and safe despite the challenges posed by a wet, cloudy road environment.

@@ -1,0 +1,38 @@
+Filename: CloudySunset2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Dry surface with **no visible water or rain**, but overall lighting suggests an overcast or partly cloudy sunset.
+- Time: Sunset or late afternoon; **diffused low-angle light** softens contrast and reduces color definition.
+- Road: Multi-lane highway with a gentle curve; **lane markings are clear and continuous**, though ambient light reduces visibility depth and sharpness.
+- Environment Complexity: Low — no traffic, pedestrians, or dynamic objects; road edges are bordered by solid barriers.
+- Sensor Visibility Risk: Low to Moderate — **soft shadows and dim sunset lighting** slightly degrade contrast, possibly impacting lane boundary clarity for vision-based systems.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets shaded pavement or low-contrast regions as lane features. [H1, H2]
+- UCA1.2: AV avoids or hesitates steering due to uncertainty in edge detection from soft lighting. [H2, H3]
+- UCA1.3: AV initiates steering too early due to misleading contours from ambient shadow gradients. [H1, H2]
+- UCA1.4: AV delays steering action while awaiting clearer visual confirmation. [H2, H3]
+- UCA1.5: Steering continues beyond required duration due to ambiguous visual feedback. [H1, H3]
+- UCA2.1: AV stops steering too early, misjudging vehicle alignment from low-contrast cues. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV responds to shadow boundaries or dim texture changes as lane features, initiating steering incorrectly.
+- t1: UCA1.5 → AV maintains steering longer than needed due to reduced contrast impairing alignment feedback.
+- t2: UCA2.1 → Correction ends prematurely without proper verification of centered alignment.
+
+Causality:
+- t0: Reduced visibility from sunset and cloud cover affects visual perception accuracy.
+- t1: Subtle contrast shifts delay feedback required for timely correction.
+- t2: AV misreads visual confirmation due to dim scene characteristics.
+
+Final Loss: AV may exhibit slight lateral misalignment due to misinterpretation of shadows or termination of steering based on unclear visual cues.
+
+Safe Scenario Log (Mitigated):
+- t0: AV verifies lane features through perception redundancy and only initiates correction when confident.
+- t1: Steering adjustment is smooth and responsive to real-time visual updates.
+- t2: Termination of correction occurs only after full alignment is verified using fused visual and positional data.
+
+Final Safe Outcome: Despite lighting challenges from a cloudy sunset, the AV maintains accurate and stable steering behavior using conservative decision thresholds and reliable perception fusion.

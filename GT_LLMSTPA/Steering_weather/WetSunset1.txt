@@ -1,0 +1,38 @@
+Filename: WetSunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road surface with patchy puddles and scattered reflections, indicating recent or residual rain.
+- Time: Daylight with direct sunlight creating mild glare across the road.
+- Road: Multi-lane highway with visible but partially disrupted lane markings due to water patches.
+- Environment Complexity: Low — no nearby vehicles, pedestrians, or intersection present.
+- Sensor Visibility Risk: Moderate — light reflections from puddles and variable surface texture may degrade lane boundary detection and perception reliability.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV steers based on misread lane boundaries distorted by reflections. [H1, H2]
+- UCA1.2: AV fails to steer due to reflective patches masking critical lane guidance. [H2, H3]
+- UCA1.3: Premature steering without full clarity assessment from visual input. [H1, H2]
+- UCA1.4: Delayed steering because vision system hesitates due to surface noise. [H2, H3]
+- UCA1.5: Steering input maintained excessively on a slick surface, leading to unstable drift. [H1, H3]
+- UCA2.1: Final correction cut short before vehicle realigns fully with center. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV initiates steering based on misleading reflections; lane interpreted too far right.
+- t1: UCA1.5 → AV continues correcting for perceived offset, drifting outward on wet surface.
+- t2: UCA2.1 → Steering ends before AV realigns, resulting in prolonged off-center travel.
+
+Causality:
+- t0: Unclear lane visibility due to glare causes steering error early in the maneuver.
+- t1: Wet surface allows drift to persist longer than intended.
+- t2: Steering correction ends too soon to recover optimal trajectory.
+
+Final Loss: Vehicle steers off-center and remains there due to compounded visual distortion and premature correction termination.
+
+Safe Scenario Log (Mitigated):
+- t0: Visual input processed with glare filtering; steering only starts when lane clarity is confirmed.
+- t1: AV dynamically compensates for drift with real-time feedback.
+- t2: Correction continues until full center alignment is restored.
+
+Final Safe Outcome: AV performs safe steering across a wet surface, maintaining control and avoiding lateral deviation by adapting to limited visibility conditions.

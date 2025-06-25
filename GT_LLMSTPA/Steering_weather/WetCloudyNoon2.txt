@@ -1,0 +1,38 @@
+Filename: WetCloudySunset2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road with widespread surface moisture and **multiple large puddles** scattered across lanes.
+- Time: Cloudy late afternoon or early evening; **soft ambient light** with reduced contrast.
+- Road: Multi-lane highway with a gradual curve; **lane markings are intermittently obscured** by standing water.
+- Environment Complexity: Low — no moving objects, straight barriers on both sides.
+- Sensor Visibility Risk: High — **puddle reflections and dark wet patches** create inconsistent and misleading lane visibility, posing challenges for visual interpretation.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misreads water patches or reflections as lane markers or boundaries. [H1, H2]
+- UCA1.2: AV fails to steer due to absence or ambiguity of visible lane lines. [H2, H3]
+- UCA1.3: AV initiates steering prematurely based on false lane features. [H1, H2]
+- UCA1.4: AV delays steering due to poor surface clarity. [H2, H3]
+- UCA1.5: AV overcompensates by steering too long, drifting across lane boundaries. [H1, H3]
+- UCA2.1: AV halts steering too early, leaving it uncentered or improperly aligned. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Steering triggered early based on misperceived lane edges created by puddle boundaries.
+- t1: UCA1.5 → Steering over-extended, resulting in lateral drift away from the correct lane path.
+- t2: UCA2.1 → Steering terminates before visual confirmation of lane centering, causing misalignment.
+
+Causality:
+- t0: Poor visual conditions mislead initial maneuver.
+- t1: Lack of reliable lane visibility prevents effective correction.
+- t2: False positive lane detection ends correction phase too early.
+
+Final Loss: AV operates with an unstable trajectory or misaligned position, potentially drifting into adjacent lanes or remaining off-center.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering delayed until multi-sensor lane confidence reaches acceptable threshold.
+- t1: Controlled, incremental steering adjustments accommodate wet surface variability.
+- t2: Final correction sustained until clear confirmation of lane centering is achieved.
+
+Final Safe Outcome: The AV safely navigates the wet and reflective roadway by applying conservative, validated steering behavior, maintaining compliance with lane integrity.

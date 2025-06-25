@@ -1,0 +1,38 @@
+Filename: WetCloudySunset4.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet surface with extensive puddling and uneven moisture patterns; likely recent rainfall.
+- Time: Late afternoon or early evening with **cloudy but partially sunlit** conditions.
+- Road: Multi-lane highway; lane markings are visible but **partially obscured** by puddles and reflections.
+- Environment Complexity: Low — no visible vehicles or pedestrians, mild road curvature ahead.
+- Sensor Visibility Risk: High — **dark wet patches, glare on puddles**, and inconsistent contrast may significantly reduce the clarity of road features for perception systems.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV interprets puddles or wet glare as lane boundaries or road features incorrectly. [H1, H2]
+- UCA1.2: AV fails to initiate steering due to missing lane cues under water cover. [H2, H3]
+- UCA1.3: Steering triggered too early based on misleading reflection patterns. [H1, H2]
+- UCA1.4: AV delays steering while attempting to disambiguate road features from wet distortion. [H2, H3]
+- UCA1.5: Steering input prolonged in attempt to correct trajectory, leading to lane drift on slick surface. [H1, H3]
+- UCA2.1: Steering correction ends early while AV is still misaligned due to visual occlusion. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV misinterprets wet patches as lane lines, initiates an incorrect early steering maneuver.
+- t1: UCA1.5 → Overextended correction due to wet surface leads to lateral drift beyond intended lane.
+- t2: UCA2.1 → Premature end of steering input causes the AV to stabilize outside the proper trajectory.
+
+Causality:
+- t0: High surface reflection misleads perception, steering initiated based on faulty data.
+- t1: Steering continues too long due to delayed surface feature validation under wet conditions.
+- t2: Final correction ends before full realignment, resulting in improper lane placement.
+
+Final Loss: AV risks off-center positioning or cross-lane drift due to reflective interference and delayed or incorrect steering resolution under wet and variable lighting.
+
+Safe Scenario Log (Mitigated):
+- t0: AV uses enhanced filtering or sensor fusion to distinguish reflections from true markings, steering is delayed until confirmed.
+- t1: Steering trajectory is dynamically updated to reflect road conditions and water-induced risk.
+- t2: Final correction phase completes only once AV is verified to be centered and stable.
+
+Final Safe Outcome: Despite heavy wet patches and ambiguous reflections, AV safely interprets road features and maintains correct trajectory through controlled and adaptive steering.

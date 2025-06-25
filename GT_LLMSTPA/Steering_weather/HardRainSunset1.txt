@@ -1,0 +1,38 @@
+Filename: HardRainSunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: **Heavy rain**, with dense water streaks, surface pooling, and flowing water patterns visible.
+- Time: Sunset or late-day conditions; ambient light is soft and low-angle, creating **significant surface glare** and reduced visibility.
+- Road: Multi-lane highway with a slight curve; **lane markings are intermittently visible** but obscured by reflections and water coverage.
+- Environment Complexity: Low — open roadway, static concrete barriers, no traffic or pedestrians present.
+- Sensor Visibility Risk: Very High — **rain streaks, heavy surface gloss, and low-angle lighting** create extreme perception distortion for vision systems.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets glare or water streaks as lane lines. [H1, H2]
+- UCA1.2: AV hesitates or avoids steering due to missing or occluded markings. [H2, H3]
+- UCA1.3: AV begins steering too early based on false visual input. [H1, H2]
+- UCA1.4: Steering is delayed while waiting for improved visual signal confidence. [H2, H3]
+- UCA1.5: AV continues to steer longer than necessary, drifting due to incomplete feedback. [H1, H3]
+- UCA2.1: AV ends the steering phase early, assuming alignment without full confirmation. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV triggers early steering from misidentified puddles or glare edges.
+- t1: UCA1.5 → AV continues steering too long due to lack of lane alignment confirmation.
+- t2: UCA2.1 → Steering correction ends without verifying proper lane position, risking drift.
+
+Causality:
+- t0: High reflectivity and flowing water visually obscure lane structure.
+- t1: AV operates on compromised feedback due to reduced vision clarity.
+- t2: Final trajectory correction stops under a false positive alignment signal.
+
+Final Loss: AV may deviate or become misaligned within the lane due to poor visibility, incorrect steering duration, and premature completion of correction.
+
+Safe Scenario Log (Mitigated):
+- t0: AV uses radar/lidar and filtered camera input to confirm lane geometry before action.
+- t1: Steering is adaptive and time-bounded with environmental compensation algorithms.
+- t2: Correction concludes only after multi-sensor alignment confirmation.
+
+Final Safe Outcome: AV successfully navigates extreme weather through sensor fusion, real-time adjustment, and robust validation of lateral positioning.

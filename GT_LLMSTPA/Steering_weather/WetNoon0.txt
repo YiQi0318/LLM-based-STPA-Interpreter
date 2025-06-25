@@ -1,0 +1,38 @@
+Filename: WetNoon0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Dry-to-damp road with **faded patches and visible light wear**; surface shows minor discoloration.
+- Time: Noon or early afternoon — bright sunlight and strong shadows cast from barriers.
+- Road: Multi-lane highway, mild curve, faded white arrow markings and partially degraded lane lines.
+- Environment Complexity: Low — no traffic or dynamic obstacles; consistent concrete barrier lines.
+- Sensor Visibility Risk: Moderate — combination of **faded lane markings, sunlight glare**, and surface patchiness may reduce visual reliability for steering decisions.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets surface arrows or lane lines due to fading and glare. [H1, H2]
+- UCA1.2: AV fails to steer due to insufficient visibility of worn lane guides. [H2, H3]
+- UCA1.3: Steering starts early based on low-confidence marking detection. [H1, H2]
+- UCA1.4: Steering delayed while vision system hesitates under unclear surface feedback. [H2, H3]
+- UCA1.5: AV applies steering too long due to inability to confirm lane center. [H1, H3]
+- UCA2.1: AV ends steering early, before lateral position is corrected, due to perceived but incomplete realignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV responds to misinterpreted arrows under harsh light, triggering early lane change or alignment offset.
+- t1: UCA1.5 → Continued steering causes excessive drift across lanes.
+- t2: UCA2.1 → Correction ends too early; AV stabilizes in off-center lane position.
+
+Causality:
+- t0: High brightness and degraded markings result in incorrect perception and steering decision.
+- t1: Lack of clear lane feedback extends steering input duration.
+- t2: Incomplete correction locks in misalignment due to mistaken assumption of recovery.
+
+Final Loss: The AV may experience off-lane travel or lateral deviation due to unclear or misleading visual data under strong sunlight and faded paint.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering deferred until vision system confirms lane and arrow recognition with high confidence.
+- t1: Adjustments occur gradually and with active verification of lane alignment from combined perception sources.
+- t2: Steering only terminates once realignment and central lane position are confirmed.
+
+Final Safe Outcome: AV performs correct steering behavior under visibility degradation, completing maneuver with full lateral stability and road compliance.

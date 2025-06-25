@@ -1,0 +1,38 @@
+Filename: WetCloudySunset4.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road surface with multiple large puddles and high reflectivity; indicates recent rainfall.
+- Time: Late afternoon or early evening under cloudy sky; ambient lighting is soft and shadowless.
+- Road: Multi-lane highway with a slight curve; **lane markings are partially obscured** by standing water and glare.
+- Environment Complexity: Low — no traffic, no pedestrians, no dynamic obstacles.
+- Sensor Visibility Risk: High — reflections from puddles, water-induced surface artifacts, and glare can confuse lane detection and cause perception errors.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misreads puddles or reflections as lane lines or physical barriers. [H1, H2]
+- UCA1.2: AV fails to steer due to occluded or uncertain lane position. [H2, H3]
+- UCA1.3: Steering begins too early based on false or distorted lane detection. [H1, H2]
+- UCA1.4: AV delays steering due to waiting for visual disambiguation. [H2, H3]
+- UCA1.5: AV maintains steering too long, drifting laterally due to uncertain visual cues. [H1, H3]
+- UCA2.1: AV ends steering too soon under the impression of correct alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV initiates steering from misinterpreted water reflection, resulting in misalignment.
+- t1: UCA1.5 → AV continues adjusting steering, but due to poor feedback, drifts out of center lane.
+- t2: UCA2.1 → AV terminates correction early before true lane centering is achieved.
+
+Causality:
+- t0: Misleading surface reflections create incorrect initial path.
+- t1: Overcorrection caused by visual uncertainty results in lateral deviation.
+- t2: Premature correction termination leaves AV uncentered.
+
+Final Loss: AV risks unstable lane positioning and lateral drift due to persistent visual distortion and premature steering decisions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV waits for verified multi-sensor lane detection before steering.
+- t1: Steering corrections are moderated and guided by redundant perception input.
+- t2: Final alignment achieved before releasing steering command, ensuring centered lane position.
+
+Final Safe Outcome: AV adapts to reflective and wet road conditions through robust perception and controlled maneuvering, maintaining safe and accurate lane alignment.

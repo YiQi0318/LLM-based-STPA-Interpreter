@@ -1,0 +1,38 @@
+Filename: MidRainyNoon0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Active moderate rain with **visible rainfall streaks and large wet patches** on the road surface.
+- Time: Noon or early afternoon; bright lighting present but slightly diffused by rain/cloud cover.
+- Road: Multi-lane highway, gradual curve; **lane markings are intermittently visible**, some obscured by water accumulation or reflections.
+- Environment Complexity: Low — empty road, no nearby vehicles or pedestrians, bordered by solid barriers.
+- Sensor Visibility Risk: High — **reflections, rain streaks, and partial lane occlusion** can mislead vision systems and delay or distort perception of boundaries.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets surface reflections or water trails as lane features. [H1, H2]
+- UCA1.2: AV does not steer due to lack of confidence in lane detection caused by occlusion. [H2, H3]
+- UCA1.3: AV begins steering too early based on misleading puddle patterns. [H1, H2]
+- UCA1.4: AV delays steering input while attempting to disambiguate reflections from valid cues. [H2, H3]
+- UCA1.5: AV overextends steering duration in response to incomplete visual tracking. [H1, H3]
+- UCA2.1: AV ends the steering action before full lateral centering is confirmed. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV misreads rain sheen as lane features and triggers premature maneuver.
+- t1: UCA1.5 → Correction overshoots due to continued uncertainty in lane alignment.
+- t2: UCA2.1 → Steering ends early while AV is still off-center or drifting.
+
+Causality:
+- t0: Rain-induced surface noise distorts vision system’s lane feature detection.
+- t1: Persistent occlusion and streaking prevent real-time correction validation.
+- t2: Overconfidence in ambiguous visual input ends correction too soon.
+
+Final Loss: AV exhibits lateral deviation or fails to maintain center alignment due to reflection-based visual confusion and premature steering termination.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering is deferred until confidence in lane geometry is established through sensor fusion.
+- t1: Steering adjustments are small, controlled, and adjusted continuously during rain.
+- t2: AV confirms proper alignment before terminating correction, even in noisy perception conditions.
+
+Final Safe Outcome: AV completes safe and reliable steering under moderate rain by validating perception inputs and controlling correction behavior adaptively.

@@ -1,0 +1,38 @@
+Filename: WetSunset0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Damp to wet surface conditions, with multiple large dark patches consistent with retained moisture or puddles.
+- Time: Daylight, possibly morning or late afternoon based on shadow angles.
+- Road: Multi-lane highway, visibly marked lanes, some obscured by road surface discoloration and reflection.
+- Environment Complexity: Minimal; no obstacles, vehicles, or pedestrians visible in the scene.
+- Sensor Visibility Risk: Moderate — the contrast between dry and wet areas, and inconsistent road texture, may lead to reduced perception reliability (lane line confusion or misalignment).
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: Steering based on distorted or partially obscured lane perception caused by wet patches. [H1, H2]
+- UCA1.2: Steering not initiated due to lane boundaries being masked by moisture artifacts. [H2, H3]
+- UCA1.3: Steering begins too early, before confirming lane features through filtered perception. [H1, H2]
+- UCA1.4: Steering starts too late due to vision delay in separating lane lines from wet road. [H2, H3]
+- UCA1.5: Steering duration too long on wet surface, resulting in over-drift. [H1, H3]
+- UCA2.1: Steering ends prematurely before AV is fully re-aligned with the lane center. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV starts steering based on distorted vision; misinterprets lane alignment.
+- t1: UCA1.5 → Sustained steering causes deviation due to low friction and visual mismatch.
+- t2: UCA2.1 → Correction stops early; AV stabilizes off-center.
+
+Causality:
+- t0: Partial visual occlusion by wet texture creates false perception of lane direction.
+- t1: Control system maintains steering beyond optimal point, failing to realign properly.
+- t2: Final steering adjustment is truncated before trajectory correction is complete.
+
+Final Loss: AV remains outside ideal lane position due to moisture-induced visibility issues and suboptimal steering termination.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering decision delayed until wet surface artifacts are filtered and lanes confirmed.
+- t1: Steering is applied conservatively, correcting drift in real-time using visual feedback.
+- t2: Full re-alignment is completed with gradual tapering of input.
+
+Final Safe Outcome: AV adapts steering duration and timing to road visibility challenges, maintaining control and accurate lane positioning.

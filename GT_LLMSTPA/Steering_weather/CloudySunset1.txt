@@ -1,0 +1,38 @@
+Filename: CloudySunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Dry and overcast; **no rain or puddles**, but low-angle sunlight filtered through clouds creates soft, diffused lighting.
+- Time: Sunset or late afternoon — **warm-toned, hazy light** produces mild shadow gradients across the road.
+- Road: Multi-lane highway with a slight curve; **lane markings are sharp and uninterrupted**, though the lighting may reduce depth perception and texture contrast.
+- Environment Complexity: Low — no dynamic elements or visual clutter; the road is defined by static barriers.
+- Sensor Visibility Risk: Low to Moderate — **low-angle glare and dimming from cloud cover** slightly degrade contrast and may challenge visual boundary detection.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV confuses soft shadow transitions with lane edges. [H1, H2]
+- UCA1.2: AV avoids or delays steering due to uncertain visual distinction of markings. [H2, H3]
+- UCA1.3: Steering begins too early based on misinterpreted texture or surface gradient. [H1, H2]
+- UCA1.4: AV delays necessary action, waiting for a better-contrasted visual signal. [H2, H3]
+- UCA1.5: Steering continues unnecessarily due to ambiguous low-contrast feedback. [H1, H3]
+- UCA2.1: AV terminates steering early, mistaking subtle alignment cues for full correction. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV reacts to mild contrast gradients created by indirect sunlight as if they were lane indicators.
+- t1: UCA1.5 → Steering continues longer than needed due to uncertain position confirmation.
+- t2: UCA2.1 → AV ends maneuver too early under the false impression of correct alignment.
+
+Causality:
+- t0: Low-angle cloudy lighting affects the visual clarity of lane borders.
+- t1: Subtle changes in shadow and brightness lead to control uncertainty.
+- t2: AV concludes maneuver based on low-contrast visual interpretation rather than reliable confirmation.
+
+Final Loss: AV deviates slightly from center alignment or makes premature corrections, increasing lateral instability under soft-light conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV uses multi-sensor validation to distinguish lane features from ambient shading.
+- t1: Steering input is refined with perception checks and correction thresholds.
+- t2: Final adjustment ends after confirmed lane alignment from visual and inertial sensors.
+
+Final Safe Outcome: The AV maintains accurate steering and alignment in soft, overcast sunset conditions by leveraging contrast-insensitive perception methods and confidence-based control timing.

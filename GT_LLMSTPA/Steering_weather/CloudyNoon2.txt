@@ -1,0 +1,38 @@
+Filename: CloudyNoon2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Dry and overcast — **no precipitation or water presence**, but cloud cover diffuses sunlight.
+- Time: Noon or early afternoon; **even ambient lighting** with minimal shadows or glare.
+- Road: Multi-lane highway on a curve; **lane markings are clear and visible** with no apparent surface occlusion.
+- Environment Complexity: Low — empty scene with no dynamic elements; consistent edge barriers are present.
+- Sensor Visibility Risk: Low — although contrast is slightly reduced, **no glare, puddles, or harsh shadows** are present to affect vision systems significantly.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets surface texture or road wear as lane boundaries. [H1, H2]
+- UCA1.2: AV hesitates due to low-contrast or low-variation road surface under diffused light. [H2, H3]
+- UCA1.3: AV steers prematurely based on weak visual features (e.g., faded markings). [H1, H2]
+- UCA1.4: AV delays steering unnecessarily to validate already-visible markings. [H2, H3]
+- UCA1.5: AV continues steering longer than needed due to minimal feedback variation. [H1, H3]
+- UCA2.1: AV terminates maneuver before actual alignment is verified. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV triggers steering in response to non-lane surface features caused by low-contrast ambient lighting.
+- t1: UCA1.5 → Prolonged correction results from insufficient variation in lateral feedback cues.
+- t2: UCA2.1 → AV stops correction based on a false assumption of lane alignment under uniform lighting.
+
+Causality:
+- t0: Cloudy lighting reduces contrast between lane markings and road surface.
+- t1: Poor feature distinction slows or misguides the correction loop.
+- t2: Termination of maneuver occurs without clear sensory validation.
+
+Final Loss: AV risks slight lateral drift or oscillation within the lane due to misinterpretation of surface features under flat-light conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV confirms lane edges using cross-validated camera and map-based cues.
+- t1: Correction behavior is optimized for low-gradient scenes using high-confidence tracking.
+- t2: Correction ends only after full confirmation from inertial and visual feedback fusion.
+
+Final Safe Outcome: AV maintains stable and accurate trajectory during cloudy noon conditions by relying on validated perception rather than contrast-dependent features.

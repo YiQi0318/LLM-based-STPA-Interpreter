@@ -1,0 +1,38 @@
+Filename: SoftRainSunset0.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road with widespread reflective patches and puddles, consistent with soft or recent rain.
+- Time: Sunset or late afternoon; ambient light is soft with some areas of glare.
+- Road: Multi-lane highway with a light curve; **lane markings intermittently obscured** by water and reflectivity.
+- Environment Complexity: Low — no vehicles, pedestrians, or traffic elements in view.
+- Sensor Visibility Risk: High — **wet surfaces with puddle reflections and partial lane occlusion** create false lane cues and hinder accurate detection.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV mistakes puddles or surface reflections for lane markings or edges. [H1, H2]
+- UCA1.2: AV hesitates or avoids steering due to visually occluded lanes. [H2, H3]
+- UCA1.3: AV initiates steering too early based on false lane interpretation. [H1, H2]
+- UCA1.4: Steering is delayed due to unresolved visual ambiguity. [H2, H3]
+- UCA1.5: Steering continues longer than needed, causing drift or deviation. [H1, H3]
+- UCA2.1: AV ends steering prematurely, assuming alignment without confirmation. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV steers in response to misleading cues from wet surface distortion.
+- t1: UCA1.5 → AV maintains steering correction beyond optimal point due to feedback uncertainty.
+- t2: UCA2.1 → Steering ends too early; AV is left uncentered in lane.
+
+Causality:
+- t0: Puddle reflections interfere with accurate lane detection, triggering early maneuver.
+- t1: Limited lane clarity causes AV to continue adjusting without proper reference.
+- t2: AV halts steering prematurely based on false positive alignment.
+
+Final Loss: AV becomes misaligned or unstable within the lane, risking lateral deviation under poor visibility.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering is delayed until lane features are reliably detected across sensors.
+- t1: AV adjusts trajectory incrementally to account for inconsistent visibility.
+- t2: Final alignment is verified before steering correction is terminated.
+
+Final Safe Outcome: The AV maintains lane integrity through deliberate, visually validated steering behavior in light rain conditions.

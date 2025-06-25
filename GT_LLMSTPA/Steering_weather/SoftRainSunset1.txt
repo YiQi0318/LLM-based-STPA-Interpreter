@@ -1,0 +1,38 @@
+Filename: SoftRainSunset1.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet surface conditions with **multiple puddles and scattered water reflections**, indicative of recent or light rainfall.
+- Time: Sunset or late-day lighting with mild glare; visibility is ambient and diffused.
+- Road: Multi-lane highway; **lane markings are partially occluded** by pooled water and reflectivity across the surface.
+- Environment Complexity: Low — no vehicles or pedestrians present; barriers visible along both edges.
+- Sensor Visibility Risk: High — **glossy surface conditions and distorted water patches** interfere with visual lane recognition and can impact steering decisions.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets reflective water or gloss as part of the lane structure. [H1, H2]
+- UCA1.2: AV does not steer due to inadequate visibility of lane lines beneath water. [H2, H3]
+- UCA1.3: Steering is initiated too early from misdetected boundaries. [H1, H2]
+- UCA1.4: AV delays steering awaiting improved visual clarity. [H2, H3]
+- UCA1.5: AV holds steering too long in uncertain tracking conditions. [H1, H3]
+- UCA2.1: AV terminates steering early due to incorrect assumption of alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Steering is triggered early based on misleading visual surface conditions.
+- t1: UCA1.5 → AV continues steering correction longer than needed, drifting laterally.
+- t2: UCA2.1 → Steering ends too early without confirming center alignment.
+
+Causality:
+- t0: Water-covered lane markings are misread as legitimate edges.
+- t1: Continued uncertainty prevents timely adjustment.
+- t2: AV halts correction without real positional verification.
+
+Final Loss: AV risks operating off-center or drifting between lanes due to reflection-induced misinterpretation and suboptimal steering control under wet conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: AV postpones steering until valid lane confirmation through sensor fusion is achieved.
+- t1: AV performs controlled, incremental corrections in response to degraded visibility.
+- t2: Steering concludes only after full trajectory alignment is confirmed and stable.
+
+Final Safe Outcome: The AV maintains a safe and accurate path under wet and low-contrast lighting through cautious, validated steering behavior.

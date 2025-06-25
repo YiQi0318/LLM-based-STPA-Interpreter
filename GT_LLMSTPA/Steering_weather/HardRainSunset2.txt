@@ -1,0 +1,38 @@
+Filename: HardRainSunset2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: **Heavy rain** with intense surface wetness, flowing water texture, and strong rain streaks.
+- Time: Sunset or late afternoon; **low-angle lighting** introduces glare and deep reflections on the road surface.
+- Road: Multi-lane highway; markings are **partially submerged or obscured** by water and reflection.
+- Environment Complexity: Low — empty road with fixed concrete barriers; no external distractions.
+- Sensor Visibility Risk: Very High — **heavy rain, reflection, flowing water, and diffused glare** severely reduce visual lane detection reliability.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV interprets strong reflections or surface distortions as valid lane boundaries. [H1, H2]
+- UCA1.2: AV does not steer due to a lack of clear, confident lane detection. [H2, H3]
+- UCA1.3: AV initiates steering early based on distorted visual inputs. [H1, H2]
+- UCA1.4: AV delays steering too long while trying to resolve high-noise perception. [H2, H3]
+- UCA1.5: AV continues steering beyond intended correction due to unresolved visual feedback. [H1, H3]
+- UCA2.1: AV ends maneuver before it can verify that the vehicle is aligned correctly. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV detects and reacts to intense surface reflectivity as lane cues, beginning incorrect steering.
+- t1: UCA1.5 → Steering input is extended in an attempt to adjust without reliable reference points.
+- t2: UCA2.1 → Maneuver terminates early, leaving vehicle offset or misaligned.
+
+Causality:
+- t0: Reflection and water dynamics overwhelm camera input, producing incorrect edge detection.
+- t1: AV attempts to adjust but lacks feedback confidence in a high-distortion field.
+- t2: Steering logic terminates without validated lane position due to compromised visibility.
+
+Final Loss: The AV becomes misaligned or unstable within or across lanes due to severe visibility degradation, misclassified surfaces, and unreliable correction tracking.
+
+Safe Scenario Log (Mitigated):
+- t0: AV holds steering until confirmed visual alignment is achieved using multi-sensor fusion (e.g., radar + IMU).
+- t1: Steering behavior is smooth, time-bounded, and integrated with dynamic rain-robust filters.
+- t2: AV ends correction only after full trajectory confirmation despite visual noise.
+
+Final Safe Outcome: The AV successfully manages heavy rain and sunset glare through adaptive perception filtering and conservative, feedback-validated steering behavior.
