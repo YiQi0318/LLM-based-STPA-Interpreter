@@ -1,0 +1,38 @@
+Filename: MidRainSunset2.png
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Moderate rain; **wet surface with visible puddles and reflective patches**, consistent with ongoing or recent rainfall.
+- Time: Sunset or late afternoon; **diffused lighting** with some surface glare and soft shadows.
+- Road: Multi-lane highway on a curve; **lane markings are partially visible**, but distorted by water and reflection.
+- Environment Complexity: Low — no dynamic obstacles, traffic, or signage; barriers flank both sides.
+- Sensor Visibility Risk: High — **glare, puddle distortion, and patchy reflections** significantly degrade camera-based lane detection reliability.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misidentifies glare or puddle edges as lane markings. [H1, H2]
+- UCA1.2: AV fails to steer due to low lane confidence in reflective surface zones. [H2, H3]
+- UCA1.3: AV initiates steering early due to surface irregularities misclassified as lane cues. [H1, H2]
+- UCA1.4: AV waits too long to steer, hoping for clearer data. [H2, H3]
+- UCA1.5: Steering continues too long due to feedback delay from wet reflections. [H1, H3]
+- UCA2.1: Steering ends before full centering is visually confirmed. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV triggers premature steering due to confusing water reflections.
+- t1: UCA1.5 → Lane correction is held longer than needed, leading to lateral drift.
+- t2: UCA2.1 → AV finishes maneuver without proper visual confirmation of lane center.
+
+Causality:
+- t0: AV initiates maneuver based on misinterpreted puddle edge as lane line.
+- t1: Poor feedback in wet zones prolongs correction beyond target.
+- t2: AV believes it is aligned and terminates steering early.
+
+Final Loss: Vehicle may deviate from the correct trajectory or exhibit instability due to early reaction to distorted visuals and overconfidence in final positioning.
+
+Safe Scenario Log (Mitigated):
+- t0: AV waits for high-confidence lane line detection using multi-modal fusion before reacting.
+- t1: Steering correction is smooth, bounded, and validated in real time.
+- t2: Final maneuver ends only after clear lane centering is confirmed.
+
+Final Safe Outcome: AV maintains safe, accurate lane position despite moderate rain and visual distortion through filtered, confirmed perception and controlled steering.

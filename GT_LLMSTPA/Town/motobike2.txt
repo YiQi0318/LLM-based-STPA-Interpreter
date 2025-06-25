@@ -1,0 +1,38 @@
+Filename: motobike2.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry; road surface and visibility are ideal.
+- Time: Daytime — consistent sunlight with moderate shadows.
+- Road: Two-lane urban street with **oncoming traffic (van)**, **stationary car ahead in same lane**, **motorbike in the distance**, and **tight curbside spacing**.
+- Environment Complexity: High — involves **moving and static vehicles**, **narrow lane**, **urban buildings**, and **pedestrian features (hydrant, sidewalk)**.
+- Sensor Visibility Risk: High — **partial occlusion from parked and moving vehicles**, **tree shadows**, and **small motorbike in distance** create tracking and decision timing challenges.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering too early to avoid the stationary car without considering oncoming van and motorbike trajectory. [H1, H2]
+- UCA1.2: AV fails to steer or delays due to uncertainty in gap estimation between obstacles. [H2, H3]
+- UCA1.3: AV aggressively maneuvers without full clearance or speed profile prediction for the motorbike. [H1, H2]
+- UCA1.4: AV hesitates too long, resulting in traffic blockage or near-collision with rear-following vehicles. [H2, H3]
+- UCA1.5: AV sustains steering action too long, entering the oncoming lane even after hazard is cleared. [H1, H3]
+- UCA2.1: AV exits the steering maneuver too early, remaining improperly aligned relative to the curb or motorbike. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV initiates path change into oncoming lane to bypass car, misjudging the van’s proximity.
+- t1: UCA1.5 → Correction overshoots, risking prolonged lane invasion or sidewalk proximity.
+- t2: UCA2.1 → Steering ends before full lateral alignment, placing AV close to parked car or dynamic traffic.
+
+Causality:
+- t0: Poor spatial estimation under vehicle occlusion leads to premature maneuvering.
+- t1: Steering response lacks refinement under multi-agent constraint.
+- t2: Perceived correction completion occurs too early under spatial ambiguity.
+
+Final Loss: AV may enter the oncoming lane unsafely, or scrape against the parked vehicle due to improper correction timing in a highly constrained, multi-agent scene.
+
+Safe Scenario Log (Mitigated):
+- t0: AV defers lateral maneuver until both lanes are monitored and spacing with van/motorbike is confirmed.
+- t1: Steering is applied gradually, with collision-free corridor validation.
+- t2: Final alignment is completed only after full lane return is confirmed and no obstacles remain.
+
+Final Safe Outcome: The AV successfully steers around complex obstacles while avoiding collisions, overcorrection, or premature return to lane in a tight, multi-vehicle urban road scenario.

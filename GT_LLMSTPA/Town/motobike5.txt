@@ -1,0 +1,38 @@
+Filename: motobike5.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear, dry conditions; excellent lighting and visibility.
+- Time: Daytime — direct sunlight with distinct shadows; no weather-based interference.
+- Road: Urban or suburban street with **single-lane direction**, **motorbike directly ahead**, **parked car on the left**, and **pedestrian area and traffic signal (red)** visible further up the road.
+- Environment Complexity: High — includes **moving and static vehicles**, **pedestrian areas**, **roadside poles/trees**, and an **active red traffic light**.
+- Sensor Visibility Risk: Moderate — though visibility is good, the **motorbike’s small profile**, **proximity to the AV**, and **urban occlusions** introduce tracking and decision challenges.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV underestimates motorbike trajectory or fails to differentiate it from other objects, steering unsafely. [H1, H2]
+- UCA1.2: AV delays steering due to uncertainty about the motorbike’s path or red light behavior. [H2, H3]
+- UCA1.3: AV initiates a lane-adjusting maneuver too early, reacting to motorbike presence near the center. [H1, H2]
+- UCA1.4: AV delays steering in tight traffic, reducing spacing buffer with parked or moving agents. [H2, H3]
+- UCA1.5: AV continues steering too long, misjudging spacing relative to curb or motorbike. [H1, H3]
+- UCA2.1: AV ends steering correction prematurely before alignment with intended path is reached. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV initiates path change without fully classifying motorbike speed/direction.
+- t1: UCA1.5 → Steering overshoots, AV moves too close to the curb or into motorbike lane.
+- t2: UCA2.1 → AV prematurely exits the steering maneuver while misaligned behind the motorbike or near parked vehicle.
+
+Causality:
+- t0: Motorbike behavior is not clearly anticipated, leading to early AV maneuvering.
+- t1: Extended steering occurs due to compensation for perceived narrow margin.
+- t2: Lack of precise positional certainty results in early conclusion of correction.
+
+Final Loss: AV may conflict with nearby motorbike, pass too close to parked vehicle, or deviate from proper path due to misinterpreted movement and signal control cues.
+
+Safe Scenario Log (Mitigated):
+- t0: AV tracks motorbike’s motion and confirms path before steering.
+- t1: Maneuver is applied within tight bounds, respecting spacing from static and dynamic elements.
+- t2: Final path adjustment ends with lane centering and confirmed visual alignment.
+
+Final Safe Outcome: The AV handles dynamic urban traffic with situational awareness and trajectory validation, ensuring safe spacing and lane behavior alongside motorbikes and traffic control devices.

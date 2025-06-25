@@ -1,0 +1,38 @@
+Filename: trafficsign1.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Wet road surface with **strong water reflections** and moisture, indicating rainfall or post-rain conditions.
+- Time: Near sunset or sunrise with **extreme glare from the sun**, creating strong visual occlusion in the forward direction.
+- Road: Two-lane road, with **traffic signs (speed limit 90)** and **palm trees on both sides**; terrain includes hills and vegetation.
+- Environment Complexity: Moderate — curving road, vertical signage, sun glare, wet surface, and ambient occlusion from trees.
+- Sensor Visibility Risk: Very High — **sun glare directly ahead**, wet reflections, and dark shadows drastically impair camera-based detection and lane-following reliability.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV interprets glare or wet reflections as lane boundaries or road features. [H1, H2]
+- UCA1.2: AV does not steer due to overwhelming visual occlusion and uncertainty in road geometry. [H2, H3]
+- UCA1.3: Steering begins too early due to distorted feedback from reflective wet patches or signage. [H1, H2]
+- UCA1.4: Steering is delayed waiting for visual clarity that doesn't occur. [H2, H3]
+- UCA1.5: AV maintains steering correction too long due to continued perception degradation. [H1, H3]
+- UCA2.1: AV ends steering prematurely without verified trajectory correction under glare. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → Steering is triggered incorrectly due to false recognition of water reflection and sun flare.
+- t1: UCA1.5 → Prolonged correction causes AV to veer due to poor orientation in high-glare zone.
+- t2: UCA2.1 → AV stops adjusting trajectory before achieving visual re-centering.
+
+Causality:
+- t0: Lane and road edges are masked by glare and wet reflections, leading to false perception input.
+- t1: Lack of continuous tracking prolongs steering adjustment.
+- t2: AV assumes proper alignment based on incomplete or low-confidence visual data.
+
+Final Loss: AV may drift out of lane, overlook critical signage (e.g., speed limit), or execute unsafe maneuvers due to near-blinding conditions and reflection interference.
+
+Safe Scenario Log (Mitigated):
+- t0: AV defers steering until visual conditions improve or alternate sensing (e.g., LiDAR, map data) confirms geometry.
+- t1: Steering behavior is tightly constrained and reactive to fused sensor input.
+- t2: AV verifies alignment through non-visual input before concluding maneuver.
+
+Final Safe Outcome: AV maintains safe behavior in low-visibility, high-glare conditions by relying on redundant sensing and conservative decision thresholds.

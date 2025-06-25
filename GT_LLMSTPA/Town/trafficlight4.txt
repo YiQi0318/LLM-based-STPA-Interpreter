@@ -1,0 +1,38 @@
+Filename: trafficlight4.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry conditions, no visible road moisture or environmental interference.
+- Time: Daytime — ambient light is well-balanced with visible shadows and good contrast.
+- Road: Urban residential/commercial street with **narrow single-lane direction**, bordered by **buildings, traffic signs**, and **roadside objects** like a mailbox.
+- Environment Complexity: High — presence of **speed limit signage (30 km/h)**, tight spacing between structures, potential pedestrian zones, and distant intersection ahead.
+- Sensor Visibility Risk: Moderate — urban occlusion, shadow zones, and infrastructure clutter (poles, signs, trees) may obscure navigation elements and delay perception updates.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets static roadside elements (signs, poles, mailbox) as dynamic obstacles or lane markers. [H1, H2]
+- UCA1.2: AV does not initiate steering due to difficulty distinguishing road boundaries in tightly packed environment. [H2, H3]
+- UCA1.3: AV initiates steering prematurely, reacting to narrow lanes or sidewalk proximity. [H1, H2]
+- UCA1.4: Steering is delayed as the AV seeks unnecessary confirmation in a visually cluttered setting. [H2, H3]
+- UCA1.5: AV overcorrects due to continuous boundary ambiguity and poor lateral margin. [H1, H3]
+- UCA2.1: AV ends steering before lateral stability is achieved, drifting off-center in constrained space. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV initiates steering response based on false lateral margin judgment near poles and buildings.
+- t1: UCA1.5 → Steering is held too long, causing AV to stray near curb or centerline.
+- t2: UCA2.1 → Correction ends too soon, AV does not complete centering action.
+
+Causality:
+- t0: Lane perception degraded by vertical infrastructure and visual clutter on both sides.
+- t1: Lack of clear sidewalk-lane distinction leads to prolonged adjustment.
+- t2: AV misjudges trajectory alignment due to constrained view of road geometry.
+
+Final Loss: The AV may brush against sidewalk boundaries or misalign in narrow lanes due to overcorrection, early reaction, or premature steering cutoff.
+
+Safe Scenario Log (Mitigated):
+- t0: AV validates lateral lane structure using fused inputs and delay-based logic in occluded urban zones.
+- t1: Steering adjustments remain minimal and adaptive to road structure complexity.
+- t2: AV concludes maneuver only once confident lateral position is verified.
+
+Final Safe Outcome: AV steers safely and smoothly in a dense, visually cluttered urban environment by using conservative control strategy and multi-sensor validation.

@@ -1,0 +1,38 @@
+Filename: trafficlight2.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry road surface with no visible obstructions or environmental hazards.
+- Time: Late afternoon or morning with **intense sun glare directly ahead**, creating reduced contrast and mild haze.
+- Road: Single-lane residential street, **lined by trees and buildings**, with a **small traffic light visible in the distance**.
+- Environment Complexity: Moderate — road is clear, but **sun position degrades visual clarity**, especially in distant object and signal detection.
+- Sensor Visibility Risk: High — **sun glare directly in forward field of view**, flattening road surface contrast and making **distant signage/signal detection difficult**.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misidentifies surface brightness or shadows as lane markers or obstacles. [H1, H2]
+- UCA1.2: AV fails to steer due to poor forward visibility from solar glare. [H2, H3]
+- UCA1.3: AV initiates steering too early due to misperceived road geometry under high-exposure conditions. [H1, H2]
+- UCA1.4: AV delays maneuver due to over-cautious interpretation of poor contrast zones. [H2, H3]
+- UCA1.5: AV holds steering too long, deviating laterally without reliable reference. [H1, H3]
+- UCA2.1: AV ends steering too early due to inability to track lane under glare. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV starts steering early in response to contrast boundary created by sun-induced surface glare.
+- t1: UCA1.5 → Without stable perception, AV drifts during extended correction attempt.
+- t2: UCA2.1 → Correction halts prematurely under the assumption of completed alignment.
+
+Causality:
+- t0: Sun-facing orientation floods camera sensor with brightness, misguiding initial maneuver.
+- t1: AV struggles to confirm position against low-contrast edges during correction.
+- t2: System ends maneuver based on incomplete or corrupted visual input.
+
+Final Loss: AV could veer from center or interpret a visually flat zone incorrectly, reducing lateral stability under glare-intensive conditions.
+
+Safe Scenario Log (Mitigated):
+- t0: Steering is delayed until visual confidence recovers or alternate sensor input (e.g., LiDAR, IMU) confirms geometry.
+- t1: Steering is tightly constrained, using historic lane tracking and environmental mapping.
+- t2: Maneuver ends only after confirmation from redundant perception sources.
+
+Final Safe Outcome: The AV successfully navigates through sun-glare conditions using adaptive decision timing and sensor fusion, maintaining a stable and accurate lane position.

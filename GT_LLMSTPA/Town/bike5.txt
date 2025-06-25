@@ -1,0 +1,38 @@
+Filename: bike5.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry; good road visibility and lighting.
+- Time: Daytime — strong but even lighting with visible long shadows.
+- Road: Two-lane urban road with **fenced boundary on right**, **cyclist in lane ahead**, **blue car merging or parked on the left**, and **urban buildings in the distance**.
+- Environment Complexity: High — **cyclist in trajectory**, **left vehicle encroachment**, **right boundary fencing**, and **mixed urban features** constrain the AV's lateral freedom.
+- Sensor Visibility Risk: Moderate — **vehicle shadow**, **overlapping objects**, and **narrow clearance** between dynamic agents challenge lane estimation and safe trajectory planning.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering too early to avoid the cyclist and encroaches into the path of the left vehicle. [H1, H2]
+- UCA1.2: AV delays steering due to indecision between cyclist avoidance and left-lane encroachment risk. [H2, H3]
+- UCA1.3: AV steers aggressively around the cyclist without accurate prediction of the blue vehicle's motion. [H1, H2]
+- UCA1.4: AV hesitates too long and gets caught in a narrowing path between the cyclist and the left-side car. [H2, H3]
+- UCA1.5: AV continues steering longer than needed, placing itself too close to roadside fencing or into another travel path. [H1, H3]
+- UCA2.1: AV ends the steering too early, moving back toward the cyclist without full clearance. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV initiates a path correction before the blue car’s path is fully understood, risking lateral conflict.
+- t1: UCA1.5 → Correction continues excessively, pushing AV toward road boundary or wrong lane.
+- t2: UCA2.1 → Steering stops too early, failing to provide safe distance from the cyclist.
+
+Causality:
+- t0: Tight lateral space and two dynamic agents (car and cyclist) increase decision complexity.
+- t1: Overcorrection occurs due to uncertainty about spacing and vehicle intent.
+- t2: Incomplete clearance judgment results in an unsafe return trajectory.
+
+Final Loss: The AV risks collision or unsafe proximity with either the cyclist or another vehicle due to poor lateral spacing management and maneuver timing in a congested urban lane.
+
+Safe Scenario Log (Mitigated):
+- t0: AV holds trajectory until left-side vehicle motion is confirmed stable.
+- t1: AV performs short, buffered lane adjustment with constant tracking of the cyclist and left vehicle.
+- t2: AV returns to lane center only after ensuring clearance from all nearby road users and boundaries.
+
+Final Safe Outcome: The AV maneuvers safely past a cyclist in a narrow corridor while balancing clearance from adjacent traffic and physical road edges through sensor fusion and trajectory prediction.

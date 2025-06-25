@@ -1,0 +1,38 @@
+Filename: bike1.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry with optimal visibility.
+- Time: Daytime — balanced daylight with moderate shadows and good surface contrast.
+- Road: Wide urban intersection; **cyclist is crossing diagonally in front of AV**, with **tall buildings**, **light poles**, and **minimal lane markings** in the visible zone.
+- Environment Complexity: High — **uncontrolled cyclist crossing**, **open intersection**, **faint lane guidance**, and **urban surroundings** require adaptive control and pedestrian-level awareness.
+- Sensor Visibility Risk: Moderate — **cyclist crossing angle**, **lack of clear road boundaries**, and **urban background** may interfere with accurate classification and trajectory estimation.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering while the cyclist is still crossing the intended path. [H1, H2]
+- UCA1.2: AV fails to steer or delays maneuver excessively due to indecision about cyclist’s trajectory. [H2, H3]
+- UCA1.3: AV turns to avoid the cyclist but misjudges the diagonal motion vector. [H1, H2]
+- UCA1.4: AV stalls or hesitates over the maneuver, obstructing intersection traffic flow. [H2, H3]
+- UCA1.5: AV overcompensates the steering around the cyclist and exits the intersection off-center. [H1, H3]
+- UCA2.1: AV ends the maneuver too soon, while still overlapping the cyclist's expected trajectory. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV initiates path correction into intersection while cyclist is actively crossing diagonally.
+- t1: UCA1.3 → Lateral shift misaligns with cyclist path, bringing vehicle closer instead of avoiding.
+- t2: UCA2.1 → AV returns to a straight path too early, before full cyclist clearance.
+
+Causality:
+- t0: Diagonal crossing motion misinterpreted as linear movement, triggering premature control.
+- t1: AV logic overestimates time to clearance due to broad intersection and poor edge cues.
+- t2: Incomplete clearance validation causes early return-to-path decision.
+
+Final Loss: The AV could cause a near-miss or collision with a cyclist due to poor timing and misalignment in an unstructured, wide-crossing scenario.
+
+Safe Scenario Log (Mitigated):
+- t0: AV monitors cyclist’s lateral and forward motion and holds position until the path is fully clear.
+- t1: Steering initiates only after cyclist exits projected trajectory space.
+- t2: AV confirms trajectory stability and completes intersection alignment safely within boundaries.
+
+Final Safe Outcome: AV yields to the cyclist crossing, then executes a controlled, well-aligned trajectory through an open urban intersection using conservative timing and path validation.

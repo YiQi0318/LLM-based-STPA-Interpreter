@@ -1,0 +1,38 @@
+Filename: bike3.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry, with ideal visibility.
+- Time: Daytime — high-contrast scene with strong sunlight; long shadows not visible, indicating midday sun.
+- Road: Wide urban intersection, **cyclist directly ahead**, **yellow/orange traffic signal**, **cross-traffic vehicles**, and **multi-lane roads** with curb ramps and buildings.
+- Environment Complexity: High — **intersection negotiation**, **cyclist in AV’s path**, **signal transition**, and **cross-traffic motion** require dynamic, high-priority decisions.
+- Sensor Visibility Risk: Moderate — open environment is visually clear, but **cyclist's small profile**, **signal timing**, and **distant vehicles** create challenges for timely, precise reactions.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates a steering maneuver to pass the cyclist without confirming signal transition and cross-traffic clearance. [H1, H2]
+- UCA1.2: AV fails to steer or delays due to conflicting interpretations of cyclist intent and signal meaning. [H2, H3]
+- UCA1.3: AV steers too closely to the cyclist while attempting to beat signal transition. [H1, H2]
+- UCA1.4: AV waits too long to steer, blocking the intersection and delaying the flow of traffic. [H2, H3]
+- UCA1.5: AV maintains steering correction too long across the wide intersection, misaligning from lane after passing the cyclist. [H1, H3]
+- UCA2.1: AV terminates steering too early, re-aligning within cyclist proximity before complete clearance. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV attempts to pass cyclist under a yellow light without full cross-traffic assessment.
+- t1: UCA1.5 → Steering continues through wide road, deviating into adjacent lane due to poor alignment monitoring.
+- t2: UCA2.1 → AV prematurely ends steering before cyclist has been safely passed and lane is fully reentered.
+
+Causality:
+- t0: Urgency created by yellow light reduces AV’s safety buffer in planning maneuver.
+- t1: Lack of lane reference across broad intersection reduces precision.
+- t2: Early termination results from visual assumption of successful path correction without validation.
+
+Final Loss: AV may enter unsafe conflict with cross-traffic, the cyclist, or adjacent lane vehicles due to overconfidence in timing and incomplete trajectory realignment.
+
+Safe Scenario Log (Mitigated):
+- t0: AV slows and evaluates signal and cyclist intent before maneuver.
+- t1: Steering is executed gradually with continuous position verification.
+- t2: Path is finalized after full clearance from cyclist and stable lane tracking is confirmed.
+
+Final Safe Outcome: The AV safely tracks and passes a cyclist through an intersection with dynamic signal timing and cross-traffic, prioritizing cautious, spatially aware control.

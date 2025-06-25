@@ -1,0 +1,38 @@
+Filename: person0.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry — visibility is optimal, with no signs of rain or surface moisture.
+- Time: Daytime — bright ambient lighting with consistent shadows and good surface contrast.
+- Road: Residential road curving left, with **green pedestrian signal**, **sidewalks**, **pedestrians present**, and **street-side objects** like hydrants and signs.
+- Environment Complexity: Moderate to High — includes **pedestrian presence**, **active traffic signal**, **curved road geometry**, and nearby sidewalk infrastructure.
+- Sensor Visibility Risk: Low to Moderate — while visibility is clear, the **proximity of pedestrians and curve geometry** introduces challenges in steering precision and trajectory planning.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misjudges the pedestrian’s intention to cross and initiates an unsafe maneuver. [H1, H2]
+- UCA1.2: AV hesitates to steer due to the ambiguous positioning of pedestrians near the sidewalk. [H2, H3]
+- UCA1.3: AV initiates steering too early near the curb, risking close interaction with the waiting pedestrians. [H1, H2]
+- UCA1.4: AV delays steering while overanalyzing curve and pedestrian positions. [H2, H3]
+- UCA1.5: AV maintains steering correction too long, causing excessive deviation toward the curb. [H1, H3]
+- UCA2.1: AV ends steering before fully negotiating the curve, resulting in unsafe alignment or lane departure. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV begins curve adjustment early, misjudging space between road and sidewalk.
+- t1: UCA1.5 → AV continues correcting too far into the turn, edging close to curb-side pedestrian.
+- t2: UCA2.1 → Steering is stopped early without completing the leftward curve, drifting from lane center.
+
+Causality:
+- t0: Curve geometry combined with pedestrian proximity reduces lateral margin clarity.
+- t1: Steering prolongs beyond optimal arc due to conservative avoidance logic.
+- t2: Lack of dynamic pedestrian intent confirmation ends maneuver prematurely.
+
+Final Loss: AV may end up too close to pedestrians or fail to complete the curve safely due to timing or path planning under curve and pedestrian interaction.
+
+Safe Scenario Log (Mitigated):
+- t0: AV assesses pedestrian state and confirms no intent to cross before maneuvering.
+- t1: Steering is performed incrementally with active curve-following logic.
+- t2: Correction ends after complete curve negotiation and safe lateral clearance confirmation.
+
+Final Safe Outcome: AV successfully negotiates a leftward curve in a pedestrian-dense residential zone by using conservative planning, real-time pedestrian awareness, and multi-sensor curve tracking.

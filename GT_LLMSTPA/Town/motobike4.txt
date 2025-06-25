@@ -1,0 +1,38 @@
+Filename: motobike4.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry; no rain or moisture present on the surface.
+- Time: Daytime — sunlight is strong with some shadows cast by lamps and buildings.
+- Road: Narrow two-lane residential street, **closely bordered by buildings**, with **motorbike visible in the distance** and **street lights and poles near the curb**.
+- Environment Complexity: Moderate — few dynamic agents, but **tight lane width**, **urban geometry**, and **reduced lateral margin** near infrastructure.
+- Sensor Visibility Risk: Low to Moderate — visibility is good, but **urban clutter**, **shadowing**, and **long-range motorbike detection** affect early reaction accuracy.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misjudges the approaching motorbike’s speed and triggers early avoidance. [H1, H2]
+- UCA1.2: AV delays steering due to uncertainty in lane spacing within the narrow street. [H2, H3]
+- UCA1.3: AV initiates steering too soon, adjusting for an obstacle that is still distant. [H1, H2]
+- UCA1.4: AV withholds steering while seeking clearance that does not require correction yet. [H2, H3]
+- UCA1.5: AV maintains a lane adjustment too long, veering near curbs or street infrastructure. [H1, H3]
+- UCA2.1: AV terminates the steering before full lane alignment is reached due to misclassified motorbike behavior. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV begins steering in anticipation of the motorbike at a distance, despite available space.
+- t1: UCA1.5 → Continued lateral shift causes drift toward sidewalk or lamp posts.
+- t2: UCA2.1 → AV concludes maneuver without full lateral correction, remaining slightly off-center.
+
+Causality:
+- t0: Motorbike’s distant presence triggers overcautious trajectory change.
+- t1: Steering response overshoots due to lack of real-time refinement near tight obstacles.
+- t2: Early maneuver exit occurs based on incomplete threat resolution.
+
+Final Loss: AV may operate off-center or too close to roadside objects due to early and sustained steering behavior in reaction to a distant motorbike.
+
+Safe Scenario Log (Mitigated):
+- t0: AV defers lateral change until motorbike behavior is better understood and within range.
+- t1: Steering adjustments are gradual, constrained, and stay within defined road boundaries.
+- t2: Final alignment is confirmed through curb/lane detection before ending maneuver.
+
+Final Safe Outcome: AV maintains centered and safe trajectory within narrow urban road while tracking distant dynamic objects conservatively, avoiding overreaction or lateral drift.

@@ -1,0 +1,38 @@
+Filename: bike4.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry; excellent visibility and contrast.
+- Time: Daytime — strong daylight with long building and pole shadows.
+- Road: Wide urban intersection with **green traffic signal**, **cyclist directly ahead in-lane**, **open space**, and **urban buildings with vertical structures** (trees, poles).
+- Environment Complexity: Moderate to High — **cyclist presence**, **lane transition through intersection**, **signal compliance**, and **urban occlusions** (light poles, shadows).
+- Sensor Visibility Risk: Moderate — **shadow patterns**, **cyclist silhouette overlap**, and **open urban geometry** increase timing sensitivity in tracking and steering decisions.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering to pass the cyclist at the green light without ensuring full intersection clearance. [H1, H2]
+- UCA1.2: AV fails to steer, remaining behind the cyclist too long, impeding traffic or causing hesitation. [H2, H3]
+- UCA1.3: AV steers too closely, assuming the cyclist will accelerate straight through. [H1, H2]
+- UCA1.4: AV delays steering, misinterpreting the green light as immediate go-ahead without cyclist tracking. [H2, H3]
+- UCA1.5: AV continues steering excessively during the maneuver, exiting lane alignment in the wide intersection. [H1, H3]
+- UCA2.1: AV ends steering before safely passing the cyclist, drifting too early toward their lane path. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV begins passing maneuver on green without confirming full clear path beyond the cyclist.
+- t1: UCA1.5 → AV drifts across the wide intersection zone and fails to recenter after lateral shift.
+- t2: UCA2.1 → AV ends maneuver while still adjacent to the cyclist without full clearance.
+
+Causality:
+- t0: Misjudged interaction between green signal timing and cyclist speed.
+- t1: Overconfidence in empty intersection width leads to over-steering.
+- t2: Steering ends based on incomplete forward field validation.
+
+Final Loss: AV could side-approach the cyclist, misalign in the wide intersection, or create confusion in traffic flow due to poor spatial timing and overcompensated or premature control.
+
+Safe Scenario Log (Mitigated):
+- t0: AV tracks the cyclist's motion through the green light and defers maneuver until path is clear.
+- t1: Steering is adapted incrementally, respecting buffer zones and lane integrity.
+- t2: Maneuver ends only after safe re-centering in the lane, past cyclist and intersection boundary.
+
+Final Safe Outcome: AV successfully navigates a green-light intersection with a cyclist ahead by combining trajectory prediction, signal logic, and conservative control in an open urban space.

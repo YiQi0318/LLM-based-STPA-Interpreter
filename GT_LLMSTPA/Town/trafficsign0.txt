@@ -1,0 +1,38 @@
+Filename: trafficsign0.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear, dry conditions with high visibility; no rain or moisture on the road.
+- Time: Daytime with bright natural lighting and clear sky.
+- Road: Multi-lane highway with visible **overpass ahead** and consistent **lane markings**.
+- Environment Complexity: Moderate — presence of another vehicle ahead in the same lane; **guardrails, barriers, and rocky terrain** on both sides.
+- Sensor Visibility Risk: Low — environment is visually consistent, though **dynamic elements (e.g., lead vehicle)** introduce some complexity.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV incorrectly reacts to road edge shadows or surface color variation as lane changes. [H1, H2]
+- UCA1.2: AV fails to steer or overreacts to the lead vehicle’s positioning or behavior. [H2, H3]
+- UCA1.3: AV initiates a lane change or steering maneuver prematurely due to unclear road curvature or unexpected vehicle movement. [H1, H2]
+- UCA1.4: AV delays steering too long while evaluating safe lane position behind the lead vehicle. [H2, H3]
+- UCA1.5: AV applies steering input too aggressively or holds correction too long, risking oversteer or lane departure. [H1, H3]
+- UCA2.1: AV halts steering correction early without reaching center alignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.2, UCA1.3 → AV misjudges lead vehicle’s position or intention and steers unexpectedly.
+- t1: UCA1.5 → AV continues steering too long, risking side lane encroachment.
+- t2: UCA2.1 → Steering stops early, leaving AV uncentered within its lane.
+
+Causality:
+- t0: Forward vehicle causes AV to interpret a need for lane shift or correction.
+- t1: Lack of situational clarity leads to excessive control action.
+- t2: Premature conclusion of maneuver leaves AV offset in its lane.
+
+Final Loss: AV may become misaligned, too close to the lead vehicle, or inadvertently cross into adjacent lanes due to dynamic scene complexity.
+
+Safe Scenario Log (Mitigated):
+- t0: AV maintains current lane and distance unless lead vehicle trajectory is unpredictable.
+- t1: Steering adjustments are short, incremental, and reevaluated constantly with high-confidence data.
+- t2: Steering ceases only after lateral position is verified to be stable and centered.
+
+Final Safe Outcome: AV handles highway navigation safely by tracking the lead vehicle, maintaining lateral alignment, and minimizing control effort under clear conditions.

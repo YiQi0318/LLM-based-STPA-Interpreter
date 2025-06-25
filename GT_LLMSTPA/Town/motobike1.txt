@@ -1,0 +1,38 @@
+Filename: motobike1.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Rainy or recently wet — **wet road surface**, **visible reflection**, and **gray overcast sky** reduce contrast and traction.
+- Time: Daytime — ambient daylight present, but visibility is degraded by weather conditions.
+- Road: Multi-lane intersection with **green traffic light**, **car directly ahead**, **motorbike to the left**, and **multiple pedestrians and road features** at the crossing.
+- Environment Complexity: High — includes **dynamic vehicles**, **active intersection**, **pedestrian presence**, and **weather-based perception interference**.
+- Sensor Visibility Risk: High — **rain reflection**, **surface glare**, and **reduced contrast** interfere with accurate tracking of road markings, other vehicles, and intersection boundaries.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering too early in response to wet surface reflections or incorrect perception of motorbike trajectory. [H1, H2]
+- UCA1.2: AV hesitates to steer due to poor confidence in lane visibility or intersection layout under wet conditions. [H2, H3]
+- UCA1.3: AV misinterprets motorbike distance/speed and makes a corrective maneuver unsafely. [H1, H2]
+- UCA1.4: AV delays steering excessively, misjudging cross-traffic or pedestrian presence under occluded visibility. [H2, H3]
+- UCA1.5: AV continues steering longer than needed due to tracking errors in the rain-distorted visual field. [H1, H3]
+- UCA2.1: AV ends steering before completing trajectory correction across the intersection. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV starts maneuver due to false boundary perception from reflection.
+- t1: UCA1.5 → Continued steering beyond necessary correction leads AV into unintended zone or adjacent lane.
+- t2: UCA2.1 → AV halts path adjustment prematurely, failing to align properly in the correct lane.
+
+Causality:
+- t0: Wet surface reflections simulate visual lane artifacts, misguiding perception.
+- t1: Sensor feedback delay or noise from rain leads to prolonged correction.
+- t2: Incomplete perception leads to early steering termination before confirmation of alignment.
+
+Final Loss: AV may drift from intended lane or conflict with another vehicle or pedestrian space due to steering timing misaligned with real-world geometry under poor weather.
+
+Safe Scenario Log (Mitigated):
+- t0: AV validates all lane features using sensor fusion and avoids reacting to visual anomalies caused by rain.
+- t1: Steering correction is brief, bounded, and dynamically updated based on vehicle proximity and intersection logic.
+- t2: Final maneuver concludes only after intersection lane re-entry is visually and spatially confirmed.
+
+Final Safe Outcome: The AV safely negotiates a wet intersection with active traffic and pedestrians by accounting for weather distortion, maintaining control discipline, and validating positioning throughout.

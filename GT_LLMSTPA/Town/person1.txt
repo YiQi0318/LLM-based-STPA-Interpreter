@@ -1,0 +1,38 @@
+Filename: person1.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Overcast or rainy; **dark sky with wet or damp road surface**, suggesting reduced traction and visibility.
+- Time: Late afternoon or early evening — low light, **ambient gray tone**, and use of traffic signals (red pedestrian light).
+- Road: Single-lane road with **sidewalk**, **pedestrian on crosswalk**, **planter obstacle**, and **residential fencing** along the route.
+- Environment Complexity: High — **pedestrian in active crosswalk**, **dark, slippery road**, **obscured sidewalk boundaries**, and **wet reflections** affecting perception.
+- Sensor Visibility Risk: High — **low contrast lighting**, **glare from wet surface**, and **presence of pedestrian** in a low-visibility situation pose risk to lane detection and control decisions.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV fails to identify the pedestrian in low light and proceeds to steer. [H1, H2]
+- UCA1.2: AV does not steer around the pedestrian due to misclassification or visibility issues. [H2, H3]
+- UCA1.3: AV steers prematurely before the pedestrian clears the danger zone. [H1, H2]
+- UCA1.4: AV delays steering while awaiting pedestrian exit but misjudges their position or intent. [H2, H3]
+- UCA1.5: AV holds steering too long, causing instability or overcompensation when lane resumes. [H1, H3]
+- UCA2.1: AV ends steering correction too early, risking close pass or side contact with pedestrian. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV proceeds without detecting or reacting to the pedestrian, initiating unsafe path.
+- t1: UCA1.5 → AV continues lateral maneuver past necessary point, approaching non-road area (e.g., sidewalk or planter).
+- t2: UCA2.1 → AV ends path correction before full clearance of pedestrian.
+
+Causality:
+- t0: Low light, rain, and dark clothing reduce pedestrian visibility to vision systems.
+- t1: AV tries to maintain clearance but lacks confirmed trajectory feedback.
+- t2: Decision is finalized without full spatial validation, leading to an unsafe approach.
+
+Final Loss: The AV may endanger the pedestrian or violate the crosswalk space due to misjudged timing and environmental degradation in visual input.
+
+Safe Scenario Log (Mitigated):
+- t0: AV identifies pedestrian and halts or delays steering until crosswalk is fully clear.
+- t1: Steering path is recalculated using pedestrian trajectory and clearances.
+- t2: Final maneuver concludes only after safe, verified clearance from both pedestrian and lane edge elements.
+
+Final Safe Outcome: The AV safely navigates around the pedestrian in a dark, rainy setting using robust visual and behavioral prediction, ensuring maximum protection.

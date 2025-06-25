@@ -1,0 +1,38 @@
+Filename: bike7.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry, with high visibility and strong sunlight.
+- Time: Daytime — shadows cast clearly, sunlight affects portions of visual scene.
+- Road: Two-lane residential/urban road, **60 km/h speed limit**, **bicyclist ahead in lane**, **oncoming car present**, **trees and tall buildings** alongside.
+- Environment Complexity: High — includes **vulnerable road user (bicyclist)**, **oncoming traffic**, **speed limit constraint**, **parked and moving vehicles**, and **tree-induced shadows**.
+- Sensor Visibility Risk: Moderate — **tree shadows**, **side structures**, and **narrow clearances** complicate path estimation and agent tracking.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering too early in response to the cyclist without confirming clearance or oncoming traffic. [H1, H2]
+- UCA1.2: AV does not steer at all, failing to adjust path around the cyclist. [H2, H3]
+- UCA1.3: AV steers too closely to the bicyclist, assuming they will stay in a straight predictable path. [H1, H2]
+- UCA1.4: AV delays steering while seeking clearance confirmation from oncoming car or surroundings. [H2, H3]
+- UCA1.5: AV maintains steering longer than necessary, drifting toward curb or incorrect trajectory. [H1, H3]
+- UCA2.1: AV ends the maneuver too early, returning to lane center before safely passing the cyclist. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV moves to pass the cyclist while oncoming traffic is closer than safe margin allows.
+- t1: UCA1.3 → AV passes too close to the cyclist due to compressed lateral space.
+- t2: UCA2.1 → AV ends steering too early, pulling in before sufficient distance is cleared.
+
+Causality:
+- t0: Risk underestimation due to speed limit and timing with oncoming traffic.
+- t1: Misjudged lateral spacing due to narrow road and visual complexity.
+- t2: Incomplete pass before steering termination.
+
+Final Loss: AV may endanger the bicyclist or approach head-on traffic due to mistimed or misjudged lane deviation and premature maneuver completion.
+
+Safe Scenario Log (Mitigated):
+- t0: AV waits to steer until oncoming lane is clear and a pass is viable.
+- t1: Passes the cyclist with ample lateral space, tracking both agents dynamically.
+- t2: Returns to lane only after full clearance from the cyclist and re-confirmation of correct trajectory.
+
+Final Safe Outcome: AV completes a safe pass of a cyclist on a constrained residential road by applying conservative timing, trajectory refinement, and continuous validation of surrounding agent behavior.

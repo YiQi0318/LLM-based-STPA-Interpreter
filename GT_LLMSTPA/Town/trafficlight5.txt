@@ -1,0 +1,38 @@
+Filename: trafficlight5.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry road surface, with no visual signs of rain or moisture.
+- Time: Daytime with soft lighting and moderate shadow presence.
+- Road: Narrow two-lane residential street; **curbs and sidewalks on both sides**, with **buildings very close to the road**.
+- Environment Complexity: High — **other vehicle directly ahead**, **speed limit sign (30)**, closely spaced homes, potential for pedestrian activity, and obstructed side views from parked cars or buildings.
+- Sensor Visibility Risk: Moderate to High — although visibility is good, **urban occlusion**, parked vehicles, and narrow lanes increase the chance of missed or late detections.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misidentifies a parked or moving vehicle as lane structure or static object. [H1, H2]
+- UCA1.2: AV fails to steer or yields incorrectly due to confusing environmental clutter or occluded road boundaries. [H2, H3]
+- UCA1.3: Steering is initiated too early, reacting to the lead vehicle’s motion or visual ambiguity in narrow lanes. [H1, H2]
+- UCA1.4: AV delays steering or overanalyzes in a densely constrained environment. [H2, H3]
+- UCA1.5: AV maintains an overcorrective steering maneuver due to misclassification of sidewalk/curb positions. [H1, H3]
+- UCA2.1: AV terminates steering too early, causing poor centering in a tight lane. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV overreacts to lead vehicle positioning or lane edge uncertainty, initiating unnecessary adjustment.
+- t1: UCA1.5 → AV continues correction too long and encroaches curb or opposite lane.
+- t2: UCA2.1 → AV ends adjustment before achieving safe lateral placement.
+
+Causality:
+- t0: Narrow lane and visual obstruction from buildings complicate lane boundary detection.
+- t1: Misinterpretation of roadside structures as navigable boundaries causes oversteer.
+- t2: Steering correction is cut off before the AV is fully re-centered.
+
+Final Loss: AV may drift out of lane or steer too close to curbs or adjacent obstacles in a tight urban road environment due to misperception or mis-timing.
+
+Safe Scenario Log (Mitigated):
+- t0: AV identifies lead vehicle trajectory and adjusts steering only when lane width and markings are clearly confirmed.
+- t1: Incremental correction is applied cautiously, prioritizing sidewalk and curb avoidance.
+- t2: AV finishes steering action only after clear confirmation of safe and centered trajectory.
+
+Final Safe Outcome: AV handles the narrow urban road safely by moderating steering behavior and relying on detailed environmental understanding, even with a lead vehicle and structural occlusion.

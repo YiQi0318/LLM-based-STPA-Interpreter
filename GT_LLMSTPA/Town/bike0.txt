@@ -1,0 +1,38 @@
+Filename: bike0.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear, dry, and optimal for visibility.
+- Time: Daytime — strong ambient light with minimal shadow interference.
+- Road: Multi-lane intersection or merge point with **STOP markings**, **cyclist directly ahead**, **roadside railings**, and **moderate open space** leading into a larger traffic zone.
+- Environment Complexity: Moderate to High — **cyclist ahead in AV’s path**, **multi-lane indicators**, **merging potential**, and **STOP logic** require timing, alignment, and behavioral anticipation.
+- Sensor Visibility Risk: Low to Moderate — good lighting, but **multiple lane markings**, **curb railings**, and **cyclist profile** could complicate intent prediction and boundary fidelity.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering before cyclist completes movement across STOP line. [H1, H2]
+- UCA1.2: AV delays steering unnecessarily, interpreting STOP as an absolute hold without dynamic context. [H2, H3]
+- UCA1.3: AV steers around cyclist prematurely, cutting path closely. [H1, H2]
+- UCA1.4: AV stalls behind cyclist for too long, disrupting flow and causing potential rear-end risk. [H2, H3]
+- UCA1.5: AV overcorrects while navigating wide STOP zone, misaligning with intended lane merge. [H1, H3]
+- UCA2.1: AV concludes its steering before full clearance of cyclist and merge zone is achieved. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV starts maneuver before cyclist has cleared or signaled intent across STOP region.
+- t1: UCA1.5 → Overcorrection across wide STOP marking causes drift outside lane or excessive lateral deviation.
+- t2: UCA2.1 → Steering ends early, leaving AV aligned incorrectly for lane merge or following.
+
+Causality:
+- t0: Misreading STOP boundary as clear when cyclist presence remains unresolved.
+- t1: Steering error arises from poor lane visibility and overreaction to boundary markers.
+- t2: Early steering termination due to visual assumption of safety.
+
+Final Loss: The AV may disrupt cyclist motion or misalign at a merge or intersection point due to poorly timed or incomplete steering response in a STOP-designated area.
+
+Safe Scenario Log (Mitigated):
+- t0: AV fully monitors cyclist position and intent before initiating path correction.
+- t1: Steering is done in-line with STOP logic, tracking markings and cyclist progress.
+- t2: Final trajectory realignment concludes after cyclist clearance and lane position confirmation.
+
+Final Safe Outcome: AV yields fully at STOP, then executes a safe, timely, and properly aligned maneuver around a cyclist in a multi-lane merge/intersection zone using predictive intent and line tracking.

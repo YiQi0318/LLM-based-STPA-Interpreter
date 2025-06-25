@@ -1,0 +1,38 @@
+Filename: motobike0.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear, dry conditions with good road grip and visibility.
+- Time: Daytime — even lighting and minimal shadow; all visual elements are well illuminated.
+- Road: Suburban two-lane road with **motorbike ahead**, **green signal active**, and **sidewalks with fences and shrubbery** lining both sides.
+- Environment Complexity: Moderate — while road is not crowded, **motorbike proximity**, **signal status**, and **narrow side clearance** require careful steering judgment.
+- Sensor Visibility Risk: Low — environment is visually clear, but **dynamic tracking of a motorbike** in a lane is challenging due to size and maneuverability.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates early steering adjustment due to incorrect anticipation of the motorbike’s lane change or trajectory. [H1, H2]
+- UCA1.2: AV fails to steer to maintain lane centering behind or beside the motorbike. [H2, H3]
+- UCA1.3: AV steers too close to the motorbike, assuming it's stationary or slower than it is. [H1, H2]
+- UCA1.4: AV delays steering excessively while resolving perceived ambiguity in motorbike motion or signal behavior. [H2, H3]
+- UCA1.5: AV maintains steering longer than needed, deviating from optimal alignment. [H1, H3]
+- UCA2.1: AV ends the maneuver too soon, failing to align completely in the correct path around or behind the motorbike. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV attempts to steer too close behind the motorbike, assuming predictable forward motion.
+- t1: UCA1.5 → Extended correction causes lateral deviation, risking contact with the curb or foliage.
+- t2: UCA2.1 → AV terminates steering early, remaining misaligned in the lane.
+
+Causality:
+- t0: AV does not account for the motorbike’s smaller size and quick acceleration.
+- t1: Steering overshoots due to miscalculated lane offset or motorbike drift.
+- t2: Early stop in control effort results in incomplete trajectory realignment.
+
+Final Loss: The AV risks improper lane following, lateral misalignment, or unsafe proximity to the motorbike due to misjudged timing and motion dynamics.
+
+Safe Scenario Log (Mitigated):
+- t0: AV maintains safe buffer and uses trajectory prediction to track motorbike motion.
+- t1: Steering correction is light and proportional, maintaining stable alignment behind motorbike.
+- t2: Correction ends after AV’s position is confirmed to be centered and aligned in-lane.
+
+Final Safe Outcome: AV performs stable lane following behind a motorbike through a green-signal-controlled area, maintaining safe distance and lane positioning with minimal control effort.

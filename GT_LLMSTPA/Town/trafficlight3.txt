@@ -1,0 +1,38 @@
+Filename: trafficlight3.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry, with no surface moisture or environmental interference.
+- Time: Daytime — bright ambient light with clear visibility and minimal shadows.
+- Road: Urban intersection with a **traffic light (yellow illuminated)** and **multiple curbs, bollards, and pedestrian islands**; wide open space visible ahead.
+- Environment Complexity: Moderate to High — includes **active traffic signal**, multiple potential trajectories (turning or straight), and pedestrian infrastructure.
+- Sensor Visibility Risk: Low — high visual clarity, but **complex signal interpretation and multi-path options** present decision challenges.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misinterprets yellow signal timing and initiates unnecessary or unsafe steering (e.g., quick lane change or turn). [H1, H2]
+- UCA1.2: AV fails to steer because of indecision during transition state (yellow light). [H2, H3]
+- UCA1.3: AV steers too early toward turn path or incorrectly navigates the center island. [H1, H2]
+- UCA1.4: AV delays steering while overanalyzing possible intersections, risking hesitation in traffic flow. [H2, H3]
+- UCA1.5: AV continues a steering path too long, risking lane departure or unintended movement into intersection infrastructure. [H1, H3]
+- UCA2.1: AV ends steering early without completing the turn or straight trajectory. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV reacts early to yellow signal, steering prematurely toward a lane that was not required.
+- t1: UCA1.5 → Steering persists as AV passes through ambiguous intersection layout.
+- t2: UCA2.1 → AV halts steering prematurely, leaving it misaligned at the intersection center.
+
+Causality:
+- t0: Yellow light creates decision urgency, leading to misinterpretation of lane intent.
+- t1: AV lacks clear completion criteria for maneuver across a non-uniform intersection.
+- t2: Perceived alignment is incorrect; AV ceases control too soon.
+
+Final Loss: AV may enter incorrect lane or improperly traverse the intersection due to signal ambiguity and poor steering timing.
+
+Safe Scenario Log (Mitigated):
+- t0: AV delays steering until intent is validated (e.g., route logic confirms straight vs. turn).
+- t1: Steering follows planned path in small, validated increments.
+- t2: Control concludes after successful navigation across traffic signal zone and full lane confirmation.
+
+Final Safe Outcome: AV handles traffic light and intersection safely by waiting for validated route decision, observing traffic signal logic, and navigating the intersection with controlled, bounded steering behavior.

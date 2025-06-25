@@ -1,0 +1,38 @@
+Filename: bike2.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear, dry conditions; strong visibility.
+- Time: Daytime — bright lighting with no significant shadows or occlusion.
+- Road: Urban two-lane road with **motorbike directly ahead**, **bicyclist riding opposite direction**, **metal roadside barriers**, and **dense building and fencing** on each side.
+- Environment Complexity: High — includes **dynamic interaction with two vulnerable road users**, **tight lateral space**, and **hard barriers** restricting evasive maneuvers.
+- Sensor Visibility Risk: Moderate — open visibility, but **narrow lane**, **multi-agent tracking**, and **close boundary constraints** stress safe control timing.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV initiates steering too early around the motorbike, risking conflict with the oncoming cyclist. [H1, H2]
+- UCA1.2: AV fails to steer or delays maneuver, following the motorbike too closely. [H2, H3]
+- UCA1.3: AV steers too far to avoid the motorbike and encroaches into the path of the oncoming cyclist. [H1, H2]
+- UCA1.4: AV overanalyzes the dual presence and stalls steering, increasing rear-end or alignment risk. [H2, H3]
+- UCA1.5: AV holds the steering too long, bringing it dangerously close to the barriers or re-entering the lane poorly. [H1, H3]
+- UCA2.1: AV exits the maneuver before full spatial clearance from both agents, risking mid-lane misalignment. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV initiates lateral movement to pass motorbike without fully accounting for oncoming cyclist’s trajectory.
+- t1: UCA1.3 → Steering overcorrection brings AV across centerline, breaching cyclist’s path.
+- t2: UCA2.1 → Steering ends before AV is fully realigned, resulting in unsafe positioning near one or both vulnerable road users.
+
+Causality:
+- t0: Narrow lanes with two dynamic agents create conflicting safety zones.
+- t1: Overcompensation during lateral maneuver leads to lane breach.
+- t2: Control ends based on premature confidence in spatial resolution.
+
+Final Loss: AV may endanger the motorbike, the bicyclist, or itself by making untimely, overly aggressive, or incomplete maneuvers in a spatially restricted road segment.
+
+Safe Scenario Log (Mitigated):
+- t0: AV tracks both the motorbike and cyclist with prediction models before maneuvering.
+- t1: AV applies a controlled lateral shift within safety bounds, avoiding overlap with either agent.
+- t2: Steering ends after full spatial resolution confirms lane alignment and agent clearance.
+
+Final Safe Outcome: AV safely passes the motorbike in a tight urban lane while maintaining separation from an oncoming cyclist, supported by precise trajectory control and dual-agent awareness.

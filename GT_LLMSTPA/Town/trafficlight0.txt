@@ -1,0 +1,38 @@
+Filename: trafficlight0.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Overcast or rainy conditions; **road appears damp**, indicating precipitation has recently occurred or is ongoing.
+- Time: Dusk or early evening — **dark sky**, diffuse ambient light, and active street lighting.
+- Road: Residential area with a **single-lane road**, **sidewalks**, **fences**, and **a traffic light (yellow illuminated)** ahead.
+- Environment Complexity: Moderate — urban neighborhood features (mailboxes, fencing), wet surface, and reduced lighting introduce challenges.
+- Sensor Visibility Risk: Moderate to High — **wet surface reflections**, **low ambient light**, and **dark horizon** increase the difficulty of visual lane tracking and signal detection.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV confuses reflective wet patches with lane boundaries or curbs. [H1, H2]
+- UCA1.2: AV fails to steer due to degraded lane line visibility in low light and water sheen. [H2, H3]
+- UCA1.3: AV initiates steering too early, reacting to false lane cues from reflection. [H1, H2]
+- UCA1.4: AV delays steering while seeking validation in a low-visibility zone. [H2, H3]
+- UCA1.5: AV sustains steering too long in uncertainty, deviating from optimal path. [H1, H3]
+- UCA2.1: AV terminates maneuver early before reaching lane center due to incomplete visual feedback. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV misinterprets road glare and begins premature lane correction.
+- t1: UCA1.5 → Steering persists in absence of lane boundary feedback, leading to lateral drift.
+- t2: UCA2.1 → Steering ends prematurely due to false confidence in positioning under low contrast.
+
+Causality:
+- t0: Water and dim lighting degrade camera-based perception, resulting in inaccurate edge recognition.
+- t1: Feedback loop loses track of lane position under low contrast and glare.
+- t2: AV terminates maneuver based on insufficient confidence data.
+
+Final Loss: The AV may veer or misalign within its lane due to poor visual contrast and water-based surface distortion under dark skies.
+
+Safe Scenario Log (Mitigated):
+- t0: AV waits for fused sensor confirmation (visual + inertial or LiDAR) before initiating steering.
+- t1: Corrections are constrained to short, adaptive inputs based on updated visibility.
+- t2: Steering ends only after trajectory is confirmed to be centered through filtered multi-source feedback.
+
+Final Safe Outcome: The AV performs a safe lane-following maneuver in low-light and wet residential conditions by prioritizing sensor confidence and adaptive control under uncertainty.

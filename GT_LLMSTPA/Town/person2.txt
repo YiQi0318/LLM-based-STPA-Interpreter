@@ -1,0 +1,38 @@
+Filename: person2.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry, ideal visibility with no surface obstruction.
+- Time: Late afternoon or morning — **strong sun positioned behind the vehicle**, causing forward-facing glare.
+- Road: Urban road with **narrow lane**, **sidewalks on both sides**, **parked/stopped car ahead**, and **a pedestrian standing at the curb**.
+- Environment Complexity: High — presence of **another vehicle**, **pedestrian**, **sidewalk boundaries**, and **strong lighting contrast**.
+- Sensor Visibility Risk: High — **sun glare from behind the AV**, **high reflectivity from vehicles**, and **presence of a pedestrian** close to the road increase perceptual and timing challenges.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misjudges parked/stopped car as a dynamic obstacle and initiates an unnecessary steering maneuver. [H1, H2]
+- UCA1.2: AV fails to steer due to indecision caused by pedestrian proximity and unclear intent. [H2, H3]
+- UCA1.3: AV begins steering too early to avoid the vehicle without confirming safety or space. [H1, H2]
+- UCA1.4: AV delays steering excessively waiting for perfect confirmation of pedestrian behavior. [H2, H3]
+- UCA1.5: AV continues steering around the obstacle longer than necessary, entering risk zones (e.g., curb, opposite lane). [H1, H3]
+- UCA2.1: AV ends steering maneuver before it's safe, re-entering lane too soon in proximity to the pedestrian. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.3 → AV reacts prematurely to the stopped car, initiating lateral motion too soon.
+- t1: UCA1.5 → Steering maneuver is prolonged unnecessarily, drifting beyond optimal return line.
+- t2: UCA2.1 → Correction ends while pedestrian and vehicle proximity still require lateral caution.
+
+Causality:
+- t0: AV misreads lighting and silhouette contrast, treating the vehicle or pedestrian as ambiguous.
+- t1: Excessive safety margin causes the AV to maintain steering too far from the curb or correct lane.
+- t2: Steering correction concludes based on time or distance rather than trajectory verification.
+
+Final Loss: The AV may misalign, invade a pedestrian area, or enter another lane due to poor timing, pedestrian misclassification, or lighting-induced vision distortion.
+
+Safe Scenario Log (Mitigated):
+- t0: AV delays steering until obstacle classification (vehicle vs. pedestrian) is fully resolved.
+- t1: Maneuver around the obstacle is controlled, maintaining safe lateral clearance.
+- t2: AV returns to lane only after spatial and semantic confirmation that environment is clear and safe.
+
+Final Safe Outcome: AV successfully navigates urban obstacle conditions with strong backlight, ensuring both vehicle clearance and pedestrian safety through validated, cautious control.

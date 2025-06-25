@@ -1,0 +1,39 @@
+Filename: trafficsign3.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and sunny — **no visual obstructions** from weather; optimal daylight conditions.
+- Time: Daytime — **bright lighting with minimal shadow interference**.
+- Road: Urban multilane street with traffic in both directions; **multiple vehicles are present** ahead and in adjacent lanes, and a **pedestrian sidewalk** is clearly visible on the right.
+- Signage: Visible traffic signs along the sidewalk (e.g., speed limit, warning signs); potential influence on steering decisions near intersections or crosswalks.
+- Environment Complexity: High — **dense contextual features**, including vehicles, pedestrians, trees, buildings, road signs, and barriers.
+- Sensor Visibility Risk: Moderate — **visual clutter, object occlusion, and motion** may reduce detection confidence or mislead lane estimation models.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV misclassifies nearby vehicles, shadows, or signs as static lane features. [H1, H2]
+- UCA1.2: AV avoids steering due to occlusion of lane markings by surrounding traffic. [H2, H3]
+- UCA1.3: AV initiates steering based on assumptions of open space near parked or moving vehicles. [H1, H2]
+- UCA1.4: AV delays maneuver waiting for clear lane view despite urgency (e.g., curve or stop zone). [H2, H3]
+- UCA1.5: Steering persists too long due to missed sign interpretation (e.g., approaching stop or school zone). [H1, H3]
+- UCA2.1: AV completes steering early due to misinterpretation of dynamic environment feedback. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1, UCA1.3 → AV begins steering based on open space next to vehicles, potentially entering an unsafe buffer zone.
+- t1: UCA1.5 → Steering continues through an area requiring caution due to missed speed regulation or stop sign.
+- t2: UCA2.1 → AV ends maneuver while still misaligned, believing it is in-lane due to momentary visual clearance.
+
+Causality:
+- t0: AV misjudges lateral space due to occlusion and traffic interference.
+- t1: Visual clutter causes important signage (e.g., speed limit or stop) to be missed or ignored.
+- t2: Steering termination is based on partial visual confirmation in a dense, fast-changing environment.
+
+Final Loss: AV may encroach on another lane, fail to obey traffic signs, or become misaligned due to premature or overly cautious steering in a complex scene.
+
+Safe Scenario Log (Mitigated):
+- t0: AV uses sensor fusion (camera + lidar) to separate moving vehicles and infrastructure.
+- t1: Signs are actively interpreted with semantic understanding and mapped policy triggers.
+- t2: Steering decisions are refined with prediction of surrounding vehicle behavior and validated by positional certainty.
+
+Final Safe Outcome: The AV safely maintains lateral stability, correctly responds to signage, and avoids interference with surrounding traffic using robust perception and policy logic.

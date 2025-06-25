@@ -1,0 +1,38 @@
+Filename: bike6.jpg
+
+Control Action (CA):
+The automotive vehicle is steering.
+
+Scene Description:
+- Weather: Clear and dry; no visual obstructions due to weather conditions.
+- Time: Daytime — bright sunlight with clear shadows, especially from buildings and trees.
+- Road: Curved residential or commercial street; **cyclist ahead on right**, **street lamps**, **trees**, and **urban infrastructure (phone booths, signs)** nearby.
+- Environment Complexity: High — includes **cyclist in close proximity**, **road curvature**, **street furniture**, and **building-induced shadows**.
+- Sensor Visibility Risk: Moderate — **partial visual occlusion** by lamp posts and trees; **urban clutter** could interfere with agent tracking and precise road edge detection.
+
+Unsafe Control Actions (UCAs):
+- UCA1.1: AV begins steering too early toward the curb to track road curve, risking cyclist proximity. [H1, H2]
+- UCA1.2: AV fails to steer or delays too long in adjusting for the cyclist and curve. [H2, H3]
+- UCA1.3: AV attempts to steer aggressively around the cyclist without fully evaluating sidewalk and infrastructure boundaries. [H1, H2]
+- UCA1.4: AV over-analyzes fixed objects (e.g., pole, booth), delaying steering in a tight window. [H2, H3]
+- UCA1.5: AV holds steering longer than necessary, encroaching onto sidewalk space or cutting the curve too sharply. [H1, H3]
+- UCA2.1: AV finishes steering prematurely, re-entering close to the cyclist before sufficient clearance is achieved. [H2, H3]
+
+Loss Scenario Log:
+- t0: UCA1.1 → AV turns rightward too early while cyclist is still close, decreasing lateral safety margin.
+- t1: UCA1.5 → Continued correction leads AV too close to edge objects or pedestrian space.
+- t2: UCA2.1 → Steering ends early, causing the AV to return into potential cyclist path.
+
+Causality:
+- t0: Lane curvature combined with visual occlusion and clutter leads to early maneuver.
+- t1: Lack of refined curve estimation and cyclist tracking causes excessive steering.
+- t2: Final alignment occurs before AV is safely distanced from cyclist and sidewalk boundary.
+
+Final Loss: AV may cause conflict with the cyclist, curb, or infrastructure due to inaccurate curve tracking or overreaction in a visually dense environment.
+
+Safe Scenario Log (Mitigated):
+- t0: AV recognizes cyclist and curve interaction, delaying maneuver until safe.
+- t1: AV adapts its path to maintain separation from cyclist and infrastructure.
+- t2: Correction ends only after trajectory safety and lane centering are validated.
+
+Final Safe Outcome: AV successfully navigates a curved urban road near a cyclist by using conservative steering logic and spatial validation in a complex, cluttered scene.
